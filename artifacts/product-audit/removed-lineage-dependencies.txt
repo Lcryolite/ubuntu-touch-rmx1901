@@ -1,0 +1,60 @@
+Halium product dependency exclusions
+====================================
+
+Product definitions and inherited makefiles
+-------------------------------------------
+- device/realme/RMX1901/lineage_RMX1901.mk
+  Not selected or inherited by halium_RMX1901.mk. This keeps its Evolution-era
+  flags, mini-GApps selection, branding properties, and GMS client ID out of
+  the Halium product.
+- vendor/lineage/config/common_full_phone.mk
+  Inherited only by lineage_RMX1901.mk; never inherited by halium_RMX1901.mk.
+- hardware/dolby/dolby.mk
+  In device.mk, inherited only when TARGET_PRODUCT is not halium_RMX1901.
+- build/make/target/product/non_ab_device.mk
+  Added to the newer ROM device tree for recovery applypatch support, but this
+  makefile does not exist in Android 11 and the Halium product excludes OTA.
+- hardware/qcom-caf/common/common.mk
+  Added by the newer device tree, but the pinned Lineage 18.1 Qualcomm common
+  project has no such product makefile; its os_pickup makefiles are discovered
+  by the Android build system instead.
+- vendor/qcom/opensource/healthd-ext/health-vendor-product.mk
+  Added by a 2026 ROM-specific device-tree change. The pinned Halium 11
+  manifest has no healthd-ext project, and the associated Lineage health
+  service is excluded from the Halium product.
+
+BoardConfig policy includes excluded from halium_RMX1901
+--------------------------------------------------------
+- device/lineage/sepolicy/libion/sepolicy.mk
+  Added by a 2026 device-tree change; the pinned Lineage 18.1 sepolicy tree has
+  no libion policy subtree.
+- device/lineage/sepolicy/libperfmgr/sepolicy.mk
+  Added during a 2024 ROM migration; the pinned Lineage 18.1 sepolicy tree has
+  no libperfmgr policy subtree, and the associated Lineage power service is
+  excluded from the Halium product.
+
+No Evolution or GApps product makefile is inherited anywhere on the Halium
+product path. The only Evolution/GApps settings present in the source tree are
+isolated in lineage_RMX1901.mk, which remains unmodified.
+
+ROM-only packages excluded from halium_RMX1901
+----------------------------------------------
+- LunarisDolby
+- Aperture
+- android.hardware.light-service.lineage
+- vendor.lineage.health-service.default
+- vendor.lineage.livedisplay-service.sdm
+- android.hardware.power-service.lineage-libperfmgr
+- RealmeDoze
+- RealmeParts and its privileged-app permission file
+- RemovePackages
+- UpdaterOverlayCustom and AB_OTA_UPDATER configuration
+- QuickAccessWallet
+
+ROM-only overlays and Soong namespaces excluded from halium_RMX1901
+-------------------------------------------------------------------
+- device/realme/RMX1901/overlay-lineage
+- device/realme/RMX1901/external/LunarisDolby
+- bootable/deprecated-ota
+- hardware/lineage/interfaces/power-libperfmgr
+- hardware/dolby

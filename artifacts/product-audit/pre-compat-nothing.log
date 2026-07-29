@@ -1,0 +1,125 @@
+00:13:26 ************************************************************
+00:13:26 You are building on a machine with 15.2GB of RAM
+00:13:26
+00:13:26 The minimum required amount of free memory is around 16GB,
+00:13:26 and even with that, some configurations may not work.
+00:13:26
+00:13:26 If you run into segfaults or other errors, try reducing your
+00:13:26 -j value.
+00:13:26 ************************************************************
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=halium_RMX1901
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-2a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-7.1.3-2-cachyos-x86_64-CachyOS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ3A.211001.001
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=vendor/realme/RMX1901 device/realme/RMX1901 vendor/qcom/opensource/usb/etc hardware/qcom-caf/sdm845 hardware/google/interfaces hardware/google/pixel/pixelstats hardware/google/pixel/power-libperfmgr hardware/qcom-caf/common/libqti-perfd-client hardware/nxp
+============================================
+[  2% 1/40] glob external/libdrm/intel/Android.sources.bp
+[  5% 2/40] glob external/boringssl/sources.bp
+[  7% 3/40] glob external/deqp/AndroidGen.bp
+[ 10% 4/40] glob external/libdrm/Android.sources.bp
+[ 12% 5/40] glob external/libdrm/amdgpu/Android.sources.bp
+[ 15% 6/40] glob external/libdrm/etnaviv/Android.sources.bp
+[ 17% 7/40] glob external/libdrm/freedreno/Android.sources.bp
+[ 20% 8/40] glob external/libdrm/libkms/Android.sources.bp
+[ 22% 9/40] glob external/libdrm/nouveau/Android.sources.bp
+[ 25% 10/40] glob external/libdrm/omap/Android.sources.bp
+[ 27% 11/40] glob external/libdrm/radeon/Android.sources.bp
+[ 30% 12/40] glob external/libdrm/tests/modetest/Android.sources.bp
+[ 32% 13/40] glob external/libdrm/tests/util/Android.sources.bp
+[ 35% 14/40] glob external/ltp/gen.bp
+[ 37% 15/40] glob external/mesa3d/Android.gen.bp
+[ 40% 16/40] glob external/mesa3d/src/mesa/Android.sources.bp
+[ 42% 17/40] glob external/python/cpython3/Android-bionic.bp
+[ 45% 18/40] glob external/python/cpython3/Android-darwin_x86_64.bp
+[ 47% 19/40] glob external/python/cpython3/Android-linux_x86_64.bp
+[ 50% 20/40] glob external/scrypt/sources.bp
+[ 52% 21/40] glob external/tensorflow/tensorflow/lite/tflite_static.bp
+[ 55% 22/40] glob external/v8/Android.base.bp
+[ 57% 23/40] glob external/v8/Android.initializers.bp
+[ 60% 24/40] glob external/v8/Android.libbase.bp
+[ 62% 25/40] glob external/v8/Android.libplatform.bp
+[ 65% 26/40] glob external/v8/Android.libsampler.bp
+[ 67% 27/40] glob external/v8/Android.torque.bp
+[ 70% 28/40] glob frameworks/base/ApiDocs.bp
+[ 72% 29/40] glob frameworks/base/StubLibraries.bp
+[ 75% 30/40] glob frameworks/rs/support.bp
+[ 77% 31/40] glob libcore/JavaLibrary.bp
+[ 80% 32/40] glob libcore/NativeCode.bp
+[ 82% 33/40] glob libcore/non_openjdk_java_files.bp
+[ 85% 34/40] glob libcore/openjdk_java_files.bp
+[ 87% 35/40] glob prebuilts/ndk/android_native_app_glue.bp
+[ 90% 36/40] glob prebuilts/ndk/stl.bp
+[ 92% 37/40] glob prebuilts/ndk/cpufeatures.bp
+[ 95% 38/40] glob prebuilts/sdk/current/androidx/JavaPlugins.bp
+[ 97% 39/40] glob prebuilts/tools/common/m2/robolectric.bp
+[100% 40/40] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+FAILED: out/soong/build.ninja
+out/soong/.bootstrap/bin/soong_build -t -l out/.module_paths/Android.bp.list -b out/soong -n out -d out/soong/build.ninja.d -globFile out/soong/.bootstrap/build-globs.ninja -o out/soong/build.ninja Android.bp
+error: device/realme/RMX1901/Android.bp:11:1: unrecognized module type "install_symlink"
+error: device/realme/RMX1901/Android.bp:18:1: unrecognized module type "install_symlink"
+error: device/realme/RMX1901/doze/Android.bp:24:25: unrecognized property "optimize.shrink_resources"
+error: device/realme/RMX1901/RealmeParts/Android.bp:24:25: unrecognized property "optimize.shrink_resources"
+error: vendor/realme/RMX1901/Android.bp:16202:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16211:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16220:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16229:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16238:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16247:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16256:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16265:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16274:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16283:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16292:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16301:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16310:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16319:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16328:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16337:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16346:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16355:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16364:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16373:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16382:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16391:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16400:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16409:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16418:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16427:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16436:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16445:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16454:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16463:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16472:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16481:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16490:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:21239:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21246:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21253:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21260:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21267:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21274:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21281:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21288:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21295:1: unrecognized module type "install_symlink"
+ninja: build stopped: subcommand failed.
+00:13:28 soong bootstrap failed with: exit status 1
+
+#### failed to build some targets (3 seconds) ####

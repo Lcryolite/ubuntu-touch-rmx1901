@@ -1,0 +1,16 @@
+{
+  "url": "https://api.github.com/repos/Halium/initramfs-tools-halium/releases/9577925",
+  "id": 9577925,
+  "tag_name": "continuous",
+  "target_commitish": "a2c1bb1a68b4ca312749dc5859feddf124a5946f",
+  "author": {
+    "login": "jbruechert",
+    "id": 13609393
+  },
+  "draft": false,
+  "prerelease": false,
+  "created_at": "2018-02-07T18:19:03Z",
+  "updated_at": "2023-01-17T13:46:48Z",
+  "published_at": "2018-02-07T18:27:55Z",
+  "immutable": false
+}

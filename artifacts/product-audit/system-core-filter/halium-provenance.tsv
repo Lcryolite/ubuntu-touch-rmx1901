@@ -1,0 +1,17 @@
+9cf343f02121afed89d757bc9a21d987a10d1eb2	38317dca7e66a586e12261380931deaea53262bc	(halium) init: start inside LXC container without SELinux
+e6bfc40edc1b7795292a29e474c9132cae69a1ba	fcc5896cb4103ab083342968924b1ecbe2c99f30	(halium) init: modify mount_all to skip mounts and trigger nonencrypted state
+b8d37bd91e666fe721815251cfca3b0b9e8fc216	4eb6a2796de9c36dc6f389df3634a370e76b7d23	(halium) init: adjust first stage mounts for Halium
+36365abeaf30a5839a2489e5cb0c8d45d866069d	fa09ac6c330b7bab529fe51a8d9ec33d2ff54576	(halium) avoid modifying USB configuration set by host
+b6957bca23f86223ded55e89db69cc87493318d7	3521230900bf05bf3de67d6d5187da44863e23f2	(halium) init: Handle udev event peaks
+3e7122a04b0db0af3021e949ee1a40b13f5e7b32	86cbebd2efb66b2179c64cc81e61e9aeff4191c3	(halium) init: ignore non-kernel messages in ReadUevent
+4c02200b697bb6b3b649605d7463fc130b746460	9bf8f7481926de2eabc75001fa70dbcd93c5544c	(halium) init: ignore androidboot.force_normal_boot in kernel cmdline
+2e29e20ec2282a3a48148e9cce3502aef71ee6d2	5768c22ff1c16b5066a4069b8f2e1909c66c6290	(halium) init.rc: binderfs should be mounted by host
+b4b09fd8ad9860dff82ffc47a3b2b3e87f97879a	8c40b2ded171129690b269ac2a0b2d0dfc531f36	(halium) ueventd: restore /dev/.coldboot_done creation
+dde38c2307bb8b55ff01561fff40c0d05939c41b	e8917c6ef200370d5ab1d35f0367e73c5b2fc20d	(halium) init: load properties from (/system/etc)/prop.halium last
+c803f56f12b30f722158d11fb9f3d0dbe5a79dd0	6bd4cf1fe60ae1f3b3e57338c71aa519ae60dff6	(halium) init: ignore mount command for /dev/usb-ffs/adb
+b08382509df38d3c4390c492dee87fc1fe289844	0f96b7aaf206e0c5884a5f737d2faaa0e914929c	(halium) init.rc: Create directory for trust-store socket
+33fb5ce1644d1849159202808c165d19f6c5c0f9	2c18f50d258ee497f803a308606a1e62f65f4e56	(halium) adb: disable auth requirement for recovery by default
+d52a593fc2ff74143d8e536ea04bb676b02c14ee	792ec635c32813bd8d023118fe8723b9a6368c68	(halium) libpropertyinfoparser: allow property_info to be owned by nobody user/group
+7bcd9765cf315c14efc08ce2154d674168cf9b4c	731fcc461a495910773b93255a2f4bf4e1746e24	(halium) system/core: make sure we can write to all the partitions in recovery
+e5766a54705bc654d7230b11740669f407c981da	9b01c53904eadba6d16e8c709ba3971da52a02fa	(halium) init.rc: also disable mounting /config in container
+0e5b3ab86ac24f358e11f5369ecc73dde56f70a9	2aedd07dfd2c6321b87b37d3ec3911f9d626c155	(halium) libprocessgroup: fix mounting cpu/cpuacct on systemd hosts

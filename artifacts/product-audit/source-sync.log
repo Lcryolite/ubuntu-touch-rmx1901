@@ -1,0 +1,52 @@
+
+... A new version of repo (2.65) is available.
+... New version is available at: /home/lknife/android/rmx1901-halium11/.repo/repo/repo
+... The launcher is run from: /usr/bin/repo
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+!!! to get an update installed.
+
+error: Unable to fully sync the tree
+error: Downloading network changes failed.
+Failing repos (network):
+cts
+external/apache-commons-compress
+prebuilts/runtime
+prebuilts/rust
+prebuilts/sdk
+tools/repohooks
+tools/security
+Try re-running with "-j1 --fail-fast" to exit at the first error.
+================================================================================
+Repo command failed due to the following `SyncError` errors:
+GitCommandError: 'fetch --quiet github --prune --recurse-submodules=no --tags +refs/heads/lineage-18.1:refs/remotes/github/lineage-18.1 +refs/tags/*:refs/tags/*' on LineageOS/android_cts failed
+stdout: fatal: unable to access 'https://github.com/LineageOS/android_cts/': TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
+GitCommandError: 'fetch --quiet aosp --prune --recurse-submodules=no --tags tag android-11.0.0_r46 +refs/tags/android-11.0.0_r46:refs/tags/android-11.0.0_r46 +refs/tags/*:refs/tags/*' on platform/external/apache-commons-compress failed
+stdout: fatal: unable to access 'https://android.googlesource.com/platform/external/apache-commons-compress/': TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
+GitCommandError: 'fetch --depth=1 --no-auto-gc --quiet aosp --prune --recurse-submodules=no --no-tags tag android-11.0.0_r46 +refs/tags/android-11.0.0_r46:refs/tags/android-11.0.0_r46' on platform/prebuilts/runtime failed
+stdout: fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/runtime/': TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
+GitCommandError: 'fetch --depth=1 --no-auto-gc --quiet aosp --prune --recurse-submodules=no --no-tags tag android-11.0.0_r46 +refs/tags/android-11.0.0_r46:refs/tags/android-11.0.0_r46' on platform/prebuilts/rust failed
+stdout: fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/rust/': TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
+GitCommandError: 'fetch --depth=1 --no-auto-gc --quiet aosp --prune --recurse-submodules=no --no-tags tag android-11.0.0_r46 +refs/tags/android-11.0.0_r46:refs/tags/android-11.0.0_r46' on platform/prebuilts/sdk failed
+stdout: fatal: unable to access 'https://android.googlesource.com/platform/prebuilts/sdk/': TLS connect error: error:0A000126:SSL routines::unexpected eof while reading
++2 additional errors...
+device/qcom/sepolicy: Shared project LineageOS/android_device_qcom_sepolicy found, disabling pruning.
+hardware/qcom/audio: Shared project LineageOS/android_hardware_qcom_audio found, disabling pruning.
+hardware/qcom/display: Shared project LineageOS/android_hardware_qcom_display found, disabling pruning.
+hardware/qcom/media: Shared project LineageOS/android_hardware_qcom_media found, disabling pruning.
+vendor/nxp/opensource/pn5xx/halimpl: Shared project LineageOS/android_vendor_nxp_opensource_halimpl found, disabling pruning.
+vendor/nxp/opensource/pn5xx/hidlimpl: Shared project LineageOS/android_vendor_nxp_opensource_hidlimpl found, disabling pruning.
+repo_sync_exit=1
+
+=== targeted retry 2026-07-26T21:05:21+08:00 ===
+
+... A new version of repo (2.65) is available.
+... New version is available at: /home/lknife/android/rmx1901-halium11/.repo/repo/repo
+... The launcher is run from: /usr/bin/repo
+!!! The launcher is not writable.  Please talk to your sysadmin or distro
+!!! to get an update installed.
+
+================================================================================
+Repo command failed due to the following `SyncFailFastError` errors:
+GitCommandError: 'fetch --no-auto-gc --quiet aosp --prune --recurse-submodules=no --tags tag android-11.0.0_r46 +refs/tags/android-11.0.0_r46:refs/tags/android-11.0.0_r46 +refs/tags/*:refs/tags/*' on platform/prebuilts/rust failed
+stdout: error: RPC failed; curl 56 OpenSSL SSL_read: OpenSSL/3.6.3: error:0A000126:SSL routines::unexpected eof while reading, errno 0
+targeted_retry_exit=1

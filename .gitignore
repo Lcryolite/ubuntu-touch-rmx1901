@@ -1,0 +1,8 @@
+.worktrees/
+/build/
+/workdir/
+/out/
+/ota/
+/images/
+/halium-boot-ramdisk.img
+/.halium-boot-ramdisk.img.download

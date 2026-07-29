@@ -1,0 +1,6 @@
+Push mode: non-force, HEAD:refs/heads/lineage-18.1 into an empty remote
+Result: PASS
+Remote branch created: d46b623b60d9dcf1496b0e131433d92f09853c89
+GitHub warning: cmds/incidentd/testdata/morethan96MB.txt is 96.13 MiB, above the recommended 50 MiB but below the enforced 100 MiB limit.
+GitHub warning: media/tests/contents/media_api/videoeditor/H264_BP_640x480_15fps_384kbps_60_0.mp4 is 58.32 MiB, above the recommended 50 MiB but below the enforced 100 MiB limit.
+GH001 did not reject the push.

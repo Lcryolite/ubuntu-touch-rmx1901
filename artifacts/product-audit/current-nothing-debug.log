@@ -1,0 +1,267 @@
+23:05:30 ************************************************************
+23:05:30 You are building on a machine with 15.2GB of RAM
+23:05:30
+23:05:30 The minimum required amount of free memory is around 16GB,
+23:05:30 and even with that, some configurations may not work.
+23:05:30
+23:05:30 If you run into segfaults or other errors, try reducing your
+23:05:30 -j value.
+23:05:30 ************************************************************
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=halium_RMX1901
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-2a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-7.1.3-2-cachyos-x86_64-CachyOS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ3A.211001.001
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=vendor/realme/RMX1901 device/realme/RMX1901 vendor/qcom/opensource/usb/etc hardware/qcom-caf/sdm845 hardware/google/interfaces hardware/google/pixel/pixelstats hardware/google/pixel/power-libperfmgr hardware/qcom-caf/common/libqti-perfd-client hardware/nxp
+============================================
+[100% 1/1] out/soong/.minibootstrap/minibp out/soong/.bootstrap/build.ninja
+[  1% 2/182] compile out/soong/.bootstrap/soong-shared/pkg/android/soong/shared.a
+[  1% 3/182] compile out/soong/.bootstrap/blueprint-deptools/pkg/github.com/google/blueprint/deptools.a
+[  2% 4/182] compile out/soong/.bootstrap/loadplugins/obj/loadplugins.a
+[  2% 5/182] compile out/soong/.bootstrap/soong-env/pkg/android/soong/env.a
+[  3% 6/182] compile out/soong/.bootstrap/gotestmain/obj/gotestmain.a
+[  3% 7/182] compile out/soong/.bootstrap/soong_env/obj/soong_env.a
+[  4% 8/182] compile out/soong/.bootstrap/blueprint-pathtools/pkg/github.com/google/blueprint/pathtools.a
+[  4% 9/182] compile out/soong/.bootstrap/blueprint-parser/pkg/github.com/google/blueprint/parser.a
+[  5% 10/182] compile out/soong/.bootstrap/blueprint-parser/test/github.com/google/blueprint/parser.a
+[  6% 11/182] compile out/soong/.bootstrap/gotestrunner/obj/gotestrunner.a
+[  6% 12/182] compile out/soong/.bootstrap/blueprint-pathtools/test/github.com/google/blueprint/pathtools.a
+[  7% 13/182] compile out/soong/.bootstrap/blueprint-proptools/pkg/github.com/google/blueprint/proptools.a
+[  7% 14/182] link out/soong/.bootstrap/soong_env/obj/a.out
+[  8% 15/182] cp out/soong/.bootstrap/bin/soong_env
+[  8% 16/182] link out/soong/.bootstrap/loadplugins/obj/a.out
+[  9% 17/182] cp out/soong/.bootstrap/bin/loadplugins
+[  9% 18/182] link out/soong/.bootstrap/gotestrunner/obj/a.out
+[ 10% 19/182] create out/soong/.bootstrap/soong_build/gen/plugin.go
+[ 10% 20/182] cp out/soong/.bootstrap/bin/gotestrunner
+[ 11% 21/182] compile out/soong/.bootstrap/blueprint-proptools/test/github.com/google/blueprint/proptools.a
+[ 12% 22/182] link out/soong/.bootstrap/gotestmain/obj/a.out
+[ 12% 23/182] cp out/soong/.bootstrap/bin/gotestmain
+[ 13% 24/182] gotestmain out/soong/.bootstrap/aidl-soong-rules/test/test.go
+[ 13% 25/182] gotestmain out/soong/.bootstrap/blueprint/test/test.go
+[ 14% 26/182] gotestmain out/soong/.bootstrap/blueprint-bootstrap-bpdoc/test/test.go
+[ 14% 27/182] gotestmain out/soong/.bootstrap/blueprint-parser/test/test.go
+[ 15% 28/182] gotestmain out/soong/.bootstrap/blueprint-pathtools/test/test.go
+[ 15% 29/182] gotestmain out/soong/.bootstrap/blueprint-proptools/test/test.go
+[ 16% 30/182] gotestmain out/soong/.bootstrap/soong-apex/test/test.go
+[ 17% 31/182] gotestmain out/soong/.bootstrap/soong-bpf/test/test.go
+[ 17% 32/182] gotestmain out/soong/.bootstrap/soong-cc-config/test/test.go
+[ 18% 33/182] gotestmain out/soong/.bootstrap/soong-dexpreopt/test/test.go
+[ 18% 34/182] gotestmain out/soong/.bootstrap/soong-genrule/test/test.go
+[ 19% 35/182] gotestmain out/soong/.bootstrap/soong-python/test/test.go
+[ 19% 36/182] gotestmain out/soong/.bootstrap/soong-remoteexec/test/test.go
+[ 20% 37/182] gotestmain out/soong/.bootstrap/soong-cc/test/test.go
+[ 20% 38/182] gotestmain out/soong/.bootstrap/soong-etc/test/test.go
+[ 21% 39/182] gotestmain out/soong/.bootstrap/soong-sdk/test/test.go
+[ 21% 40/182] gotestmain out/soong/.bootstrap/soong-sh/test/test.go
+[ 22% 41/182] gotestmain out/soong/.bootstrap/soong-rust/test/test.go
+[ 23% 42/182] gotestmain out/soong/.bootstrap/soong-sysprop/test/test.go
+[ 23% 43/182] gotestmain out/soong/.bootstrap/soong-xml/test/test.go
+[ 24% 44/182] gotestmain out/soong/.bootstrap/soong-android/test/test.go
+[ 24% 45/182] gotestmain out/soong/.bootstrap/soong-java/test/test.go
+[ 25% 46/182] compile out/soong/.bootstrap/blueprint-pathtools/test/test.a
+[ 25% 47/182] compile out/soong/.bootstrap/blueprint-parser/test/test.a
+[ 26% 48/182] compile out/soong/.bootstrap/blueprint-proptools/test/test.a
+[ 26% 49/182] compile out/soong/.bootstrap/blueprint/pkg/github.com/google/blueprint.a
+[ 27% 50/182] compile out/soong/.bootstrap/soong/pkg/android/soong.a
+[ 28% 51/182] compile out/soong/.bootstrap/blueprint/test/github.com/google/blueprint.a
+[ 28% 52/182] compile out/soong/.bootstrap/blueprint-bootstrap-bpdoc/pkg/github.com/google/blueprint/bootstrap/bpdoc.a
+[ 29% 53/182] compile out/soong/.bootstrap/soong-android-soongconfig/pkg/android/soong/android/soongconfig.a
+[ 29% 54/182] compile out/soong/.bootstrap/blueprint/test/test.a
+[ 30% 55/182] compile out/soong/.bootstrap/blueprint-bootstrap-bpdoc/test/github.com/google/blueprint/bootstrap/bpdoc.a
+[ 30% 56/182] compile out/soong/.bootstrap/blueprint-bootstrap-bpdoc/test/test.a
+[ 31% 57/182] compile out/soong/.bootstrap/blueprint-bootstrap/pkg/github.com/google/blueprint/bootstrap.a
+[ 31% 58/182] link out/soong/.bootstrap/blueprint-parser/test/test
+[ 32% 59/182] test github.com/google/blueprint/parser
+[ 32% 60/182] link out/soong/.bootstrap/blueprint-pathtools/test/test
+[ 33% 61/182] test github.com/google/blueprint/pathtools
+[ 34% 62/182] link out/soong/.bootstrap/blueprint-proptools/test/test
+[ 34% 63/182] test github.com/google/blueprint/proptools
+[ 35% 64/182] link out/soong/.bootstrap/blueprint/test/test
+[ 35% 65/182] test github.com/google/blueprint
+[ 36% 66/182] link out/soong/.bootstrap/blueprint-bootstrap-bpdoc/test/test
+[ 36% 67/182] test github.com/google/blueprint/bootstrap/bpdoc
+[ 37% 68/182] compile out/soong/.bootstrap/soong-android/pkg/android/soong/android.a
+[ 37% 69/182] compile out/soong/.bootstrap/soong-phony/pkg/android/soong/phony.a
+[ 38% 70/182] compile out/soong/.bootstrap/soong-remoteexec/pkg/android/soong/remoteexec.a
+[ 39% 71/182] compile out/soong/.bootstrap/soong-icu/pkg/android/soong/icu.a
+[ 39% 72/182] compile out/soong/.bootstrap/soong-remoteexec/test/android/soong/remoteexec.a
+[ 40% 73/182] compile out/soong/.bootstrap/soong-tradefed/pkg/android/soong/tradefed.a
+[ 40% 74/182] compile out/soong/.bootstrap/kernel-config-soong-rules/pkg/android/soong/kernel/configs.a
+[ 41% 75/182] compile out/soong/.bootstrap/soong-robolectric/pkg/android/soong/robolectric.a
+[ 41% 76/182] compile out/soong/.bootstrap/soong-remoteexec/test/test.a
+[ 42% 77/182] compile out/soong/.bootstrap/soong-etc/pkg/android/soong/etc.a
+[ 42% 78/182] compile out/soong/.bootstrap/soong-lineage-generator/pkg/lineage/soong/generator.a
+[ 43% 79/182] compile out/soong/.bootstrap/soong-java-config/pkg/android/soong/java/config.a
+[ 43% 80/182] compile out/soong/.bootstrap/soong-etc/test/android/soong/etc.a
+[ 44% 81/182] compile out/soong/.bootstrap/vintf-compatibility-matrix-soong-rules/pkg/android/soong/vintf-compatibility-matrix.a
+[ 45% 82/182] compile out/soong/.bootstrap/soong-dexpreopt/test/android/soong/dexpreopt.a
+[ 45% 83/182] compile out/soong/.bootstrap/soong-genrule/pkg/android/soong/genrule.a
+[ 46% 84/182] compile out/soong/.bootstrap/soong-ca-certificates/pkg/android/soong/system/ca-certificates.a
+[ 46% 85/182] compile out/soong/.bootstrap/soong-java-config-error_prone/pkg/android/soong/java/config/error_prone.a
+[ 47% 86/182] compile out/soong/.bootstrap/soong-dexpreopt/test/test.a
+[ 47% 87/182] compile out/soong/.bootstrap/soong-genrule/test/android/soong/genrule.a
+[ 48% 88/182] compile out/soong/.bootstrap/soong-etc/test/test.a
+[ 48% 89/182] compile out/soong/.bootstrap/soong-xml/pkg/android/soong/xml.a
+[ 49% 90/182] compile out/soong/.bootstrap/soong-dexpreopt/pkg/android/soong/dexpreopt.a
+[ 50% 91/182] compile out/soong/.bootstrap/soong-xml/test/android/soong/xml.a
+[ 50% 92/182] compile out/soong/.bootstrap/soong-genrule/test/test.a
+[ 51% 93/182] compile out/soong/.bootstrap/soong-fs_config/pkg/android/soong/fs_config.a
+[ 51% 94/182] compile out/soong/.bootstrap/soong-python/pkg/android/soong/python.a
+[ 52% 95/182] compile out/soong/.bootstrap/soong-wayland-protocol-codegen/pkg/android/soong/external/wayland-protocol.a
+[ 52% 96/182] compile out/soong/.bootstrap/soong-xml/test/test.a
+[ 53% 97/182] compile out/soong/.bootstrap/soong-python/test/android/soong/python.a
+[ 53% 98/182] compile out/soong/.bootstrap/soong-cc-config/test/android/soong/cc/config.a
+[ 54% 99/182] compile out/soong/.bootstrap/soong-cc-config/pkg/android/soong/cc/config.a
+[ 54% 100/182] compile out/soong/.bootstrap/soong-python/test/test.a
+[ 55% 101/182] compile out/soong/.bootstrap/soong-libchrome/pkg/android/soong/external/libchrome.a
+[ 56% 102/182] compile out/soong/.bootstrap/soong-cc-config/test/test.a
+[ 56% 103/182] compile out/soong/.bootstrap/soong-selinux/pkg/android/soong/selinux.a
+[ 57% 104/182] compile out/soong/.bootstrap/soong-rust-config/pkg/android/soong/rust/config.a
+[ 57% 105/182] compile out/soong/.bootstrap/soong-android/test/android/soong/android.a
+[ 58% 106/182] compile out/soong/.bootstrap/soong-android/test/test.a
+[ 58% 107/182] link out/soong/.bootstrap/soong-remoteexec/test/test
+[ 59% 108/182] compile out/soong/.bootstrap/soong-cc/pkg/android/soong/cc.a
+[ 59% 109/182] link out/soong/.bootstrap/soong-genrule/test/test
+[ 60% 110/182] link out/soong/.bootstrap/soong-android/test/test
+[ 60% 111/182] link out/soong/.bootstrap/soong-xml/test/test
+[ 61% 112/182] link out/soong/.bootstrap/soong-cc-config/test/test
+[ 62% 113/182] compile out/soong/.bootstrap/soong-cc/test/android/soong/cc.a
+[ 62% 114/182] link out/soong/.bootstrap/soong-python/test/test
+[ 63% 115/182] link out/soong/.bootstrap/soong-etc/test/test
+[ 63% 116/182] compile out/soong/.bootstrap/soong-sanitizer_status/pkg/android/soong/security/santizers_status.a
+[ 64% 117/182] link out/soong/.bootstrap/soong-dexpreopt/test/test
+[ 64% 118/182] compile out/soong/.bootstrap/soong-display_defaults_sm7250/pkg/android/soong/hardware/qcom/sm7250/display.a
+[ 65% 119/182] compile out/soong/.bootstrap/soong-fluoride/pkg/android/soong/fluoride.a
+[ 65% 120/182] compile out/soong/.bootstrap/soong-fluoride_qti/pkg/android/soong/fluoride_qti.a
+[ 66% 121/182] compile out/soong/.bootstrap/soong-cc/test/test.a
+[ 67% 122/182] compile out/soong/.bootstrap/soong-clang-prebuilts/pkg/android/soong/prebuilts/clang/host/linux-x86/clangprebuilts.a
+[ 67% 123/182] compile out/soong/.bootstrap/soong-llvm/pkg/android/soong/external/llvm.a
+[ 68% 124/182] compile out/soong/.bootstrap/soong-bpf/test/android/soong/bpf.a
+[ 68% 125/182] compile out/soong/.bootstrap/soong-bpf/pkg/android/soong/bpf.a
+[ 69% 126/182] compile out/soong/.bootstrap/soong-bpf/test/test.a
+[ 69% 127/182] compile out/soong/.bootstrap/soong-clang/pkg/android/soong/external/clang.a
+[ 70% 128/182] compile out/soong/.bootstrap/soong-sh/pkg/android/soong/sh.a
+[ 70% 129/182] compile out/soong/.bootstrap/soong-sh/test/android/soong/sh.a
+[ 71% 130/182] compile out/soong/.bootstrap/soong-sh/test/test.a
+[ 71% 131/182] compile out/soong/.bootstrap/soong-rust/pkg/android/soong/rust.a
+[ 72% 132/182] compile out/soong/.bootstrap/soong-rust/test/android/soong/rust.a
+[ 73% 133/182] compile out/soong/.bootstrap/soong-rust/test/test.a
+[ 73% 134/182] test android/soong/android
+[ 74% 135/182] test android/soong/dexpreopt
+[ 74% 136/182] test android/soong/remoteexec
+[ 75% 137/182] test android/soong/python
+[ 75% 138/182] test android/soong/etc
+[ 76% 139/182] test android/soong/cc/config
+[ 76% 140/182] test android/soong/xml
+[ 77% 141/182] test android/soong/genrule
+[ 78% 142/182] link out/soong/.bootstrap/soong-cc/test/test
+[ 78% 143/182] link out/soong/.bootstrap/soong-bpf/test/test
+[ 79% 144/182] link out/soong/.bootstrap/soong-sh/test/test
+[ 79% 145/182] link out/soong/.bootstrap/soong-rust/test/test
+[ 80% 146/182] compile out/soong/.bootstrap/soong-java/test/android/soong/java.a
+[ 80% 147/182] compile out/soong/.bootstrap/soong-java/test/test.a
+[ 81% 148/182] compile out/soong/.bootstrap/soong-java/pkg/android/soong/java.a
+[ 81% 149/182] compile out/soong/.bootstrap/soong-suite-harness/pkg/android/soong/suite_harness.a
+[ 82% 150/182] compile out/soong/.bootstrap/xsdc-soong-rules/pkg/android/soong/xsdc.a
+[ 82% 151/182] compile out/soong/.bootstrap/soong-sysprop/pkg/android/soong/sysprop.a
+[ 83% 152/182] compile out/soong/.bootstrap/soong-sysprop/test/android/soong/sysprop.a
+[ 84% 153/182] compile out/soong/.bootstrap/aidl-soong-rules/pkg/android/soong/aidl.a
+[ 84% 154/182] compile out/soong/.bootstrap/soong-sysprop/test/test.a
+[ 85% 155/182] compile out/soong/.bootstrap/hidl-soong-rules/pkg/android/soong/hidl.a
+[ 85% 156/182] compile out/soong/.bootstrap/aidl-soong-rules/test/android/soong/aidl.a
+[ 86% 157/182] compile out/soong/.bootstrap/aidl-soong-rules/test/test.a
+[ 86% 158/182] compile out/soong/.bootstrap/soong-apex/pkg/android/soong/apex.a
+[ 87% 159/182] compile out/soong/.bootstrap/soong-art/pkg/android/soong/art.a
+[ 87% 160/182] compile out/soong/.bootstrap/soong-apex/test/android/soong/apex.a
+[ 88% 161/182] compile out/soong/.bootstrap/soong-apex/test/test.a
+[ 89% 162/182] compile out/soong/.bootstrap/soong-sdk/pkg/android/soong/sdk.a
+[ 89% 163/182] compile out/soong/.bootstrap/soong-sdk/test/android/soong/sdk.a
+[ 90% 164/182] compile out/soong/.bootstrap/soong-sdk/test/test.a
+[ 90% 165/182] compile out/soong/.bootstrap/soong_build/obj/soong_build.a
+[ 91% 166/182] link out/soong/.bootstrap/soong-java/test/test
+[ 91% 167/182] link out/soong/.bootstrap/soong-sysprop/test/test
+[ 92% 168/182] link out/soong/.bootstrap/aidl-soong-rules/test/test
+[ 92% 169/182] link out/soong/.bootstrap/soong-apex/test/test
+[ 93% 170/182] link out/soong/.bootstrap/soong-sdk/test/test
+[ 93% 171/182] link out/soong/.bootstrap/soong_build/obj/a.out
+[ 94% 172/182] test android/soong/cc
+[ 95% 173/182] test android/soong/sh
+[ 95% 174/182] test android/soong/bpf
+[ 96% 175/182] test android/soong/rust
+[ 96% 176/182] test android/soong/java
+[ 97% 177/182] test android/soong/sysprop
+[ 97% 178/182] test android/soong/aidl
+[ 98% 179/182] test android/soong/apex
+[ 98% 180/182] test android/soong/sdk
+[ 99% 181/182] cp out/soong/.bootstrap/bin/soong_build
+[100% 182/182] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+FAILED: out/soong/build.ninja
+out/soong/.bootstrap/bin/soong_build -t -l out/.module_paths/Android.bp.list -b out/soong -n out -d out/soong/build.ninja.d -globFile out/soong/.bootstrap/build-globs.ninja -o out/soong/build.ninja Android.bp
+error: device/realme/RMX1901/Android.bp:11:1: unrecognized module type "install_symlink"
+error: device/realme/RMX1901/Android.bp:18:1: unrecognized module type "install_symlink"
+error: device/realme/RMX1901/doze/Android.bp:24:25: unrecognized property "optimize.shrink_resources"
+error: device/realme/RMX1901/RealmeParts/Android.bp:24:25: unrecognized property "optimize.shrink_resources"
+error: vendor/realme/RMX1901/Android.bp:16202:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16211:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16220:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16229:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16238:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16247:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16256:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16265:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16274:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16283:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16292:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16301:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16310:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16319:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16328:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16337:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16346:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16355:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16364:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16373:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16382:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16391:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16400:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16409:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16418:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16427:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16436:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16445:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16454:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16463:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16472:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16481:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:16490:1: unrecognized module type "prebuilt_rfsa"
+error: vendor/realme/RMX1901/Android.bp:21239:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21246:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21253:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21260:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21267:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21274:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21281:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21288:1: unrecognized module type "install_symlink"
+error: vendor/realme/RMX1901/Android.bp:21295:1: unrecognized module type "install_symlink"
+ninja: build stopped: subcommand failed.
+23:06:04 soong bootstrap failed with: exit status 1
+
+#### failed to build some targets (34 seconds) ####

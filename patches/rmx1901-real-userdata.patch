@@ -1,0 +1,43 @@
+--- a/scripts/halium-userdata
++++ b/scripts/halium-userdata
+@@ -188,3 +188,2 @@
+-					halium_log "userdata_mount=tmpfs-rescue reason=f2fs-recovery path=$userdata_canonical"
+-					if ! halium_mount -t tmpfs -o rw,nosuid,nodev,mode=0755 tmpfs "$userdata_mountpoint"; then
+-						halium_policy_panic "Could not mount tmpfs userdata rescue"
++					if ! validate_rmx1901_userdata "$userdata_device"; then
++						halium_policy_panic "RMX1901 userdata changed before recovery mount"
+@@ -192,0 +192,13 @@
++					if ! halium_mount -t f2fs -o rw,nosuid,nodev "$userdata_canonical" "$userdata_mountpoint"; then
++						halium_policy_panic "Could not mount validated RMX1901 userdata writable"
++						return 1
++					fi
++					if ! validate_rmx1901_userdata "$userdata_device" ||
++					   [ ! -d "$userdata_mountpoint/system-data" ] ||
++					   [ ! -d "$userdata_mountpoint/user-data" ]; then
++						halium_umount "$userdata_mountpoint" || true
++						halium_policy_panic "Writable RMX1901 userdata failed identity or layout validation"
++						return 1
++					fi
++					halium_log "userdata_recovery=replayed path=$userdata_canonical"
++					halium_log "userdata_mount=rw-validated type=f2fs path=$userdata_canonical"
+@@ -224,0 +237,20 @@
++	fi
++
++	if [ "${rmx1901_systempart-}" = /dev/disk/by-partlabel/system ]; then
++		if ! validate_rmx1901_userdata "$userdata_device"; then
++			halium_policy_panic "RMX1901 userdata changed before writable mount"
++			return 1
++		fi
++		if ! halium_mount -t f2fs -o rw,nosuid,nodev "$userdata_canonical" "$userdata_mountpoint"; then
++			halium_policy_panic "Could not mount validated RMX1901 userdata writable"
++			return 1
++		fi
++		if ! validate_rmx1901_userdata "$userdata_device" ||
++		   [ ! -d "$userdata_mountpoint/system-data" ] ||
++		   [ ! -d "$userdata_mountpoint/user-data" ]; then
++			halium_umount "$userdata_mountpoint" || true
++			halium_policy_panic "Writable RMX1901 userdata failed identity or layout validation"
++			return 1
++		fi
++		halium_log "userdata_mount=rw-validated type=f2fs path=$userdata_canonical"
++		return 0

@@ -1,0 +1,13 @@
+# kind	key	value
+source	hybris_patches_revision	0b07bd1d2f0a8468b2b101bddfc9c4cba14edde0
+history	original_head	0e5b3ab86ac24f358e11f5369ecc73dde56f70a9
+history	published_head	2aedd07dfd2c6321b87b37d3ec3911f9d626c155
+tree	original	bd57f1e43379a75c56761a1f68d77e3ecd875ff0
+tree	published	bd57f1e43379a75c56761a1f68d77e3ecd875ff0
+removed_blob	oid	70352dbb7a51e338096bb1305ea63641a39200cd
+removed_blob	size	229696508
+removed_blob	path	libunwindstack/tests/files/offline/jit_debug_x86_32/libartd.so
+commit_map	sha256	590393e700361626c8192de6e59d817c88be372e23bf56751607ca0dc537d073
+commit_map	bytes	4921767
+commit_map	lines	60022
+patches	count	17

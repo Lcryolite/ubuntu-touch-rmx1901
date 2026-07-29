@@ -1,0 +1,10 @@
+{
+  "schema": "rmx1901-safe-initrd-release-v1",
+  "production_status": "released",
+  "repository": "Lcryolite/initramfs-tools-halium-rmx1901",
+  "source_commit": "1d6aa40c185fb0cc161ef302262124ebbd221b03",
+  "sha256": "3f02a6379313dd14b596d15049130f3a2ba98f3799757c4918515ece6befb5da",
+  "release_immutable": true,
+  "release_api_url": "https://api.github.com/repos/Lcryolite/initramfs-tools-halium-rmx1901/releases/360539684",
+  "asset_api_url": "https://api.github.com/repos/Lcryolite/initramfs-tools-halium-rmx1901/releases/assets/491633704"
+}

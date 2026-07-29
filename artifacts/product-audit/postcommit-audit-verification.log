@@ -1,0 +1,16 @@
+Task 1 audit re-check (2026-07-27, Asia/Shanghai)
+
+Command:
+  SOURCE_ROOT=/home/lknife/android/rmx1901-halium11 LINEAGE_COMPAT_REPO=/tmp/rmx1901-compat-provenance.nXYHAg/compat bash artifacts/product-audit/verify-task1-audit.sh /home/lknife/android/rmx1901-halium11/vendor/realme/RMX1901
+Result:
+  verified acde0a3 metadata, provenance fields, and 12 pinned Git objects
+
+Command:
+  bash /home/lknife/android/rmx1901-halium11/device/realme/RMX1901/soong/verify_install_symlinks.sh /home/lknife/android/rmx1901-halium11/out/soong/Android-halium_RMX1901.mk /home/lknife/android/rmx1901-halium11/out/build-halium_RMX1901.ninja
+Result:
+  verified 12 packaged install_symlink outputs
+
+Command:
+  git -C /home/lknife/android/rmx1901-halium11-port/.worktrees/halium11-reference-rootfs diff --check
+Result:
+  clean (no output)

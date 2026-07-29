@@ -1,0 +1,1673 @@
+10:33:04 ************************************************************
+10:33:04 You are building on a machine with 15.2GB of RAM
+10:33:04
+10:33:04 The minimum required amount of free memory is around 16GB,
+10:33:04 and even with that, some configurations may not work.
+10:33:04
+10:33:04 If you run into segfaults or other errors, try reducing your
+10:33:04 -j value.
+10:33:04 ************************************************************
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=halium_RMX1901
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-2a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-7.1.3-2-cachyos-x86_64-CachyOS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ3A.211001.001
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=vendor/realme/RMX1901 device/realme/RMX1901 vendor/qcom/opensource/usb/etc hardware/qcom-caf/sdm845 hardware/google/interfaces hardware/google/pixel/pixelstats hardware/google/pixel/power-libperfmgr hardware/qcom-caf/common/libqti-perfd-client hardware/nxp hardware/qcom-caf/sdm845 vendor/qcom/opensource/commonsys-intf/display vendor/qcom/opensource/data-ipa-cfg-mgr vendor/qcom/opensource/dataservices packages/apps/Bluetooth
+============================================
+[100% 1/1] out/soong/.minibootstrap/minibp out/soong/.bootstrap/build.ninja
+[ 66% 2/3] glob device/realme/RMX1901/NOTICE
+[100% 3/3] out/soong/.bootstrap/bin/soong_build out/soong/build.ninja
+device/realme/RMX1901/device.mk was modified, regenerating...
+out/soong/Android-halium_RMX1901.mk was modified, regenerating...
+[100% 4/4] initializing build system ...
+[  1% 5/272] including out/soong/Android-halium_RMX1901.mk ...
+[  2% 6/272] including art/Android.mk ...
+[  2% 7/272] including bionic/Android.mk ...
+[  2% 8/272] including bootable/recovery/Android.mk ...
+[  3% 9/272] including build/make/target/board/Android.mk ...
+[  3% 10/272] including build/make/target/product/gsi/Android.mk ...
+[  4% 11/272] including build/make/target/product/security/Android.mk ...
+[  4% 12/272] including build/make/tools/fs_config/Android.mk ...
+[  4% 13/272] including cts/Android.mk ...
+[  5% 14/272] including dalvik/Android.mk ...
+[  5% 15/272] including development/apps/Development/Android.mk ...
+[  5% 16/272] including development/apps/DumpViewer/Android.mk ...
+[  6% 17/272] including development/build/Android.mk ...
+[  6% 18/272] including development/cmds/monkey/Android.mk ...
+[  6% 19/272] including development/samples/ApiDemos/Android.mk ...
+[  7% 20/272] including development/samples/IntentPlayground/Android.mk ...
+[  7% 21/272] including development/samples/MultiClientInputMethod/Android.mk ...
+[  8% 22/272] including development/samples/MultiDisplay/Android.mk ...
+[  8% 23/272] including development/samples/RenderScript/Android.mk ...
+[  8% 24/272] including development/samples/ShortcutDemo/Android.mk ...
+[  9% 25/272] including development/samples/ShortcutSample/Android.mk ...
+[  9% 26/272] including development/samples/UiAutomator/Android.mk ...
+[  9% 27/272] including development/testrunner/Android.mk ...
+[ 10% 28/272] including device/generic/goldfish-opengl/Android.mk ...
+[ 10% 29/272] including device/generic/goldfish/Android.mk ...
+[ 11% 30/272] including device/google/atv/LeanbackSampleApp/Android.mk ...
+[ 11% 31/272] including device/google/atv/sdk/Android.mk ...
+[ 11% 32/272] including device/google/contexthub/firmware/Android.mk ...
+[ 12% 33/272] including device/google/contexthub/lefty/Android.mk ...
+[ 12% 34/272] including device/google/contexthub/lib/Android.mk ...
+[ 12% 35/272] including device/google/contexthub/sensorhal/Android.mk ...
+[ 13% 36/272] including device/google/cuttlefish/Android.mk ...
+[ 13% 37/272] including device/google/vrservices/xr/packages/BluetoothQtiSymlink/Android.mk ...
+[ 13% 38/272] including device/google/vrservices/xr/packages/overlays/SetupWizardOverlayXr/Android.mk ...
+[ 14% 39/272] including device/lineage/atv/Android.mk ...
+[ 14% 40/272] including device/qcom/sepolicy-legacy/Android.mk ...
+[ 15% 41/272] including device/sample/Android.mk ...
+[ 15% 42/272] including external/ant-wireless/ant_native/Android.mk ...
+[ 15% 43/272] including external/ant-wireless/ant_service/Android.mk ...
+[ 16% 44/272] including external/ant-wireless/antradio-library/Android.mk ...
+[ 16% 45/272] including external/bash/Android.mk ...
+[ 16% 46/272] including external/chromium-trace/Android.mk ...
+[ 17% 47/272] including external/chromium-webview/Android.mk ...
+[ 17% 48/272] including external/clang/Android.mk ...
+[ 18% 49/272] including external/connectivity/cnefeatureconfig/Android.mk ...
+[ 18% 50/272] including external/e2fsprogs/Android.mk ...
+[ 18% 51/272] including external/exoplayer/Android.mk ...
+[ 19% 52/272] including external/flatbuffers/Android.mk ...
+[ 19% 53/272] including external/fmtlib/support/Android.mk ...
+[ 19% 54/272] including external/google-breakpad/Android.mk ...
+[ 20% 55/272] including external/googletest/googletest/Android.mk ...
+[ 20% 56/272] including external/htop/Android.mk ...
+[ 20% 57/272] including external/hyphenation-patterns/Android.mk ...
+[ 21% 58/272] including external/icu/icu4c/Android.mk ...
+[ 21% 59/272] including external/json-c/Android.mk ...
+[ 22% 60/272] including external/libaom/Android.mk ...
+[ 22% 61/272] including external/libarchive/contrib/android/Android.mk ...
+[ 22% 62/272] including external/libncurses/Android.mk ...
+[ 23% 63/272] including external/libnfc-nxp/Android.mk ...
+[ 23% 64/272] including external/libusb/Android.mk ...
+[ 23% 65/272] including external/libvpx/Android.mk ...
+[ 24% 66/272] including external/ltp/Android.mk ...
+[ 24% 67/272] including external/markdown/Android.mk ...
+[ 25% 68/272] including external/mesa3d/Android.mk ...
+[ 25% 69/272] including external/nano/Android.mk ...
+[ 25% 70/272] including external/noto-fonts/emoji-compat/Android.mk ...
+[ 26% 71/272] including external/p7zip/Android.mk ...
+[ 26% 72/272] including external/pigz/Android.mk ...
+[ 26% 73/272] including external/proguard/Android.mk ...
+[ 27% 74/272] including external/robolectric-shadows/Android.mk ...
+[ 27% 75/272] including external/rsync/Android.mk ...
+[ 27% 76/272] including external/unrar/Android.mk ...
+[ 28% 77/272] including external/v4l2_codec2/tests/Android.mk ...
+[ 28% 78/272] including external/vim/Android.mk ...
+[ 29% 79/272] including external/vixl/Android.mk ...
+[ 29% 80/272] including external/vogar/Android.mk ...
+[ 29% 81/272] including external/vulkan-validation-layers/Android.mk ...
+[ 30% 82/272] including external/walt/android/WALT/app/src/main/jni/Android.mk ...
+[ 30% 83/272] including external/webrtc/Android.mk ...
+[ 30% 84/272] including external/wpa_supplicant_8/Android.mk ...
+[ 31% 85/272] including external/zip/Android.mk ...
+[ 31% 86/272] including frameworks/av/camera/Android.mk ...
+[ 31% 87/272] including frameworks/av/cmds/stagefright/Android.mk ...
+[ 32% 88/272] including frameworks/av/media/audioserver/Android.mk ...
+[ 32% 89/272] including frameworks/av/media/codec2/Android.mk ...
+[ 33% 90/272] including frameworks/av/media/libeffects/visualizer/Android.mk ...
+[ 33% 91/272] including frameworks/av/media/libmedia/xsd/vts/Android.mk ...
+[ 33% 92/272] including frameworks/av/media/libstagefright/xmlparser/vts/Android.mk ...
+[ 34% 93/272] including frameworks/av/services/audiopolicy/manager/Android.mk ...
+[ 34% 94/272] including frameworks/av/services/audiopolicy/service/Android.mk ...
+[ 34% 95/272] including frameworks/av/services/camera/libcameraservice/Android.mk ...
+[ 35% 96/272] including frameworks/base/Android.mk ...
+[ 35% 97/272] including frameworks/native/cmds/flatland/Android.mk ...
+[ 36% 98/272] including frameworks/native/cmds/ip-up-vpn/Android.mk ...
+[ 36% 99/272] including frameworks/opt/car/services/tests/Android.mk ...
+[ 36% 100/272] including frameworks/opt/localepicker/tests/Android.mk ...
+[ 37% 101/272] including frameworks/opt/net/wifi/libwifi_hal/Android.mk ...
+[ 37% 102/272] including frameworks/rs/Android.mk ...
+[ 37% 103/272] including halium/halium-boot/Android.mk ...
+[ 38% 104/272] including hardware/broadcom/libbt/Android.mk ...
+[ 38% 105/272] including hardware/broadcom/wlan/bcmdhd/Android.mk ...
+[ 38% 106/272] including hardware/google/easel/amber/camera/Android.mk ...
+[ 39% 107/272] including hardware/interfaces/compatibility_matrices/Android.mk ...
+[ 39% 108/272] including hardware/interfaces/configstore/1.1/default/Android.mk ...
+[ 40% 109/272] including hardware/interfaces/drm/1.0/default/Android.mk ...
+[ 40% 110/272] including hardware/interfaces/graphics/composer/2.2/default/Android.mk ...
+[ 40% 111/272] including hardware/interfaces/keymaster/3.0/default/Android.mk ...
+[ 41% 112/272] including hardware/interfaces/media/1.0/xml/Android.mk ...
+[ 41% 113/272] including hardware/interfaces/soundtrigger/2.0/default/Android.mk ...
+[ 41% 114/272] including hardware/interfaces/soundtrigger/2.1/default/Android.mk ...
+[ 42% 115/272] including hardware/interfaces/wifi/1.4/default/Android.mk ...
+[ 42% 116/272] including hardware/interfaces/wifi/supplicant/1.1/vts/Android.mk ...
+[ 43% 117/272] including hardware/invensense/Android.mk ...
+[ 43% 118/272] including hardware/knowles/athletico/sound_trigger_hal/Android.mk ...
+[ 43% 119/272] including hardware/libhardware/Android.mk ...
+[ 44% 120/272] including hardware/lineage/interfaces/wifi/1.0-legacy/Android.mk ...
+[ 44% 121/272] including hardware/qcom-caf/apq8084/Android.mk ...
+[ 44% 122/272] including hardware/qcom-caf/bt/Android.mk ...
+[ 45% 123/272] including hardware/qcom-caf/msm8916/Android.mk ...
+[ 45% 124/272] including hardware/qcom-caf/msm8952/Android.mk ...
+[ 45% 125/272] including hardware/qcom-caf/msm8953/Android.mk ...
+[ 46% 126/272] including hardware/qcom-caf/msm8960/Android.mk ...
+[ 46% 127/272] including hardware/qcom-caf/msm8974/Android.mk ...
+[ 47% 128/272] including hardware/qcom-caf/msm8994/Android.mk ...
+[ 47% 129/272] including hardware/qcom-caf/msm8996/Android.mk ...
+[ 47% 130/272] including hardware/qcom-caf/msm8998/Android.mk ...
+[ 48% 131/272] including hardware/qcom-caf/sdm845/Android.mk ...
+[ 48% 132/272] including hardware/qcom-caf/sm8150/Android.mk ...
+[ 48% 133/272] including hardware/qcom-caf/sm8250/Android.mk ...
+[ 49% 134/272] including hardware/qcom-caf/sm8350/Android.mk ...
+[ 49% 135/272] including hardware/qcom-caf/vr/Android.mk ...
+[ 50% 136/272] including hardware/qcom-caf/wlan/Android.mk ...
+[ 50% 137/272] including hardware/qcom/Android.mk ...
+[ 50% 138/272] including hardware/ril/libril/Android.mk ...
+[ 51% 139/272] including hardware/ril/reference-ril/Android.mk ...
+[ 51% 140/272] including hardware/ril/rild/Android.mk ...
+[ 51% 141/272] including kernel/realme/sdm710/Android.mk ...
+[ 52% 142/272] including lineage-sdk/Android.mk ...
+[ 52% 143/272] including packages/apps/AudioFX/tests/Android.mk ...
+[ 52% 144/272] including packages/apps/Backgrounds/Android.mk ...
+[ 53% 145/272] including packages/apps/Bluetooth/tests/Android.mk ...
+[ 53% 146/272] including packages/apps/Camera2/Android.mk ...
+[ 54% 147/272] including packages/apps/Car/libs/car-ui-lib/Android.mk ...
+[ 54% 148/272] including packages/apps/Dialer/Android.mk ...
+[ 54% 149/272] including packages/apps/Etar/Android.mk ...
+[ 55% 150/272] including packages/apps/FMRadio/Android.mk ...
+[ 55% 151/272] including packages/apps/Gallery2/Android.mk ...
+[ 55% 152/272] including packages/apps/LineageCustomizer/Android.mk ...
+[ 56% 153/272] including packages/apps/Messaging/Android.mk ...
+[ 56% 154/272] including packages/apps/Nfc/nxp/Android.mk ...
+[ 56% 155/272] including packages/apps/SampleLocationAttribution/Android.mk ...
+[ 57% 156/272] including packages/apps/SetupWizard/tests/Android.mk ...
+[ 57% 157/272] including packages/apps/Snap/Android.mk ...
+[ 58% 158/272] including packages/apps/StorageManager/Android.mk ...
+[ 58% 159/272] including packages/apps/TV/common/tests/robotests/Android.mk ...
+[ 58% 160/272] including packages/apps/TV/jni/minijail/Android.mk ...
+[ 59% 161/272] including packages/apps/TV/partner_support/sample_customization/Android.mk ...
+[ 59% 162/272] including packages/apps/TV/tests/Android.mk ...
+[ 59% 163/272] including packages/apps/TV/tuner/tests/robotests/Android.mk ...
+[ 60% 164/272] including packages/apps/TV/tuner/tests/testing/Android.mk ...
+[ 60% 165/272] including packages/apps/ThemePicker/Android.mk ...
+[ 61% 166/272] including packages/apps/Trebuchet/Android.mk ...
+[ 61% 167/272] including packages/apps/TvSettings/TwoPanelSettingsOverlay/Android.mk ...
+[ 61% 168/272] including packages/apps/Updater/Android.mk ...
+[ 62% 169/272] including packages/apps/WallpaperPicker2/Android.mk ...
+[ 62% 170/272] including packages/overlays/Lineage/accents/black/Android.mk ...
+[ 62% 171/272] including packages/overlays/Lineage/accents/blue/Android.mk ...
+[ 63% 172/272] including packages/overlays/Lineage/accents/brown/Android.mk ...
+[ 63% 173/272] including packages/overlays/Lineage/accents/cyan/Android.mk ...
+[ 63% 174/272] including packages/overlays/Lineage/accents/green/Android.mk ...
+[ 64% 175/272] including packages/overlays/Lineage/accents/orange/Android.mk ...
+[ 64% 176/272] including packages/overlays/Lineage/accents/pink/Android.mk ...
+[ 65% 177/272] including packages/overlays/Lineage/accents/purple/Android.mk ...
+[ 65% 178/272] including packages/overlays/Lineage/accents/red/Android.mk ...
+[ 65% 179/272] including packages/overlays/Lineage/accents/yellow/Android.mk ...
+[ 66% 180/272] including packages/overlays/Lineage/customizations/BlackTheme/Android.mk ...
+[ 66% 181/272] including packages/overlays/Lineage/customizations/NavigationBarNoHint/Android.mk ...
+[ 66% 182/272] including packages/overlays/Lineage/fonts/Lato/Android.mk ...
+[ 67% 183/272] including packages/overlays/Lineage/fonts/Rubik/Android.mk ...
+[ 67% 184/272] including packages/overlays/Lineage/stub/Android.mk ...
+[ 68% 185/272] including packages/services/Car/Android.mk ...
+[ 68% 186/272] including packages/services/Mtp/perf_tests/Android.mk ...
+[ 68% 187/272] including packages/services/Mtp/tests/Android.mk ...
+[ 69% 188/272] including pdk/apps/HelloPDK/Android.mk ...
+[ 69% 189/272] including pdk/apps/TestingCamera/Android.mk ...
+[ 69% 190/272] including pdk/apps/TestingCamera2/Android.mk ...
+[ 70% 191/272] including platform_testing/scripts/perf-load-setup/Android.mk ...
+[ 70% 192/272] including platform_testing/scripts/perf-setup/Android.mk ...
+[ 70% 193/272] including platform_testing/scripts/perfetto-setup/Android.mk ...
+[ 71% 194/272] including platform_testing/utils/crashcollector/Android.mk ...
+[ 71% 195/272] including prebuilts/asuite/acloud/linux-x86/Android.mk ...
+[ 72% 196/272] including prebuilts/clang/host/linux-x86/Android.mk ...
+[ 72% 197/272] including prebuilts/ndk/Android.mk ...
+[ 72% 198/272] including prebuilts/runtime/Android.mk ...
+[ 73% 199/272] including prebuilts/sdk/Android.mk ...
+[ 73% 200/272] including system/bt/gd/Android.mk ...
+[ 73% 201/272] including system/chre/Android.mk ...
+[ 74% 202/272] including system/core/fastboot/Android.mk ...
+[ 74% 203/272] including system/core/healthd/Android.mk ...
+[ 75% 204/272] including system/core/init/Android.mk ...
+[ 75% 205/272] including system/core/rootdir/Android.mk ...
+[ 75% 206/272] including system/extras/Android.mk ...
+[ 76% 207/272] including system/iorap/Android.mk ...
+[ 76% 208/272] including system/libfmq/benchmarks/Android.mk ...
+[ 76% 209/272] including system/libfmq/tests/Android.mk ...
+[ 77% 210/272] including system/libhidl/transport/base/1.0/vts/functional/Android.mk ...
+[ 77% 211/272] including system/libhidl/vintfdata/Android.mk ...
+[ 77% 212/272] including system/libvintf/Android.mk ...
+[ 78% 213/272] including system/memory/libmeminfo/vts/Android.mk ...
+[ 78% 214/272] including system/sepolicy/Android.mk ...
+[ 79% 215/272] including system/timezone/Android.mk ...
+[ 79% 216/272] including system/tools/aidl/build/Android.mk ...
+[ 79% 217/272] including system/tools/hidl/build/Android.mk ...
+[ 80% 218/272] including system/tools/hidl/test/hidl_test/Android.mk ...
+[ 80% 219/272] including system/tools/hidl/test/java_test/Android.mk ...
+[ 80% 220/272] including test/framework/build/Android.mk ...
+[ 81% 221/272] including test/mlts/benchmark/Android.mk ...
+[ 81% 222/272] including test/vti/test_serving/configs/global/Android.mk ...
+[ 81% 223/272] including test/vts-testcase/fuzz/config/neuralnetworks/V1_2/iface_fuzzer/Android.mk ...
+[ 82% 224/272] including test/vts-testcase/hal/neuralnetworks/V1_2/benchmark/java/Android.mk ...
+[ 82% 225/272] including test/vts-testcase/hal/neuralnetworks/V1_3/benchmark/java/Android.mk ...
+[ 83% 226/272] including test/vts-testcase/hal/radio/config/V1_0/target/radio/config/Android.mk ...
+[ 83% 227/272] including test/vts-testcase/hal/radio/config/V1_1/target/radio/config/Android.mk ...
+[ 83% 228/272] including test/vts-testcase/hal/radio/config/V1_2/target/radio/config/Android.mk ...
+[ 84% 229/272] including test/vts-testcase/hal/vts_specs/Android.mk ...
+[ 84% 230/272] including test/vts-testcase/kernel/bow/Android.mk ...
+[ 84% 231/272] including test/vts-testcase/kernel/dynamic_partitions/Android.mk ...
+[ 85% 232/272] including test/vts-testcase/kernel/loop/Android.mk ...
+[ 85% 233/272] including test/vts-testcase/security/poc/target/Android.mk ...
+[ 86% 234/272] including test/vts/compilation_tools/vtsc/test/Android.mk ...
+[ 86% 235/272] including test/vts/specification/Android.mk ...
+[ 86% 236/272] including test/vts/tools/vts-tradefed/etc/Android.mk ...
+[ 87% 237/272] including test/vts/utils/python/archive/Android.mk ...
+[ 87% 238/272] including test/vts/utils/python/coverage/Android.mk ...
+[ 87% 239/272] including tools/loganalysis/Android.mk ...
+[ 88% 240/272] including tools/platform-compat/Android.mk ...
+[ 88% 241/272] including tools/test/connectivity/Android.mk ...
+[ 88% 242/272] including tools/test/graphicsbenchmark/Android.mk ...
+[ 89% 243/272] including tools/tradefederation/contrib/Android.mk ...
+[ 89% 244/272] including tools/tradefederation/core/Android.mk ...
+[ 90% 245/272] including vendor/halium/audioflingerglue/Android.mk ...
+vendor/halium/audioflingerglue/Android.mk:41: warning: *** ANDROID_MICRO undefined. Assuming 0
+/bin/bash: line 1: test: -le: unary operator expected
+cat: frameworks/av/include/media/AudioSystem.h: No such file or directory
+[ 90% 246/272] including vendor/halium/biometryd/android/hybris/Android.mk ...
+[ 90% 247/272] including vendor/halium/droidmedia/Android.mk ...
+vendor/halium/droidmedia/Android.mk:43: warning: *** ANDROID_MICRO undefined. Assuming 0
+[ 91% 248/272] including vendor/halium/hardware/audio/Android.mk ...
+[ 91% 249/272] including vendor/halium/libhybris/compat/camera/Android.mk ...
+[ 91% 250/272] including vendor/halium/libhybris/compat/hwc2/Android.mk ...
+[ 92% 251/272] including vendor/halium/libhybris/compat/input/Android.mk ...
+[ 92% 252/272] including vendor/halium/libhybris/compat/media/Android.mk ...
+[ 93% 253/272] including vendor/halium/libhybris/compat/surface_flinger/Android.mk ...
+[ 93% 254/272] including vendor/halium/libhybris/compat/ui/Android.mk ...
+[ 93% 255/272] including vendor/halium/platform-api/android/hybris/Android.mk ...
+[ 94% 256/272] including vendor/lineage/bootanimation/Android.mk ...
+[ 94% 257/272] including vendor/lineage/charger/Android.mk ...
+[ 94% 258/272] including vendor/nxp/opensource/pn5xx/Android.mk ...
+[ 95% 259/272] including vendor/nxp/opensource/sn100x/Android.mk ...
+[ 95% 260/272] including vendor/qcom/opensource/audio-hal/st-hal/Android.mk ...
+[ 95% 261/272] including vendor/qcom/opensource/audio/Android.mk ...
+[ 96% 262/272] including vendor/qcom/opensource/commonsys/packages/apps/Bluetooth/tests/Android.mk ...
+[ 96% 263/272] including vendor/qcom/opensource/data-ipa-cfg-mgr/ipanat/test/Android.mk ...
+[ 97% 264/272] including vendor/qcom/opensource/dataservices/datatop/Android.mk ...
+[ 97% 265/272] including vendor/qcom/opensource/dataservices/rmnetctl/Android.mk ...
+[ 97% 266/272] including vendor/qcom/opensource/libfmjni/Android.mk ...
+[ 98% 267/272] including vendor/qcom/opensource/power/Android.mk ...
+[ 98% 268/272] including vendor/qcom/opensource/wfd-commonsys/Android.mk ...
+[ 98% 269/272] including vendor/realme/RMX1901/Android.mk ...
+[ 99% 270/272] including out/soong/late-halium_RMX1901.mk ...
+[ 99% 271/272] finishing build rules ...
+[100% 272/272] writing build rules ...
+10:35:32 Removed file that is no longer installed:  out/target/product/RMX1901/system/lib64/vendor.qti.diaghal-V1-ndk.so
+10:35:32 Removed file that is no longer installed:  out/target/product/RMX1901/system/system_ext/lib64/libdpmctmgr.so
+10:35:32 Removed file that is no longer installed:  out/target/product/RMX1901/system/system_ext/lib64/libdpmfdmgr.so
+10:35:32 Removed file that is no longer installed:  out/target/product/RMX1901/system/system_ext/lib64/libdpmtcm.so
+No need to regenerate ninja file
+Starting ninja...
+[ 16% 273/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libmdmdetect.so
+[ 16% 274/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libqmiservices.so
+[ 16% 275/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libqmi_client_helper.so
+[ 16% 276/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libdiag.so
+[ 17% 277/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libqmi_client_qmux.so
+[ 17% 278/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libqmi_cci.so
+[ 17% 279/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libdsutils.so
+[ 17% 280/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libqmi_encdec.so
+[ 17% 281/1626] target Prebuilt: libmdmdetect (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libmdmdetect_intermediates/libmdmdetect.so)
+[ 17% 282/1626] target Prebuilt: libqmi_client_helper (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libqmi_client_helper_intermediates/libqmi_client_helper.so)
+[ 17% 283/1626] target Prebuilt: libqmiservices (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libqmiservices_intermediates/libqmiservices.so)
+[ 17% 284/1626] target Prebuilt: libqmi_client_qmux (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libqmi_client_qmux_intermediates/libqmi_client_qmux.so)
+[ 17% 285/1626] target Prebuilt: libdiag (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdiag_intermediates/libdiag.so)
+[ 17% 286/1626] target Prebuilt: libqmi_cci (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libqmi_cci_intermediates/libqmi_cci.so)
+[ 17% 287/1626] target Prebuilt: libdsutils (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdsutils_intermediates/libdsutils.so)
+[ 17% 288/1626] target Prebuilt: libqmi_encdec (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libqmi_encdec_intermediates/libqmi_encdec.so)
+[ 17% 289/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+[ 17% 290/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libdpmqmihal.so
+[ 17% 291/1626] Copy: out/target/product/RMX1901/symbols/vendor/bin/dpmQmiMgr
+[ 17% 292/1626] Copy: out/target/product/RMX1901/symbols/system/system_ext/lib64/vendor.qti.diaghal@1.0.so
+[ 18% 293/1626] Copy: out/target/product/RMX1901/symbols/system/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+[ 18% 294/1626] Copy: out/target/product/RMX1901/symbols/system/system_ext/lib64/libdiag_system.so
+[ 18% 295/1626] Copy: out/target/product/RMX1901/symbols/system/system_ext/lib64/libdpmframework.so
+[ 18% 296/1626] Copy: out/target/product/RMX1901/symbols/system/system_ext/bin/dpmd
+[ 18% 297/1626] target Prebuilt: com.qualcomm.qti.dpm.api@1.0_vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/com.qualcomm.qti.dpm.api@1.0_vendor_intermediates/com.qualcomm.qti.dpm.api@1.0_vendor.so)
+[ 18% 298/1626] target Prebuilt: libdpmqmihal (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdpmqmihal_intermediates/libdpmqmihal.so)
+[ 18% 299/1626] Copy: out/target/product/RMX1901/symbols/vendor/lib64/libidl.so
+[ 18% 300/1626] Notice file: external/libcxxabi/NOTICE -- out/target/product/RMX1901/obj/NOTICE_FILES/src/system/lib/libc++demangle.vendor.a.txt
+[ 18% 301/1626] Notice file: external/libcxxabi/NOTICE -- out/target/product/RMX1901/obj/NOTICE_FILES/src/system/lib64/libc++demangle.vendor.a.txt
+[ 18% 302/1626] target Prebuilt: libidl (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libidl_intermediates/libidl.so)
+[ 18% 303/1626] //vendor/realme/RMX1901:dpmQmiMgr prebuilt
+[ 18% 304/1626] //vendor/realme/RMX1901:dpmd prebuilt
+[ 18% 305/1626] Install: out/target/product/RMX1901/vendor/lib64/libdiag.so
+[ 18% 306/1626] Install: out/target/product/RMX1901/vendor/lib64/libidl.so
+[ 18% 307/1626] Install: out/target/product/RMX1901/vendor/lib64/libmdmdetect.so
+[ 18% 308/1626] Install: out/target/product/RMX1901/vendor/lib64/libqmi_encdec.so
+[ 19% 309/1626] Install: out/target/product/RMX1901/vendor/lib64/com.qualcomm.qti.dpm.api@1.0.so
+[ 19% 310/1626] //vendor/realme/RMX1901:com.qualcomm.qti.dpm.api@1.0_vendor generate toc com.qualcomm.qti.dpm.api@1.0.so
+[ 19% 311/1626] //vendor/realme/RMX1901:com.qualcomm.qti.dpm.api@1.0 generate toc com.qualcomm.qti.dpm.api@1.0.so
+[ 19% 312/1626] //vendor/realme/RMX1901:libdiag_system generate toc libdiag_system.so
+[ 19% 313/1626] Install: out/target/product/RMX1901/vendor/lib64/libqmiservices.so
+[ 19% 314/1626] Install: out/target/product/RMX1901/vendor/lib64/libdsutils.so
+[ 19% 315/1626] Install: out/target/product/RMX1901/vendor/lib64/libqmi_cci.so
+[ 19% 316/1626] //vendor/realme/RMX1901:libdpmframework generate toc libdpmframework.so
+[ 19% 317/1626] Install: out/target/product/RMX1901/vendor/lib64/libdpmqmihal.so
+[ 19% 318/1626] Copy: out/target/product/RMX1901/obj/SHARED_LIBRARIES/com.qualcomm.qti.dpm.api@1.0_vendor_intermediates/com.qualcomm.qti.dpm.api@1.0_vendor.so.toc
+[ 19% 319/1626] Install: out/target/product/RMX1901/vendor/lib64/libqmi_client_qmux.so
+[ 19% 320/1626] Install: out/target/product/RMX1901/vendor/lib64/libqmi_client_helper.so
+[ 19% 321/1626] //vendor/realme/RMX1901:libdpmqmihal generate toc libdpmqmihal.so
+[ 19% 322/1626] //vendor/realme/RMX1901:vendor.qti.diaghal@1.0 generate toc vendor.qti.diaghal@1.0.so
+[ 19% 323/1626] Copy: out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdpmqmihal_intermediates/libdpmqmihal.so.toc
+[ 19% 324/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/ghash-ssse3-x86_64.S [linux_glibc]
+[ 19% 325/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/md5-x86_64.S [linux_glibc]
+[ 20% 326/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/aesni-gcm-x86_64.S [linux_glibc]
+[ 20% 327/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/ghash-x86_64.S [linux_glibc]
+[ 20% 328/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/aesni-x86_64.S [linux_glibc]
+[ 20% 329/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/aes-x86_64.S [linux_glibc]
+[ 20% 330/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/p256_beeu-x86_64-asm.S [linux_glibc]
+[ 20% 331/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/rdrand-x86_64.S [linux_glibc]
+[ 20% 332/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/rsaz-avx2.S [linux_glibc]
+[ 20% 333/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/p256-x86_64-asm.S [linux_glibc]
+[ 20% 334/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/vpaes-x86_64.S [linux_glibc]
+[ 20% 335/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/sha1-x86_64.S [linux_glibc]
+[ 20% 336/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/sha512-x86_64.S [linux_glibc]
+[ 20% 337/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/x86_64-mont.S [linux_glibc]
+[ 20% 338/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/sha256-x86_64.S [linux_glibc]
+[ 20% 339/1626] //bionic/libc:crtbrand clang arch-common/bionic/crtbrand.S
+[ 20% 340/1626] //bionic/libc:crtbrand clang arch-common/bionic/crtbrand.S
+[ 20% 341/1626] //external/boringssl:bcm_object clang linux-x86_64/crypto/fipsmodule/x86_64-mont5.S [linux_glibc]
+[ 21% 342/1626] //bionic/libc:crtend_so clang arch-common/bionic/crtend_so.S
+[ 21% 343/1626] //bionic/libc:crtbegin_so1 clang arch-common/bionic/crtbegin_so.c
+[ 21% 344/1626] //bionic/libc:crtbegin_so1 clang arch-common/bionic/crtbegin_so.c
+[ 21% 345/1626] //bionic/libc:crtend_so clang arch-common/bionic/crtend_so.S
+[ 21% 346/1626] //bionic/libc:crtbegin_so link crtbegin_so.o
+[ 21% 347/1626] //bionic/libc:crtbegin_so link crtbegin_so.o
+[ 21% 348/1626] //system/tools/aidl:aidl-cpp clang++ main.cpp [linux_glibc]
+[ 21% 349/1626] //system/tools/aidl:libaidl-common clang++ aidl_checkapi.cpp [linux_glibc]
+[ 21% 350/1626] //system/tools/aidl:libaidl-common clang++ aidl.cpp [linux_glibc]
+[ 21% 351/1626] //system/tools/aidl:libaidl-common clang++ aidl_const_expressions.cpp [linux_glibc]
+[ 21% 352/1626] //system/tools/aidl:libaidl-common clang++ lex/system/tools/aidl/aidl_language_l.cpp [linux_glibc]
+[ 21% 353/1626] //system/tools/hidl:hidl-gen clang++ main.cpp [linux_glibc]
+[ 21% 354/1626] //system/tools/aidl:libaidl-common clang++ aidl_typenames.cpp [linux_glibc]
+[ 21% 355/1626] //system/tools/aidl:libaidl-common clang++ aidl_language.cpp [linux_glibc]
+[ 21% 356/1626] //system/tools/aidl:libaidl-common clang++ aidl_to_cpp.cpp [linux_glibc]
+[ 21% 357/1626] //system/tools/aidl:libaidl-common clang++ yacc/system/tools/aidl/aidl_language_y.cpp [linux_glibc]
+[ 22% 358/1626] //system/tools/aidl:libaidl-common clang++ ast_java.cpp [linux_glibc]
+[ 22% 359/1626] //system/tools/aidl:libaidl-common clang++ ast_cpp.cpp [linux_glibc]
+[ 22% 360/1626] //system/tools/aidl:libaidl-common clang++ aidl_to_ndk.cpp [linux_glibc]
+[ 22% 361/1626] //system/tools/aidl:libaidl-common clang++ code_writer.cpp [linux_glibc]
+[ 22% 362/1626] //system/tools/aidl:libaidl-common clang++ generate_cpp.cpp [linux_glibc]
+[ 22% 363/1626] //system/tools/aidl:libaidl-common clang++ aidl_to_cpp_common.cpp [linux_glibc]
+[ 22% 364/1626] //system/tools/aidl:libaidl-common clang++ generate_ndk.cpp [linux_glibc]
+[ 22% 365/1626] //external/boringssl:bcm_object clang src/crypto/fipsmodule/bcm.c [linux_glibc]
+[ 22% 366/1626] //external/boringssl:bcm_object link bcm_object.o [linux_glibc]
+[ 22% 367/1626] //system/tools/aidl:libaidl-common clang++ generate_aidl_mappings.cpp [linux_glibc]
+[ 22% 368/1626] //system/tools/aidl:libaidl-common clang++ generate_java.cpp [linux_glibc]
+[ 22% 369/1626] //system/tools/aidl:libaidl-common clang++ aidl_to_java.cpp [linux_glibc]
+[ 22% 370/1626] //system/tools/aidl:libaidl-common clang++ line_reader.cpp [linux_glibc]
+[ 22% 371/1626] //system/tools/aidl:libaidl-common clang++ import_resolver.cpp [linux_glibc]
+[ 22% 372/1626] //system/tools/aidl:libaidl-common clang++ generate_java_binder.cpp [linux_glibc]
+[ 22% 373/1626] //external/fmtlib:fmtlib clang++ src/format.cc
+[ 23% 374/1626] //system/core/base:libbase clang++ abi_compatibility.cpp
+[ 23% 375/1626] //system/tools/aidl:libaidl-common clang++ options.cpp [linux_glibc]
+[ 23% 376/1626] //external/fmtlib:fmtlib static link fmtlib.a
+[ 23% 377/1626] //system/core/base:libbase clang++ chrono_utils.cpp
+[ 23% 378/1626] //system/core/base:libbase clang++ liblog_symbols.cpp
+[ 23% 379/1626] //system/tools/aidl:libaidl-common clang++ io_delegate.cpp [linux_glibc]
+[ 23% 380/1626] //system/core/base:libbase clang++ mapped_file.cpp
+[ 23% 381/1626] //system/core/base:libbase clang++ cmsg.cpp
+[ 23% 382/1626] //system/tools/aidl:libaidl-common static link libaidl-common.a [linux_glibc]
+[ 23% 383/1626] //external/fmtlib:fmtlib clang++ src/format.cc
+[ 23% 384/1626] //external/fmtlib:fmtlib static link fmtlib.a
+[ 23% 385/1626] //system/core/base:libbase clang++ file.cpp
+[ 23% 386/1626] //system/core/base:libbase clang++ parsebool.cpp
+[ 23% 387/1626] //system/core/base:libbase clang++ process.cpp
+[ 23% 388/1626] //system/core/base:libbase clang++ threads.cpp
+[ 23% 389/1626] //external/fmtlib:fmtlib header-abi-dumper src/format.cc
+[ 23% 390/1626] //system/core/base:libbase clang++ stringprintf.cpp
+[ 24% 391/1626] //system/core/base:libbase clang++ parsenetaddress.cpp
+[ 24% 392/1626] //system/core/base:libbase clang++ logging.cpp
+[ 24% 393/1626] //system/core/base:libbase clang++ errors_unix.cpp
+[ 24% 394/1626] //system/core/base:libbase clang++ abi_compatibility.cpp
+[ 24% 395/1626] //system/core/base:libbase clang++ test_utils.cpp
+[ 24% 396/1626] //system/core/base:libbase clang++ strings.cpp
+[ 24% 397/1626] //system/core/base:libbase clang++ chrono_utils.cpp
+[ 24% 398/1626] //system/core/base:libbase clang++ liblog_symbols.cpp
+[ 24% 399/1626] //system/core/base:libbase header-abi-dumper abi_compatibility.cpp
+[ 24% 400/1626] //system/core/base:libbase clang++ mapped_file.cpp
+[ 24% 401/1626] //system/core/base:libbase clang++ file.cpp
+[ 24% 402/1626] //system/core/base:libbase clang++ properties.cpp
+[ 24% 403/1626] //system/core/base:libbase header-abi-dumper liblog_symbols.cpp
+[ 24% 404/1626] //system/core/base:libbase clang++ cmsg.cpp
+[ 24% 405/1626] //system/core/base:libbase header-abi-dumper chrono_utils.cpp
+[ 24% 406/1626] //system/core/base:libbase header-abi-dumper mapped_file.cpp
+[ 25% 407/1626] //system/core/base:libbase clang++ process.cpp
+[ 25% 408/1626] //system/core/base:libbase clang++ parsebool.cpp
+[ 25% 409/1626] //system/core/base:libbase header-abi-dumper parsebool.cpp
+[ 25% 410/1626] //system/core/base:libbase header-abi-dumper process.cpp
+[ 25% 411/1626] //system/core/base:libbase clang++ parsenetaddress.cpp
+[ 25% 412/1626] //system/core/base:libbase header-abi-dumper cmsg.cpp
+[ 25% 413/1626] //system/core/base:libbase clang++ threads.cpp
+[ 25% 414/1626] //system/core/base:libbase header-abi-dumper threads.cpp
+[ 25% 415/1626] //system/core/base:libbase clang++ stringprintf.cpp
+[ 25% 416/1626] //system/core/base:libbase clang++ logging.cpp
+[ 25% 417/1626] //system/core/base:libbase header-abi-dumper stringprintf.cpp
+[ 25% 418/1626] //system/core/base:libbase header-abi-dumper parsenetaddress.cpp
+[ 25% 419/1626] //system/core/base:libbase clang++ properties.cpp
+[ 25% 420/1626] //system/core/base:libbase header-abi-dumper file.cpp
+[ 25% 421/1626] //system/core/base:libbase clang++ errors_unix.cpp
+[ 25% 422/1626] //system/core/base:libbase clang++ strings.cpp
+[ 26% 423/1626] //system/core/base:libbase clang++ test_utils.cpp
+[ 26% 424/1626] //system/core/base:libbase clang++ abi_compatibility.cpp [linux_glibc]
+[ 26% 425/1626] //system/core/base:libbase header-abi-dumper errors_unix.cpp
+[ 26% 426/1626] //system/core/base:libbase header-abi-dumper logging.cpp
+[ 26% 427/1626] //system/core/base:libbase clang++ chrono_utils.cpp [linux_glibc]
+[ 26% 428/1626] //system/core/base:libbase header-abi-dumper properties.cpp
+[ 26% 429/1626] //system/core/base:libbase clang++ liblog_symbols.cpp [linux_glibc]
+[ 26% 430/1626] //system/core/base:libbase header-abi-dumper test_utils.cpp
+[ 26% 431/1626] //system/core/base:libbase clang++ parsebool.cpp [linux_glibc]
+[ 26% 432/1626] //system/core/base:libbase clang++ mapped_file.cpp [linux_glibc]
+[ 26% 433/1626] //system/core/base:libbase header-abi-dumper strings.cpp
+[ 26% 434/1626] //system/core/base:libbase clang++ cmsg.cpp [linux_glibc]
+[ 26% 435/1626] //system/core/base:libbase clang++ process.cpp [linux_glibc]
+[ 26% 436/1626] //system/core/base:libbase clang++ threads.cpp [linux_glibc]
+[ 26% 437/1626] //system/core/base:libbase clang++ stringprintf.cpp [linux_glibc]
+[ 26% 438/1626] //system/core/base:libbase clang++ parsenetaddress.cpp [linux_glibc]
+[ 26% 439/1626] //system/core/base:libbase clang++ file.cpp [linux_glibc]
+[ 27% 440/1626] //system/core/base:libbase clang++ logging.cpp [linux_glibc]
+[ 27% 441/1626] //system/core/base:libbase clang++ errors_unix.cpp [linux_glibc]
+[ 27% 442/1626] //external/libcxx:libc++_static clang++ src/any.cpp
+[ 27% 443/1626] //system/core/base:libbase clang++ test_utils.cpp [linux_glibc]
+[ 27% 444/1626] //bionic/libc:libc clang stub.c
+[ 27% 445/1626] //bionic/libc:libc link libc.so
+[ 27% 446/1626] //bionic/libc:libc generate bss symbol order libc.so.symbol_order
+[ 27% 447/1626] //external/libcxx:libc++_static clang++ src/bind.cpp
+[ 27% 448/1626] //bionic/libc:libc link libc.so
+[ 27% 449/1626] //bionic/libc:libc strip libc.so
+[ 27% 450/1626] target Prebuilt: libc (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libc_intermediates/libc.so)
+[ 27% 451/1626] //external/libcxx:libc++_static clang++ src/charconv.cpp
+[ 27% 452/1626] //bionic/libc:libc generate toc libc.so
+[ 27% 453/1626] //system/core/base:libbase clang++ strings.cpp [linux_glibc]
+[ 27% 454/1626] //external/libcxx:libc++_static clang++ src/verbose_abort.cpp
+[ 27% 455/1626] //external/libcxx:libc++_static clang++ src/chrono.cpp
+[ 28% 456/1626] //external/libcxx:libc++_static clang++ src/exception.cpp
+[ 28% 457/1626] //external/libcxx:libc++_static clang++ src/condition_variable.cpp
+[ 28% 458/1626] //system/core/base:libbase clang++ properties.cpp [linux_glibc]
+[ 28% 459/1626] //external/libcxx:libc++_static clang++ src/hash.cpp
+[ 28% 460/1626] //external/libcxx:libc++_static clang++ src/future.cpp
+[ 28% 461/1626] //external/libcxx:libc++_static clang++ src/debug.cpp
+[ 28% 462/1626] //external/libcxx:libc++_static clang++ src/iostream.cpp
+[ 28% 463/1626] //external/libcxx:libc++_static clang++ src/new.cpp
+[ 28% 464/1626] //external/libcxx:libc++_static clang++ src/memory.cpp
+[ 28% 465/1626] //external/fmtlib:fmtlib clang++ src/format.cc [linux_glibc]
+[ 28% 466/1626] //external/libcxx:libc++_static clang++ src/optional.cpp
+[ 28% 467/1626] //external/fmtlib:fmtlib static link fmtlib.a [linux_glibc]
+[ 28% 468/1626] //system/core/base:libbase static link libbase.a [linux_glibc]
+[ 28% 469/1626] //external/libcxx:libc++_static clang++ src/mutex.cpp
+[ 28% 470/1626] //external/libcxx:libc++_static clang++ src/algorithm.cpp
+[ 28% 471/1626] //external/libcxx:libc++_static clang++ src/shared_mutex.cpp
+[ 29% 472/1626] //external/libcxx:libc++_static clang++ src/random.cpp
+[ 29% 473/1626] //external/libcxx:libc++_static clang++ src/regex.cpp
+[ 29% 474/1626] //external/libcxx:libc++_static clang++ src/stdexcept.cpp
+[ 29% 475/1626] //external/libcxx:libc++_static clang++ src/typeinfo.cpp
+[ 29% 476/1626] //external/libcxx:libc++_static clang++ src/utility.cpp
+[ 29% 477/1626] //external/libcxx:libc++_static clang++ src/variant.cpp
+[ 29% 478/1626] //external/libcxx:libc++_static clang++ src/valarray.cpp
+[ 29% 479/1626] //external/libcxx:libc++_static clang++ src/system_error.cpp
+[ 29% 480/1626] //external/libcxx:libc++_static clang++ src/vector.cpp
+[ 29% 481/1626] //external/libcxx:libc++_static clang++ src/strstream.cpp
+[ 29% 482/1626] //external/libcxx:libc++_static clang++ src/charconv.cpp
+[ 29% 483/1626] //external/libcxx:libc++_static clang++ src/bind.cpp
+[ 29% 484/1626] //external/libcxx:libc++_static clang++ src/any.cpp
+[ 29% 485/1626] //external/libcxx:libc++_static clang++ src/thread.cpp
+[ 29% 486/1626] //external/libcxx:libc++_static header-abi-dumper src/charconv.cpp
+[ 29% 487/1626] //external/libcxx:libc++_static header-abi-dumper src/any.cpp
+[ 30% 488/1626] //external/libcxx:libc++_static header-abi-dumper src/bind.cpp
+[ 30% 489/1626] //external/libcxx:libc++_static clang++ src/verbose_abort.cpp
+[ 30% 490/1626] //external/libcxx:libc++_static clang++ src/chrono.cpp
+[ 30% 491/1626] //external/libcxx:libc++_static header-abi-dumper src/verbose_abort.cpp
+[ 30% 492/1626] //external/libcxx:libc++_static clang++ src/condition_variable.cpp
+[ 30% 493/1626] //external/libcxx:libc++_static clang++ src/exception.cpp
+[ 30% 494/1626] //external/libcxx:libc++_static header-abi-dumper src/exception.cpp
+[ 30% 495/1626] //external/libcxx:libc++_static header-abi-dumper src/chrono.cpp
+[ 30% 496/1626] //external/libcxx:libc++_static clang++ src/debug.cpp
+[ 30% 497/1626] //external/libcxx:libc++_static clang++ src/string.cpp
+[ 30% 498/1626] //external/libcxx:libc++_static clang++ src/hash.cpp
+[ 30% 499/1626] //external/libcxx:libc++_static clang++ src/ios.cpp
+[ 30% 500/1626] //external/libcxx:libc++_static header-abi-dumper src/debug.cpp
+[ 30% 501/1626] //external/libcxx:libc++_static header-abi-dumper src/hash.cpp
+[ 30% 502/1626] //external/libcxx:libc++_static clang++ src/future.cpp
+[ 30% 503/1626] //external/libcxx:libc++_static header-abi-dumper src/condition_variable.cpp
+[ 30% 504/1626] //external/libcxx:libc++_static clang++ src/iostream.cpp
+[ 31% 505/1626] //external/libcxx:libc++_static clang++ src/algorithm.cpp
+[ 31% 506/1626] //external/libcxx:libc++_static clang++ src/memory.cpp
+[ 31% 507/1626] //external/libcxx:libc++_static clang++ src/mutex.cpp
+[ 31% 508/1626] //external/libcxx:libc++_static header-abi-dumper src/iostream.cpp
+[ 31% 509/1626] //external/libcxx:libc++_static header-abi-dumper src/memory.cpp
+[ 31% 510/1626] //external/libcxx:libc++_static header-abi-dumper src/algorithm.cpp
+[ 31% 511/1626] //external/libcxx:libc++_static clang++ src/new.cpp
+[ 31% 512/1626] //external/libcxx:libc++_static header-abi-dumper src/mutex.cpp
+[ 31% 513/1626] //external/libcxx:libc++_static clang++ src/optional.cpp
+[ 31% 514/1626] //external/libcxx:libc++_static clang++ src/ios.cpp
+[ 31% 515/1626] //external/libcxx:libc++_static header-abi-dumper src/future.cpp
+[ 31% 516/1626] //external/libcxx:libc++_static header-abi-dumper src/new.cpp
+[ 31% 517/1626] //external/libcxx:libc++_static clang++ src/random.cpp
+[ 31% 518/1626] //external/libcxx:libc++_static clang++ src/stdexcept.cpp
+[ 31% 519/1626] //external/libcxx:libc++_static clang++ src/regex.cpp
+[ 31% 520/1626] //external/libcxx:libc++_static header-abi-dumper src/optional.cpp
+[ 32% 521/1626] //external/libcxx:libc++_static clang++ src/shared_mutex.cpp
+[ 32% 522/1626] //external/libcxx:libc++_static header-abi-dumper src/stdexcept.cpp
+[ 32% 523/1626] //external/libcxx:libc++_static header-abi-dumper src/ios.cpp
+[ 32% 524/1626] //external/libcxx:libc++_static header-abi-dumper src/regex.cpp
+[ 32% 525/1626] //external/libcxx:libc++_static header-abi-dumper src/random.cpp
+[ 32% 526/1626] //external/libcxx:libc++_static clang++ src/system_error.cpp
+[ 32% 527/1626] //external/libcxx:libc++_static clang++ src/typeinfo.cpp
+[ 32% 528/1626] //external/libcxx:libc++_static clang++ src/strstream.cpp
+[ 32% 529/1626] //external/libcxx:libc++_static header-abi-dumper src/typeinfo.cpp
+[ 32% 530/1626] //external/libcxx:libc++_static clang++ src/utility.cpp
+[ 32% 531/1626] //external/libcxx:libc++_static header-abi-dumper src/utility.cpp
+[ 32% 532/1626] //external/libcxx:libc++_static clang++ src/thread.cpp
+[ 32% 533/1626] //external/libcxx:libc++_static header-abi-dumper src/shared_mutex.cpp
+[ 32% 534/1626] //external/libcxx:libc++_static header-abi-dumper src/system_error.cpp
+[ 32% 535/1626] //external/libcxx:libc++_static clang++ src/variant.cpp
+[ 32% 536/1626] //external/libcxx:libc++_static header-abi-dumper src/strstream.cpp
+[ 33% 537/1626] //external/libcxx:libc++_static clang++ src/valarray.cpp
+[ 33% 538/1626] //external/libcxx:libc++_static clang++ src/vector.cpp
+[ 33% 539/1626] //external/libcxx:libc++_static header-abi-dumper src/variant.cpp
+[ 33% 540/1626] //external/libcxx:libc++_static clang++ src/string.cpp
+[ 33% 541/1626] //external/libcxx:libc++_static header-abi-dumper src/thread.cpp
+[ 33% 542/1626] //external/libcxx:libc++_static clang++ src/any.cpp [linux_glibc]
+[ 33% 543/1626] //external/libcxx:libc++_static header-abi-dumper src/valarray.cpp
+[ 33% 544/1626] //external/libcxx:libc++_static clang++ src/bind.cpp [linux_glibc]
+[ 33% 545/1626] //external/libcxx:libc++_static clang++ src/locale.cpp
+[ 33% 546/1626] //external/libcxx:libc++_static clang++ src/charconv.cpp [linux_glibc]
+[ 33% 547/1626] //external/libcxx:libc++_static clang++ src/verbose_abort.cpp [linux_glibc]
+[ 33% 548/1626] //external/libcxx:libc++_static clang++ src/chrono.cpp [linux_glibc]
+[ 33% 549/1626] //external/libcxx:libc++_static clang++ src/exception.cpp [linux_glibc]
+[ 33% 550/1626] //external/libcxx:libc++_static header-abi-dumper src/vector.cpp
+[ 33% 551/1626] //external/libcxx:libc++_static header-abi-dumper src/string.cpp
+[ 33% 552/1626] //external/libcxx:libc++_static clang++ src/condition_variable.cpp [linux_glibc]
+[ 34% 553/1626] //external/libcxx:libc++_static clang++ src/hash.cpp [linux_glibc]
+[ 34% 554/1626] //external/libcxx:libc++_static clang++ src/future.cpp [linux_glibc]
+[ 34% 555/1626] //external/libcxx:libc++_static clang++ src/iostream.cpp [linux_glibc]
+[ 34% 556/1626] //external/libcxx:libc++_static clang++ src/debug.cpp [linux_glibc]
+[ 34% 557/1626] //external/libcxx:libc++_static clang++ src/optional.cpp [linux_glibc]
+[ 34% 558/1626] //external/libcxx:libc++_static clang++ src/new.cpp [linux_glibc]
+[ 34% 559/1626] //external/libcxx:libc++_static clang++ src/mutex.cpp [linux_glibc]
+[ 34% 560/1626] //external/libcxx:libc++_static clang++ src/algorithm.cpp [linux_glibc]
+[ 34% 561/1626] //external/libcxx:libc++_static clang++ src/memory.cpp [linux_glibc]
+[ 34% 562/1626] //external/libcxx:libc++_static clang++ src/stdexcept.cpp [linux_glibc]
+[ 34% 563/1626] //external/libcxx:libc++_static clang++ src/shared_mutex.cpp [linux_glibc]
+[ 34% 564/1626] //external/libcxx:libc++_static clang++ src/random.cpp [linux_glibc]
+[ 34% 565/1626] //external/libcxx:libc++_static clang++ src/regex.cpp [linux_glibc]
+[ 34% 566/1626] //external/libcxx:libc++_static clang++ src/typeinfo.cpp [linux_glibc]
+[ 34% 567/1626] //external/libcxx:libc++_static clang++ src/system_error.cpp [linux_glibc]
+[ 34% 568/1626] //external/libcxx:libc++_static clang++ src/utility.cpp [linux_glibc]
+[ 34% 569/1626] //external/libcxx:libc++_static clang++ src/strstream.cpp [linux_glibc]
+[ 35% 570/1626] //external/libcxx:libc++_static clang++ src/thread.cpp [linux_glibc]
+[ 35% 571/1626] //external/libcxxabi:libc++abi clang++ src/abort_message.cpp
+[ 35% 572/1626] //external/libcxx:libc++_static clang++ src/valarray.cpp [linux_glibc]
+[ 35% 573/1626] //external/libcxxabi:libc++abi clang++ src/cxa_aux_runtime.cpp
+[ 35% 574/1626] //external/libcxx:libc++_static clang++ src/ios.cpp [linux_glibc]
+[ 35% 575/1626] //external/libcxx:libc++_static clang++ src/variant.cpp [linux_glibc]
+[ 35% 576/1626] //external/libcxx:libc++_static clang++ src/vector.cpp [linux_glibc]
+[ 35% 577/1626] //external/libcxxabi:libc++abi clang++ src/cxa_default_handlers.cpp
+[ 35% 578/1626] //external/libcxxabi:libc++abi clang++ src/cxa_guard.cpp
+[ 35% 579/1626] //external/libcxxabi:libc++abi clang++ src/cxa_exception.cpp
+[ 35% 580/1626] //external/libcxxabi:libc++abi clang++ src/cxa_exception_storage.cpp
+[ 35% 581/1626] //external/libcxxabi:libc++abi clang++ src/cxa_unexpected.cpp
+[ 35% 582/1626] //external/libcxxabi:libc++abi clang++ src/cxa_thread_atexit.cpp
+[ 35% 583/1626] //external/libcxxabi:libc++abi clang++ src/cxa_virtual.cpp
+[ 35% 584/1626] //external/libcxxabi:libc++abi clang++ src/cxa_vector.cpp
+[ 35% 585/1626] //external/libcxxabi:libc++abi clang++ src/cxa_handlers.cpp
+[ 36% 586/1626] //external/libcxxabi:libc++abi clang++ src/fallback_malloc.cpp
+[ 36% 587/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_exception.cpp
+[ 36% 588/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_new_delete.cpp
+[ 36% 589/1626] //external/libcxxabi:libc++abi clang++ src/cxa_personality.cpp
+[ 36% 590/1626] //external/libcxxabi:libc++abi clang++ src/abort_message.cpp
+[ 36% 591/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_typeinfo.cpp
+[ 36% 592/1626] //external/libcxxabi:libc++abi clang++ src/private_typeinfo.cpp
+[ 36% 593/1626] //external/libcxxabi:libc++abi clang++ src/cxa_aux_runtime.cpp
+[ 36% 594/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_stdexcept.cpp
+[ 36% 595/1626] //external/libcxxabi:libc++abi header-abi-dumper src/abort_message.cpp
+[ 36% 596/1626] //external/libcxx:libc++_static static link libc++_static.a
+[ 36% 597/1626] //external/libcxxabi:libc++abi clang++ src/cxa_default_handlers.cpp
+[ 36% 598/1626] //external/libcxxabi:libc++abi clang++ src/cxa_exception_storage.cpp
+[ 36% 599/1626] //external/libcxxabi:libc++abi clang++ src/cxa_guard.cpp
+[ 36% 600/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_aux_runtime.cpp
+[ 36% 601/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_exception_storage.cpp
+[ 37% 602/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_default_handlers.cpp
+[ 37% 603/1626] //external/libcxxabi:libc++abi clang++ src/cxa_handlers.cpp
+[ 37% 604/1626] //external/libcxxabi:libc++abi clang++ src/cxa_exception.cpp
+[ 37% 605/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_guard.cpp
+[ 37% 606/1626] //external/libcxxabi:libc++abi clang++ src/cxa_thread_atexit.cpp
+[ 37% 607/1626] //external/libcxxabi:libc++abi clang++ src/cxa_unexpected.cpp
+[ 37% 608/1626] //external/libcxxabi:libc++abi clang++ src/cxa_personality.cpp
+[ 37% 609/1626] //external/libcxx:libc++_static clang++ src/locale.cpp
+[ 37% 610/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_exception.cpp
+[ 37% 611/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_unexpected.cpp
+[ 37% 612/1626] //external/libcxxabi:libc++abi clang++ src/cxa_virtual.cpp
+[ 37% 613/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_personality.cpp
+[ 37% 614/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_virtual.cpp
+[ 37% 615/1626] //external/libcxxabi:libc++abi clang++ src/cxa_vector.cpp
+[ 37% 616/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_handlers.cpp
+[ 37% 617/1626] //external/libcxx:libc++_static clang++ src/string.cpp [linux_glibc]
+[ 38% 618/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_thread_atexit.cpp
+[ 38% 619/1626] //external/libcxxabi:libc++abi clang++ src/fallback_malloc.cpp
+[ 38% 620/1626] //external/libcxxabi:libc++abi header-abi-dumper src/cxa_vector.cpp
+[ 38% 621/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_exception.cpp
+[ 38% 622/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_typeinfo.cpp
+[ 38% 623/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_new_delete.cpp
+[ 38% 624/1626] //external/libcxxabi:libc++abi header-abi-dumper src/fallback_malloc.cpp
+[ 38% 625/1626] //external/libcxxabi:libc++abi header-abi-dumper src/stdlib_typeinfo.cpp
+[ 38% 626/1626] //external/libcxxabi:libc++abi clang++ src/private_typeinfo.cpp
+[ 38% 627/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_stdexcept.cpp
+[ 38% 628/1626] //external/libcxxabi:libc++abi header-abi-dumper src/stdlib_exception.cpp
+[ 38% 629/1626] //external/libcxxabi:libc++abi header-abi-dumper src/stdlib_new_delete.cpp
+[ 38% 630/1626] //external/libcxxabi:libc++abi clang++ src/abort_message.cpp [linux_glibc]
+[ 38% 631/1626] //external/libcxx:libc++_static static link libc++_static.a
+[ 38% 632/1626] //external/libcxxabi:libc++abi clang++ src/cxa_aux_runtime.cpp [linux_glibc]
+[ 38% 633/1626] //external/libcxxabi:libc++abi header-abi-dumper src/private_typeinfo.cpp
+[ 38% 634/1626] //external/libcxxabi:libc++abi clang++ src/cxa_exception_storage.cpp [linux_glibc]
+[ 39% 635/1626] //external/libcxxabi:libc++abi header-abi-dumper src/stdlib_stdexcept.cpp
+[ 39% 636/1626] //external/libcxxabi:libc++abi clang++ src/cxa_default_handlers.cpp [linux_glibc]
+[ 39% 637/1626] //external/libcxxabi:libc++abi clang++ src/cxa_exception.cpp [linux_glibc]
+[ 39% 638/1626] //external/libcxxabi:libc++abi clang++ src/cxa_guard.cpp [linux_glibc]
+[ 39% 639/1626] //external/libcxxabi:libc++abi clang++ src/cxa_thread_atexit.cpp [linux_glibc]
+[ 39% 640/1626] //external/libcxxabi:libc++abi clang++ src/cxa_handlers.cpp [linux_glibc]
+[ 39% 641/1626] //external/libcxxabi:libc++abi clang++ src/cxa_virtual.cpp [linux_glibc]
+[ 39% 642/1626] //external/libcxxabi:libc++abi clang++ src/cxa_unexpected.cpp [linux_glibc]
+[ 39% 643/1626] //external/libcxxabi:libc++abi clang++ src/cxa_personality.cpp [linux_glibc]
+[ 39% 644/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_exception.cpp [linux_glibc]
+[ 39% 645/1626] //external/libcxxabi:libc++abi clang++ src/cxa_vector.cpp [linux_glibc]
+[ 39% 646/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_typeinfo.cpp [linux_glibc]
+[ 39% 647/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_new_delete.cpp [linux_glibc]
+[ 39% 648/1626] //external/libcxxabi:libc++abi clang++ src/fallback_malloc.cpp [linux_glibc]
+[ 39% 649/1626] //external/libcxxabi:libc++abi clang++ src/private_typeinfo.cpp [linux_glibc]
+[ 39% 650/1626] //external/libcxxabi:libc++abi clang++ src/stdlib_stdexcept.cpp [linux_glibc]
+[ 40% 651/1626] //external/libcxx:libc++_static header-abi-dumper src/locale.cpp
+[ 40% 652/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc.llndk clang stub.c
+[ 40% 653/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc.llndk link libcgrouprc.so
+[ 40% 654/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc.llndk generate toc libcgrouprc.so
+[ 40% 655/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc clang++ cgroup_file.cpp
+[ 40% 656/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc clang++ cgroup_controller.cpp
+[ 40% 657/1626] //system/core/libprocessgroup/cgrouprc_format:libcgrouprc_format clang++ cgroup_controller.cpp
+[ 40% 658/1626] //bionic/libc:libc.llndk clang stub.c
+[ 40% 659/1626] //bionic/libc:libc.llndk link libc.so
+[ 40% 660/1626] target Prebuilt: libc.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libc.vendor_intermediates/libc.vendor.so)
+[ 40% 661/1626] //bionic/libc:libc.llndk generate toc libc.so
+[ 40% 662/1626] //system/core/libprocessgroup/cgrouprc_format:libcgrouprc_format static link libcgrouprc_format.a
+[ 40% 663/1626] //external/boringssl:libcrypto clang err_data.c [linux_glibc]
+[ 40% 664/1626] //system/core/libprocessgroup/cgrouprc_format:libcgrouprc_format header-abi-dumper cgroup_controller.cpp
+[ 40% 665/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_bitstr.c [linux_glibc]
+[ 40% 666/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_bool.c [linux_glibc]
+[ 41% 667/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc header-abi-dumper cgroup_file.cpp
+[ 41% 668/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_d2i_fp.c [linux_glibc]
+[ 41% 669/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_dup.c [linux_glibc]
+[ 41% 670/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc header-abi-dumper cgroup_controller.cpp
+[ 41% 671/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_i2d_fp.c [linux_glibc]
+[ 41% 672/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_enum.c [linux_glibc]
+[ 41% 673/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_int.c [linux_glibc]
+[ 41% 674/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_mbstr.c [linux_glibc]
+[ 41% 675/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_gentm.c [linux_glibc]
+[ 41% 676/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_octet.c [linux_glibc]
+[ 41% 677/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_print.c [linux_glibc]
+[ 41% 678/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_object.c [linux_glibc]
+[ 41% 679/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_type.c [linux_glibc]
+[ 41% 680/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_strnid.c [linux_glibc]
+[ 41% 681/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_time.c [linux_glibc]
+[ 41% 682/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_utctm.c [linux_glibc]
+[ 42% 683/1626] //external/boringssl:libcrypto clang src/crypto/asn1/asn1_par.c [linux_glibc]
+[ 42% 684/1626] //external/boringssl:libcrypto clang src/crypto/asn1/a_utf8.c [linux_glibc]
+[ 42% 685/1626] //external/boringssl:libcrypto clang src/crypto/asn1/asn1_lib.c [linux_glibc]
+[ 42% 686/1626] //external/boringssl:libcrypto clang src/crypto/asn1/f_enum.c [linux_glibc]
+[ 42% 687/1626] //external/boringssl:libcrypto clang src/crypto/asn1/asn_pack.c [linux_glibc]
+[ 42% 688/1626] //external/boringssl:libcrypto clang src/crypto/asn1/f_int.c [linux_glibc]
+[ 42% 689/1626] //external/boringssl:libcrypto clang src/crypto/asn1/f_string.c [linux_glibc]
+[ 42% 690/1626] //external/boringssl:libcrypto clang src/crypto/asn1/tasn_fre.c [linux_glibc]
+[ 42% 691/1626] //external/boringssl:libcrypto clang src/crypto/asn1/tasn_enc.c [linux_glibc]
+[ 42% 692/1626] //external/boringssl:libcrypto clang src/crypto/asn1/tasn_typ.c [linux_glibc]
+[ 42% 693/1626] //external/boringssl:libcrypto clang src/crypto/asn1/tasn_dec.c [linux_glibc]
+[ 42% 694/1626] //external/boringssl:libcrypto clang src/crypto/asn1/tasn_new.c [linux_glibc]
+[ 42% 695/1626] //external/boringssl:libcrypto clang src/crypto/asn1/tasn_utl.c [linux_glibc]
+[ 42% 696/1626] //external/boringssl:libcrypto clang src/crypto/asn1/time_support.c [linux_glibc]
+[ 42% 697/1626] //external/boringssl:libcrypto clang src/crypto/bio/bio_mem.c [linux_glibc]
+[ 42% 698/1626] //external/boringssl:libcrypto clang src/crypto/base64/base64.c [linux_glibc]
+[ 42% 699/1626] //external/boringssl:libcrypto clang src/crypto/bio/connect.c [linux_glibc]
+[ 43% 700/1626] //external/boringssl:libcrypto clang src/crypto/bio/bio.c [linux_glibc]
+[ 43% 701/1626] //external/boringssl:libcrypto clang src/crypto/bio/fd.c [linux_glibc]
+[ 43% 702/1626] //external/boringssl:libcrypto clang src/crypto/bio/file.c [linux_glibc]
+[ 43% 703/1626] //external/boringssl:libcrypto clang src/crypto/bio/hexdump.c [linux_glibc]
+[ 43% 704/1626] //external/boringssl:libcrypto clang src/crypto/bio/printf.c [linux_glibc]
+[ 43% 705/1626] //external/boringssl:libcrypto clang src/crypto/bn_extra/bn_asn1.c [linux_glibc]
+[ 43% 706/1626] //external/boringssl:libcrypto clang src/crypto/bio/pair.c [linux_glibc]
+[ 43% 707/1626] //external/boringssl:libcrypto clang src/crypto/bio/socket_helper.c [linux_glibc]
+[ 43% 708/1626] //external/boringssl:libcrypto clang src/crypto/bio/socket.c [linux_glibc]
+[ 43% 709/1626] //external/boringssl:libcrypto clang src/crypto/bytestring/asn1_compat.c [linux_glibc]
+[ 43% 710/1626] //external/boringssl:libcrypto clang src/crypto/bytestring/ber.c [linux_glibc]
+[ 43% 711/1626] //external/boringssl:libcrypto clang src/crypto/bn_extra/convert.c [linux_glibc]
+[ 43% 712/1626] //external/boringssl:libcrypto clang src/crypto/buf/buf.c [linux_glibc]
+[ 43% 713/1626] //external/boringssl:libcrypto clang src/crypto/bytestring/unicode.c [linux_glibc]
+[ 43% 714/1626] //external/boringssl:libcrypto clang src/crypto/chacha/chacha.c [linux_glibc]
+[ 43% 715/1626] //external/boringssl:libcrypto clang src/crypto/bytestring/cbs.c [linux_glibc]
+[ 44% 716/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/cipher_extra.c [linux_glibc]
+[ 44% 717/1626] //external/boringssl:libcrypto clang src/crypto/bytestring/cbb.c [linux_glibc]
+[ 44% 718/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/derive_key.c [linux_glibc]
+[ 44% 719/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_aesctrhmac.c [linux_glibc]
+[ 44% 720/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_null.c [linux_glibc]
+[ 44% 721/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_aesccm.c [linux_glibc]
+[ 44% 722/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_aesgcmsiv.c [linux_glibc]
+[ 44% 723/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_chacha20poly1305.c [linux_glibc]
+[ 44% 724/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_rc4.c [linux_glibc]
+[ 44% 725/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_rc2.c [linux_glibc]
+[ 44% 726/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/e_tls.c [linux_glibc]
+[ 44% 727/1626] //external/boringssl:libcrypto clang src/crypto/cpu-aarch64-fuchsia.c [linux_glibc]
+[ 44% 728/1626] //external/boringssl:libcrypto clang src/crypto/cpu-aarch64-linux.c [linux_glibc]
+[ 44% 729/1626] //external/boringssl:libcrypto clang src/crypto/cipher_extra/tls_cbc.c [linux_glibc]
+[ 44% 730/1626] //external/boringssl:libcrypto clang src/crypto/cpu-arm-linux.c [linux_glibc]
+[ 44% 731/1626] //external/boringssl:libcrypto clang src/crypto/cmac/cmac.c [linux_glibc]
+[ 45% 732/1626] //external/boringssl:libcrypto clang src/crypto/cpu-arm.c [linux_glibc]
+[ 45% 733/1626] //external/boringssl:libcrypto clang src/crypto/cpu-ppc64le.c [linux_glibc]
+[ 45% 734/1626] //external/boringssl:libcrypto clang src/crypto/crypto.c [linux_glibc]
+[ 45% 735/1626] //external/boringssl:libcrypto clang src/crypto/cpu-intel.c [linux_glibc]
+[ 45% 736/1626] //external/boringssl:libcrypto clang src/crypto/dh/check.c [linux_glibc]
+[ 45% 737/1626] //external/boringssl:libcrypto clang src/crypto/curve25519/spake25519.c [linux_glibc]
+[ 45% 738/1626] //external/boringssl:libcrypto clang src/crypto/dh/dh_asn1.c [linux_glibc]
+[ 45% 739/1626] //external/boringssl:libcrypto clang src/crypto/dh/params.c [linux_glibc]
+[ 45% 740/1626] //external/boringssl:libcrypto clang src/crypto/conf/conf.c [linux_glibc]
+[ 45% 741/1626] //external/boringssl:libcrypto clang src/crypto/dh/dh.c [linux_glibc]
+[ 45% 742/1626] //external/boringssl:libcrypto clang src/crypto/dsa/dsa_asn1.c [linux_glibc]
+[ 45% 743/1626] //external/boringssl:libcrypto clang src/crypto/digest_extra/digest_extra.c [linux_glibc]
+[ 45% 744/1626] //external/boringssl:libcrypto clang src/crypto/ecdh_extra/ecdh_extra.c [linux_glibc]
+[ 45% 745/1626] //external/boringssl:libcrypto clang src/crypto/ec_extra/ec_derive.c [linux_glibc]
+[ 45% 746/1626] //external/boringssl:libcrypto clang src/crypto/dsa/dsa.c [linux_glibc]
+[ 45% 747/1626] //external/boringssl:libcrypto clang src/crypto/engine/engine.c [linux_glibc]
+[ 46% 748/1626] //external/boringssl:libcrypto clang src/crypto/ecdsa_extra/ecdsa_asn1.c [linux_glibc]
+[ 46% 749/1626] //external/boringssl:libcrypto clang src/crypto/evp/digestsign.c [linux_glibc]
+[ 46% 750/1626] //external/boringssl:libcrypto clang src/crypto/ec_extra/ec_asn1.c [linux_glibc]
+[ 46% 751/1626] //external/libcxxabi:libc++abi clang++ src/cxa_demangle.cpp [linux_glibc]
+[ 46% 752/1626] //external/boringssl:libcrypto clang src/crypto/evp/evp.c [linux_glibc]
+[ 46% 753/1626] //external/boringssl:libcrypto clang src/crypto/evp/evp_asn1.c [linux_glibc]
+[ 46% 754/1626] //external/boringssl:libcrypto clang src/crypto/err/err.c [linux_glibc]
+[ 46% 755/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_dsa_asn1.c [linux_glibc]
+[ 46% 756/1626] //external/boringssl:libcrypto clang src/crypto/evp/evp_ctx.c [linux_glibc]
+[ 46% 757/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_ec_asn1.c [linux_glibc]
+[ 46% 758/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_ed25519.c [linux_glibc]
+[ 46% 759/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_ec.c [linux_glibc]
+[ 46% 760/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_ed25519_asn1.c [linux_glibc]
+[ 46% 761/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_x25519.c [linux_glibc]
+[ 46% 762/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_rsa.c [linux_glibc]
+[ 46% 763/1626] //external/boringssl:libcrypto clang src/crypto/evp/pbkdf.c [linux_glibc]
+[ 46% 764/1626] //external/libcxxabi:libc++demangle clang++ src/cxa_demangle.cpp
+[ 47% 765/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_rsa_asn1.c [linux_glibc]
+[ 47% 766/1626] //external/boringssl:libcrypto clang src/crypto/evp/p_x25519_asn1.c [linux_glibc]
+[ 47% 767/1626] //external/libcxxabi:libc++demangle static link libc++demangle.a
+[ 47% 768/1626] //external/libcxxabi:libc++demangle clang++ src/cxa_demangle.cpp
+[ 47% 769/1626] //external/boringssl:libcrypto clang src/crypto/evp/sign.c [linux_glibc]
+[ 47% 770/1626] //external/boringssl:libcrypto clang src/crypto/ex_data.c [linux_glibc]
+[ 47% 771/1626] //external/libcxxabi:libc++demangle static link libc++demangle.a
+[ 47% 772/1626] //external/boringssl:libcrypto clang src/crypto/fipsmodule/fips_shared_support.c [linux_glibc]
+[ 47% 773/1626] //external/boringssl:libcrypto clang src/crypto/fipsmodule/is_fips.c [linux_glibc]
+[ 47% 774/1626] //external/boringssl:libcrypto clang src/crypto/evp/print.c [linux_glibc]
+[ 47% 775/1626] //external/boringssl:libcrypto clang src/crypto/hkdf/hkdf.c [linux_glibc]
+[ 47% 776/1626] //external/boringssl:libcrypto clang src/crypto/evp/scrypt.c [linux_glibc]
+[ 47% 777/1626] //external/boringssl:libcrypto clang src/crypto/lhash/lhash.c [linux_glibc]
+[ 47% 778/1626] //external/boringssl:libcrypto clang src/crypto/mem.c [linux_glibc]
+[ 47% 779/1626] //external/boringssl:libcrypto clang src/crypto/obj/obj_xref.c [linux_glibc]
+[ 47% 780/1626] //external/libcxxabi:libc++demangle header-abi-dumper src/cxa_demangle.cpp
+[ 48% 781/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_all.c [linux_glibc]
+[ 48% 782/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_info.c [linux_glibc]
+[ 48% 783/1626] //external/boringssl:libcrypto clang src/crypto/obj/obj.c [linux_glibc]
+[ 48% 784/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_oth.c [linux_glibc]
+[ 48% 785/1626] //external/libcxxabi:libc++demangle header-abi-dumper src/cxa_demangle.cpp
+[ 48% 786/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_x509.c [linux_glibc]
+[ 48% 787/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_pk8.c [linux_glibc]
+[ 48% 788/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_lib.c [linux_glibc]
+[ 48% 789/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_pkey.c [linux_glibc]
+[ 48% 790/1626] //external/boringssl:libcrypto clang src/crypto/pkcs7/pkcs7.c [linux_glibc]
+[ 48% 791/1626] //external/boringssl:libcrypto clang src/crypto/pem/pem_xaux.c [linux_glibc]
+[ 48% 792/1626] //external/boringssl:libcrypto clang src/crypto/poly1305/poly1305.c [linux_glibc]
+[ 48% 793/1626] //external/boringssl:libcrypto clang src/crypto/poly1305/poly1305_arm.c [linux_glibc]
+[ 48% 794/1626] //external/boringssl:libcrypto clang src/crypto/pkcs8/p5_pbev2.c [linux_glibc]
+[ 48% 795/1626] //external/boringssl:libcrypto clang src/crypto/pkcs7/pkcs7_x509.c [linux_glibc]
+[ 48% 796/1626] //external/boringssl:libcrypto clang src/crypto/rand_extra/deterministic.c [linux_glibc]
+[ 49% 797/1626] //external/boringssl:libcrypto clang src/crypto/rand_extra/fuchsia.c [linux_glibc]
+[ 49% 798/1626] //external/boringssl:libcrypto clang src/crypto/rand_extra/forkunsafe.c [linux_glibc]
+[ 49% 799/1626] //external/boringssl:libcrypto clang src/crypto/pkcs8/pkcs8.c [linux_glibc]
+[ 49% 800/1626] //external/boringssl:libcrypto clang src/crypto/rand_extra/rand_extra.c [linux_glibc]
+[ 49% 801/1626] //external/boringssl:libcrypto clang src/crypto/rand_extra/windows.c [linux_glibc]
+[ 49% 802/1626] //external/boringssl:libcrypto clang src/crypto/pool/pool.c [linux_glibc]
+[ 49% 803/1626] //external/boringssl:libcrypto clang src/crypto/rc4/rc4.c [linux_glibc]
+[ 49% 804/1626] //external/boringssl:libcrypto clang src/crypto/refcount_c11.c [linux_glibc]
+[ 49% 805/1626] //external/boringssl:libcrypto clang src/crypto/refcount_lock.c [linux_glibc]
+[ 49% 806/1626] //external/boringssl:libcrypto clang src/crypto/rsa_extra/rsa_print.c [linux_glibc]
+[ 49% 807/1626] //external/boringssl:libcrypto clang src/crypto/thread.c [linux_glibc]
+[ 49% 808/1626] //external/boringssl:libcrypto clang src/crypto/siphash/siphash.c [linux_glibc]
+[ 49% 809/1626] //external/boringssl:libcrypto clang src/crypto/pkcs8/pkcs8_x509.c [linux_glibc]
+[ 49% 810/1626] //external/boringssl:libcrypto clang src/crypto/thread_none.c [linux_glibc]
+[ 49% 811/1626] //external/boringssl:libcrypto clang src/crypto/thread_win.c [linux_glibc]
+[ 49% 812/1626] //external/boringssl:libcrypto clang src/crypto/rsa_extra/rsa_asn1.c [linux_glibc]
+[ 50% 813/1626] //external/boringssl:libcrypto clang src/crypto/stack/stack.c [linux_glibc]
+[ 50% 814/1626] //external/boringssl:libcrypto clang src/crypto/thread_pthread.c [linux_glibc]
+[ 50% 815/1626] //external/boringssl:libcrypto clang src/crypto/poly1305/poly1305_vec.c [linux_glibc]
+[ 50% 816/1626] //external/boringssl:libcrypto clang src/crypto/x509/a_sign.c [linux_glibc]
+[ 50% 817/1626] //external/boringssl:libcrypto clang src/crypto/x509/a_verify.c [linux_glibc]
+[ 50% 818/1626] //external/boringssl:libcrypto clang src/crypto/x509/a_digest.c [linux_glibc]
+[ 50% 819/1626] //external/boringssl:libcrypto clang src/crypto/x509/algorithm.c [linux_glibc]
+[ 50% 820/1626] //external/boringssl:libcrypto clang src/crypto/x509/a_strex.c [linux_glibc]
+[ 50% 821/1626] //external/boringssl:libcrypto clang src/crypto/x509/i2d_pr.c [linux_glibc]
+[ 50% 822/1626] //external/boringssl:libcrypto clang src/crypto/x509/by_file.c [linux_glibc]
+[ 50% 823/1626] //external/boringssl:libcrypto clang src/crypto/x509/rsa_pss.c [linux_glibc]
+[ 50% 824/1626] //external/boringssl:libcrypto clang src/crypto/x509/by_dir.c [linux_glibc]
+[ 50% 825/1626] //external/boringssl:libcrypto clang src/crypto/x509/t_crl.c [linux_glibc]
+[ 50% 826/1626] //external/boringssl:libcrypto clang src/crypto/x509/asn1_gen.c [linux_glibc]
+[ 50% 827/1626] //external/boringssl:libcrypto clang src/crypto/x509/t_x509a.c [linux_glibc]
+[ 50% 828/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509.c [linux_glibc]
+[ 50% 829/1626] //external/boringssl:libcrypto clang src/crypto/x509/t_x509.c [linux_glibc]
+[ 51% 830/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_def.c [linux_glibc]
+[ 51% 831/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_d2.c [linux_glibc]
+[ 51% 832/1626] //external/boringssl:libcrypto clang src/crypto/x509/t_req.c [linux_glibc]
+[ 51% 833/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_cmp.c [linux_glibc]
+[ 51% 834/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_ext.c [linux_glibc]
+[ 51% 835/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_att.c [linux_glibc]
+[ 51% 836/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_obj.c [linux_glibc]
+[ 51% 837/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_r2x.c [linux_glibc]
+[ 51% 838/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_set.c [linux_glibc]
+[ 51% 839/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_req.c [linux_glibc]
+[ 51% 840/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_txt.c [linux_glibc]
+[ 51% 841/1626] //external/boringssl:libcrypto clang src/crypto/hrss/hrss.c [linux_glibc]
+[ 51% 842/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_lu.c [linux_glibc]
+[ 51% 843/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509cset.c [linux_glibc]
+[ 51% 844/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509rset.c [linux_glibc]
+[ 51% 845/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_v3.c [linux_glibc]
+[ 52% 846/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_vpm.c [linux_glibc]
+[ 52% 847/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_trs.c [linux_glibc]
+[ 52% 848/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509spki.c [linux_glibc]
+[ 52% 849/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509name.c [linux_glibc]
+[ 52% 850/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_algor.c [linux_glibc]
+[ 52% 851/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_attrib.c [linux_glibc]
+[ 52% 852/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_info.c [linux_glibc]
+[ 52% 853/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_exten.c [linux_glibc]
+[ 52% 854/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_pkey.c [linux_glibc]
+[ 52% 855/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_crl.c [linux_glibc]
+[ 52% 856/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_name.c [linux_glibc]
+[ 52% 857/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_req.c [linux_glibc]
+[ 52% 858/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_pubkey.c [linux_glibc]
+[ 52% 859/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_spki.c [linux_glibc]
+[ 52% 860/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_val.c [linux_glibc]
+[ 52% 861/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_sig.c [linux_glibc]
+[ 53% 862/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_x509a.c [linux_glibc]
+[ 53% 863/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/pcy_data.c [linux_glibc]
+[ 53% 864/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_all.c [linux_glibc]
+[ 53% 865/1626] //external/boringssl:libcrypto clang src/crypto/x509/x_x509.c [linux_glibc]
+[ 53% 866/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/pcy_cache.c [linux_glibc]
+[ 53% 867/1626] //external/boringssl:libcrypto clang src/crypto/x509/x509_vfy.c [linux_glibc]
+[ 53% 868/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/pcy_lib.c [linux_glibc]
+[ 53% 869/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_akeya.c [linux_glibc]
+[ 53% 870/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/pcy_node.c [linux_glibc]
+[ 53% 871/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_akey.c [linux_glibc]
+[ 53% 872/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/pcy_map.c [linux_glibc]
+[ 53% 873/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_alt.c [linux_glibc]
+[ 53% 874/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_bcons.c [linux_glibc]
+[ 53% 875/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_bitst.c [linux_glibc]
+[ 53% 876/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/pcy_tree.c [linux_glibc]
+[ 53% 877/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_enum.c [linux_glibc]
+[ 53% 878/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_cpols.c [linux_glibc]
+[ 54% 879/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_genn.c [linux_glibc]
+[ 54% 880/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_conf.c [linux_glibc]
+[ 54% 881/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_crld.c [linux_glibc]
+[ 54% 882/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_extku.c [linux_glibc]
+[ 54% 883/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_int.c [linux_glibc]
+[ 54% 884/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_ia5.c [linux_glibc]
+[ 54% 885/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_ocsp.c [linux_glibc]
+[ 54% 886/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_info.c [linux_glibc]
+[ 54% 887/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_lib.c [linux_glibc]
+[ 54% 888/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_ncons.c [linux_glibc]
+[ 54% 889/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_pcons.c [linux_glibc]
+[ 54% 890/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_pku.c [linux_glibc]
+[ 54% 891/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_pci.c [linux_glibc]
+[ 54% 892/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_pmaps.c [linux_glibc]
+[ 54% 893/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_pcia.c [linux_glibc]
+[ 54% 894/1626] //external/boringssl:libcrypto clang linux-x86_64/crypto/chacha/chacha-x86_64.S [linux_glibc]
+[ 55% 895/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_prn.c [linux_glibc]
+[ 55% 896/1626] //external/boringssl:libcrypto clang linux-x86_64/crypto/cipher_extra/aes128gcmsiv-x86_64.S [linux_glibc]
+[ 55% 897/1626] //external/boringssl:libcrypto clang linux-x86_64/crypto/test/trampoline-x86_64.S [linux_glibc]
+[ 55% 898/1626] //external/boringssl:libcrypto clang linux-x86_64/crypto/cipher_extra/chacha20_poly1305_x86_64.S [linux_glibc]
+[ 55% 899/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_sxnet.c [linux_glibc]
+[ 55% 900/1626] //external/libcxx:libc++_static clang++ src/locale.cpp [linux_glibc]
+[ 55% 901/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_skey.c [linux_glibc]
+[ 55% 902/1626] //external/libcxx:libc++_static static link libc++_static.a [linux_glibc]
+[ 55% 903/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_purp.c [linux_glibc]
+[ 55% 904/1626] //system/core/libcutils:libcutils clang++ iosched_policy.cpp
+[ 55% 905/1626] //system/core/libcutils:libcutils clang++ canned_fs_config.cpp
+[ 55% 906/1626] //external/boringssl:libcrypto clang src/crypto/hrss/asm/poly_rq_mul.S [linux_glibc]
+[ 55% 907/1626] //system/core/libcutils:libcutils clang++ load_file.cpp
+[ 55% 908/1626] //system/core/libcutils:libcutils clang strlcpy.c
+[ 55% 909/1626] //system/core/libcutils:libcutils clang++ record_stream.cpp
+[ 55% 910/1626] //system/core/libcutils:libcutils clang++ native_handle.cpp
+[ 56% 911/1626] //external/libcxx:libc++ link libc++.so [linux_glibc]
+[ 56% 912/1626] //system/core/libcutils:libcutils clang++ config_utils.cpp
+[ 56% 913/1626] //system/core/libcutils:libcutils clang++ threads.cpp
+[ 56% 914/1626] //external/libcxx:libc++ install libc++.so [linux_glibc]
+[ 56% 915/1626] //system/core/libcutils:libcutils clang++ multiuser.cpp
+[ 56% 916/1626] //external/libcxx:libc++ generate toc libc++.so [linux_glibc]
+[ 56% 917/1626] //system/core/libcutils:libcutils clang++ fs.cpp
+[ 56% 918/1626] //system/core/libcutils:libcutils clang++ hashmap.cpp
+[ 56% 919/1626] //external/boringssl:libcrypto clang src/crypto/x509v3/v3_utl.c [linux_glibc]
+[ 56% 920/1626] //system/core/libcutils:libcutils clang++ android_reboot.cpp
+[ 56% 921/1626] //system/core/libcutils:libcutils clang++ str_parms.cpp
+[ 56% 922/1626] //system/core/libcutils:libcutils clang++ partition_utils.cpp
+[ 56% 923/1626] //system/core/libcutils:libcutils clang++ qtaguid.cpp
+[ 56% 924/1626] //system/core/libcutils:libcutils clang++ klog.cpp
+[ 56% 925/1626] //system/core/libcutils:libcutils clang++ uevent.cpp
+[ 56% 926/1626] //system/core/libcutils:libcutils clang++ properties.cpp
+[ 57% 927/1626] //system/core/libcutils:libcutils clang++ canned_fs_config.cpp
+[ 57% 928/1626] //system/core/libcutils:libcutils clang++ trace-dev.cpp
+[ 57% 929/1626] //system/core/libcutils:libcutils clang++ iosched_policy.cpp
+[ 57% 930/1626] //system/core/libcutils:libcutils clang++ config_utils.cpp
+[ 57% 931/1626] //system/core/libcutils:libcutils clang++ load_file.cpp
+[ 57% 932/1626] //system/core/libcutils:libcutils header-abi-dumper canned_fs_config.cpp
+[ 57% 933/1626] //system/core/libcutils:libcutils clang++ native_handle.cpp
+[ 57% 934/1626] //system/core/libcutils:libcutils header-abi-dumper iosched_policy.cpp
+[ 57% 935/1626] //system/core/libcutils:libcutils clang strlcpy.c
+[ 57% 936/1626] //system/core/libcutils:libcutils header-abi-dumper load_file.cpp
+[ 57% 937/1626] //system/core/libcutils:libcutils clang++ record_stream.cpp
+[ 57% 938/1626] //system/core/libcutils:libcutils header-abi-dumper native_handle.cpp
+[ 57% 939/1626] //system/core/libcutils:libcutils clang++ threads.cpp
+[ 57% 940/1626] //system/core/libcutils:libcutils header-abi-dumper strlcpy.c
+[ 57% 941/1626] //system/core/libcutils:libcutils header-abi-dumper config_utils.cpp
+[ 57% 942/1626] //system/core/libcutils:libcutils header-abi-dumper record_stream.cpp
+[ 57% 943/1626] //system/core/libcutils:libcutils header-abi-dumper threads.cpp
+[ 58% 944/1626] //system/core/libcutils:libcutils clang++ multiuser.cpp
+[ 58% 945/1626] //system/core/libcutils:libcutils clang++ android_reboot.cpp
+[ 58% 946/1626] //system/core/libcutils:libcutils clang++ fs.cpp
+[ 58% 947/1626] //system/core/libcutils:libcutils header-abi-dumper multiuser.cpp
+[ 58% 948/1626] //system/core/libcutils:libcutils clang++ str_parms.cpp
+[ 58% 949/1626] //system/core/libcutils:libcutils header-abi-dumper fs.cpp
+[ 58% 950/1626] //system/core/libcutils:libcutils header-abi-dumper android_reboot.cpp
+[ 58% 951/1626] //system/core/libcutils:libcutils clang++ hashmap.cpp
+[ 58% 952/1626] //system/core/libcutils:libcutils header-abi-dumper str_parms.cpp
+[ 58% 953/1626] //system/core/libcutils:libcutils header-abi-dumper hashmap.cpp
+[ 58% 954/1626] //system/core/libcutils:libcutils clang++ klog.cpp
+[ 58% 955/1626] //system/core/libcutils:libcutils clang++ partition_utils.cpp
+[ 58% 956/1626] //system/core/libcutils:libcutils clang++ properties.cpp
+[ 58% 957/1626] //system/core/libcutils:libcutils header-abi-dumper klog.cpp
+[ 58% 958/1626] //system/core/libcutils:libcutils clang++ fs_config.cpp
+[ 58% 959/1626] //system/core/libcutils:libcutils header-abi-dumper partition_utils.cpp
+[ 59% 960/1626] //system/core/libcutils:libcutils clang++ uevent.cpp
+[ 59% 961/1626] //system/core/libcutils:libcutils clang++ ashmem-dev.cpp
+[ 59% 962/1626] //system/core/libcutils:libcutils header-abi-dumper properties.cpp
+[ 59% 963/1626] //system/core/libcutils:libcutils clang++ config_utils.cpp [linux_glibc]
+[ 59% 964/1626] //system/core/libcutils:libcutils clang++ load_file.cpp [linux_glibc]
+[ 59% 965/1626] //system/core/libcutils:libcutils clang++ iosched_policy.cpp [linux_glibc]
+[ 59% 966/1626] //system/core/libcutils:libcutils clang++ canned_fs_config.cpp [linux_glibc]
+[ 59% 967/1626] //system/core/libcutils:libcutils header-abi-dumper uevent.cpp
+[ 59% 968/1626] //system/core/libcutils:libcutils clang++ record_stream.cpp [linux_glibc]
+[ 59% 969/1626] //system/core/libcutils:libcutils clang strlcpy.c [linux_glibc]
+[ 59% 970/1626] //system/core/libcutils:libcutils clang++ native_handle.cpp [linux_glibc]
+[ 59% 971/1626] //system/core/libcutils:libcutils clang++ threads.cpp [linux_glibc]
+[ 59% 972/1626] //system/core/libcutils:libcutils clang++ trace-dev.cpp
+[ 59% 973/1626] //system/core/libcutils:libcutils clang++ multiuser.cpp [linux_glibc]
+[ 59% 974/1626] //system/core/libcutils:libcutils clang++ hashmap.cpp [linux_glibc]
+[ 59% 975/1626] //system/core/libcutils:libcutils clang++ fs.cpp [linux_glibc]
+[ 60% 976/1626] //system/core/libcutils:libcutils clang++ fs_config.cpp
+[ 60% 977/1626] //system/core/libcutils:libcutils clang++ ashmem-host.cpp [linux_glibc]
+[ 60% 978/1626] //system/core/libcutils:libcutils clang++ ashmem-dev.cpp
+[ 60% 979/1626] //system/core/libcutils:libcutils_sockets clang++ sockets.cpp
+[ 60% 980/1626] //system/core/libcutils:libcutils clang++ trace-host.cpp [linux_glibc]
+[ 60% 981/1626] //system/core/libcutils:libcutils clang++ str_parms.cpp [linux_glibc]
+[ 60% 982/1626] //system/core/libcutils:libcutils_sockets clang++ socket_local_client_unix.cpp
+[ 60% 983/1626] //system/core/libcutils:libcutils_sockets clang++ socket_inaddr_any_server_unix.cpp
+[ 60% 984/1626] //system/core/libcutils:libcutils header-abi-dumper trace-dev.cpp
+[ 60% 985/1626] //system/core/libcutils:libcutils_sockets clang++ socket_local_server_unix.cpp
+[ 60% 986/1626] //system/core/libcutils:libcutils_sockets clang++ sockets_unix.cpp
+[ 60% 987/1626] //system/core/libcutils:libcutils_sockets clang++ socket_network_client_unix.cpp
+[ 60% 988/1626] //system/core/libcutils:libcutils_sockets clang++ sockets.cpp
+[ 60% 989/1626] //system/core/libcutils:libcutils_sockets clang++ socket_inaddr_any_server_unix.cpp
+[ 60% 990/1626] //system/core/libcutils:libcutils_sockets header-abi-dumper sockets.cpp
+[ 60% 991/1626] //system/core/libcutils:libcutils_sockets clang++ socket_local_client_unix.cpp
+[ 61% 992/1626] //system/core/libcutils:libcutils_sockets header-abi-dumper socket_inaddr_any_server_unix.cpp
+[ 61% 993/1626] //system/core/libcutils:libcutils header-abi-dumper fs_config.cpp
+[ 61% 994/1626] //system/core/libcutils:libcutils_sockets header-abi-dumper socket_local_client_unix.cpp
+[ 61% 995/1626] //system/core/libcutils:libcutils_sockets clang++ socket_local_server_unix.cpp
+[ 61% 996/1626] //system/core/libcutils:libcutils_sockets clang++ socket_network_client_unix.cpp
+[ 61% 997/1626] //system/core/libcutils:libcutils_sockets clang++ android_get_control_file.cpp
+[ 61% 998/1626] //system/core/libcutils:libcutils header-abi-dumper ashmem-dev.cpp
+[ 61% 999/1626] //system/core/libcutils:libcutils_sockets header-abi-dumper socket_local_server_unix.cpp
+[ 61% 1000/1626] //system/core/libcutils:libcutils_sockets clang++ sockets_unix.cpp
+[ 61% 1001/1626] //system/core/libcutils:libcutils_sockets clang++ sockets.cpp [linux_glibc]
+[ 61% 1002/1626] //system/core/libcutils:libcutils clang++ fs_config.cpp [linux_glibc]
+[ 61% 1003/1626] //system/core/libcutils:libcutils_sockets static link libcutils_sockets.a
+[ 61% 1004/1626] //system/core/libcutils:libcutils_sockets clang++ socket_inaddr_any_server_unix.cpp [linux_glibc]
+[ 61% 1005/1626] //system/core/libcutils:libcutils_sockets header-abi-dumper sockets_unix.cpp
+[ 61% 1006/1626] //system/core/libcutils:libcutils_sockets header-abi-dumper socket_network_client_unix.cpp
+[ 61% 1007/1626] //system/core/libcutils:libcutils_sockets clang++ socket_local_server_unix.cpp [linux_glibc]
+[ 61% 1008/1626] //system/core/libcutils:libcutils_sockets clang++ socket_local_client_unix.cpp [linux_glibc]
+[ 62% 1009/1626] //bionic/libdl:libdl clang stub.c
+[ 62% 1010/1626] //system/core/libcutils:libcutils_sockets clang++ android_get_control_file.cpp
+[ 62% 1011/1626] //bionic/libdl:libdl_android clang stub.c
+[ 62% 1012/1626] //bionic/libdl:libdl link libdl.so
+[ 62% 1013/1626] //bionic/libdl:libdl.llndk clang stub.c
+[ 62% 1014/1626] //system/core/libcutils:libcutils_sockets static link libcutils_sockets.a
+[ 62% 1015/1626] //bionic/libdl:libdl_android link libdl_android.so
+[ 62% 1016/1626] //bionic/libdl:libdl.llndk link libdl.so
+[ 62% 1017/1626] target Prebuilt: libdl.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdl.vendor_intermediates/libdl.vendor.so)
+[ 62% 1018/1626] //system/core/libcutils:libcutils_sockets clang++ sockets_unix.cpp [linux_glibc]
+[ 62% 1019/1626] //bionic/libdl:libdl_android strip libdl_android.so
+[ 62% 1020/1626] //bionic/libdl:libdl strip libdl.so
+[ 62% 1021/1626] target Prebuilt: libdl (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdl_intermediates/libdl.so)
+[ 62% 1022/1626] //bionic/libdl:libdl.llndk generate toc libdl.so
+[ 62% 1023/1626] //system/core/libcutils:libcutils_sockets clang++ socket_network_client_unix.cpp [linux_glibc]
+[ 62% 1024/1626] //hardware/libhardware:libhardware clang hardware.c
+[ 63% 1025/1626] //hardware/libhardware:libhardware clang hardware.c
+[ 63% 1026/1626] //bionic/libdl:libdl_android generate toc libdl_android.so
+[ 63% 1027/1626] //bionic/libdl:libdl generate toc libdl.so
+[ 63% 1028/1626] //system/core/libcutils:libcutils_sockets header-abi-dumper android_get_control_file.cpp
+[ 63% 1029/1626] //system/core/libcutils:libcutils static link libcutils.a [linux_glibc]
+[ 63% 1030/1626] //hardware/libhardware:libhardware header-abi-dumper hardware.c
+[ 63% 1031/1626] //system/tools/hidl:libhidl-gen clang++ Annotation.cpp [linux_glibc]
+[ 63% 1032/1626] //system/tools/hidl:libhidl-gen clang++ DocComment.cpp [linux_glibc]
+[ 63% 1033/1626] //system/tools/hidl:libhidl-gen clang++ DeathRecipientType.cpp [linux_glibc]
+[ 63% 1034/1626] //system/tools/hidl:libhidl-gen clang++ ArrayType.cpp [linux_glibc]
+[ 63% 1035/1626] //system/tools/hidl:libhidl-gen clang++ ConstantExpression.cpp [linux_glibc]
+[ 63% 1036/1626] //system/tools/hidl:libhidl-gen clang++ HandleType.cpp [linux_glibc]
+[ 63% 1037/1626] //external/boringssl:libcrypto clang src/third_party/fiat/curve25519.c [linux_glibc]
+[ 63% 1038/1626] //system/tools/hidl:libhidl-gen clang++ HidlTypeAssertion.cpp [linux_glibc]
+[ 63% 1039/1626] //external/boringssl:libcrypto link libcrypto-host.so [linux_glibc]
+[ 63% 1040/1626] //external/boringssl:libcrypto static link libcrypto.a [linux_glibc]
+[ 64% 1041/1626] //external/boringssl:libcrypto install libcrypto-host.so [linux_glibc]
+[ 64% 1042/1626] //external/boringssl:libcrypto generate toc libcrypto-host.so [linux_glibc]
+[ 64% 1043/1626] //system/tools/hidl:libhidl-gen clang++ Location.cpp [linux_glibc]
+[ 64% 1044/1626] //system/tools/hidl:libhidl-gen clang++ FmqType.cpp [linux_glibc]
+[ 64% 1045/1626] //system/tools/hidl:libhidl-gen clang++ MemoryType.cpp [linux_glibc]
+[ 64% 1046/1626] //system/tools/hidl:libhidl-gen clang++ NamedType.cpp [linux_glibc]
+[ 64% 1047/1626] //system/tools/hidl:libhidl-gen clang++ ScalarType.cpp [linux_glibc]
+[ 64% 1048/1626] //system/tools/hidl:libhidl-gen clang++ StringType.cpp [linux_glibc]
+[ 64% 1049/1626] //system/tools/hidl:libhidl-gen clang++ PointerType.cpp [linux_glibc]
+[ 64% 1050/1626] //system/tools/hidl:libhidl-gen clang++ Method.cpp [linux_glibc]
+[ 64% 1051/1626] //system/tools/hidl:libhidl-gen clang++ EnumType.cpp [linux_glibc]
+[ 64% 1052/1626] //system/tools/hidl:libhidl-gen clang++ Scope.cpp [linux_glibc]
+[ 64% 1053/1626] //system/tools/hidl:libhidl-gen clang++ VectorType.cpp [linux_glibc]
+[ 64% 1054/1626] //system/tools/hidl:libhidl-gen clang++ Type.cpp [linux_glibc]
+[ 64% 1055/1626] //system/tools/hidl:libhidl-gen clang++ TypeDef.cpp [linux_glibc]
+[ 64% 1056/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateDependencies.cpp [linux_glibc]
+[ 65% 1057/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateCppImpl.cpp [linux_glibc]
+[ 65% 1058/1626] //system/tools/hidl:libhidl-gen-ast clang++ Coordinator.cpp [linux_glibc]
+[ 65% 1059/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateCppAdapter.cpp [linux_glibc]
+[ 65% 1060/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateFormattedHidl.cpp [linux_glibc]
+[ 65% 1061/1626] //system/tools/hidl:libhidl-gen-ast clang++ AST.cpp [linux_glibc]
+[ 65% 1062/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateInheritanceHierarchy.cpp [linux_glibc]
+[ 65% 1063/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateVts.cpp [linux_glibc]
+[ 65% 1064/1626] //system/tools/hidl:libhidl-gen clang++ Interface.cpp [linux_glibc]
+[ 65% 1065/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateJava.cpp [linux_glibc]
+[ 65% 1066/1626] //system/tools/hidl:libhidl-gen-ast clang++ lex/system/tools/hidl/hidl-gen_l.cpp [linux_glibc]
+[ 65% 1067/1626] //system/tools/hidl/host_utils:libhidl-gen-host-utils clang++ Formatter.cpp [linux_glibc]
+[ 65% 1068/1626] //system/tools/hidl:libhidl-gen clang++ CompoundType.cpp [linux_glibc]
+[ 65% 1069/1626] //system/tools/hidl:libhidl-gen static link libhidl-gen.a [linux_glibc]
+[ 65% 1070/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateJavaImpl.cpp [linux_glibc]
+[ 65% 1071/1626] //system/tools/hidl:libhidl-gen-ast clang++ yacc/system/tools/hidl/hidl-gen_y.cpp [linux_glibc]
+[ 65% 1072/1626] //system/tools/hidl/utils:libhidl-gen-utils clang++ FQName.cpp [linux_glibc]
+[ 65% 1073/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ BufferedTextOutput.cpp
+[ 66% 1074/1626] //system/tools/hidl/utils:libhidl-gen-utils clang++ FqInstance.cpp [linux_glibc]
+[ 66% 1075/1626] //system/tools/hidl/utils:libhidl-gen-utils static link libhidl-gen-utils.a [linux_glibc]
+[ 66% 1076/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ BpHwBinder.cpp
+[ 66% 1077/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Binder.cpp
+[ 66% 1078/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Debug.cpp
+[ 66% 1079/1626] //system/tools/hidl/host_utils:libhidl-gen-host-utils clang++ StringHelper.cpp [linux_glibc]
+[ 66% 1080/1626] //system/tools/hidl/host_utils:libhidl-gen-host-utils static link libhidl-gen-host-utils.a [linux_glibc]
+[ 66% 1081/1626] //system/tools/hidl/hashing:libhidl-gen-hash clang++ Hash.cpp [linux_glibc]
+[ 66% 1082/1626] //system/tools/hidl/hashing:libhidl-gen-hash static link libhidl-gen-hash.a [linux_glibc]
+[ 66% 1083/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ IInterface.cpp
+[ 66% 1084/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ TextOutput.cpp
+[ 66% 1085/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Static.cpp
+[ 66% 1086/1626] //system/tools/hidl:libhidl-gen-ast clang++ generateCpp.cpp [linux_glibc]
+[ 66% 1087/1626] //system/tools/hidl:libhidl-gen-ast static link libhidl-gen-ast.a [linux_glibc]
+[ 66% 1088/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ IPCThreadState.cpp
+[ 66% 1089/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Debug.cpp
+[ 67% 1090/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Parcel.cpp
+[ 67% 1091/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ BufferedTextOutput.cpp
+[ 67% 1092/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Binder.cpp
+[ 67% 1093/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ BpHwBinder.cpp
+[ 67% 1094/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ ProcessState.cpp
+[ 67% 1095/1626] //system/libhwbinder:libhwbinder-impl-internal static link libhwbinder-impl-internal.a
+[ 67% 1096/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ IInterface.cpp
+[ 67% 1097/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper Debug.cpp
+[ 67% 1098/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper BpHwBinder.cpp
+[ 67% 1099/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper Binder.cpp
+[ 67% 1100/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ ProcessState.cpp
+[ 67% 1101/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper BufferedTextOutput.cpp
+[ 67% 1102/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ IPCThreadState.cpp
+[ 67% 1103/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper IInterface.cpp
+[ 67% 1104/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Static.cpp
+[ 67% 1105/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ TextOutput.cpp
+[ 68% 1106/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper ProcessState.cpp
+[ 68% 1107/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper IPCThreadState.cpp
+[ 68% 1108/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper Static.cpp
+[ 68% 1109/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper TextOutput.cpp
+[ 68% 1110/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_writer.cpp
+[ 68% 1111/1626] //system/libhwbinder:libhwbinder-impl-internal clang++ Parcel.cpp
+[ 68% 1112/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_value.cpp
+[ 68% 1113/1626] //system/libhwbinder:libhwbinder-impl-internal static link libhwbinder-impl-internal.a
+[ 68% 1114/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_reader.cpp
+[ 68% 1115/1626] //external/jsoncpp:libjsoncpp static link libjsoncpp.a
+[ 68% 1116/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_writer.cpp
+[ 68% 1117/1626] //system/core/liblog:liblog clang++ log_event_list.cpp
+[ 68% 1118/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_reader.cpp
+[ 68% 1119/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_value.cpp
+[ 68% 1120/1626] //external/jsoncpp:libjsoncpp static link libjsoncpp.a
+[ 68% 1121/1626] //system/core/liblog:liblog clang++ log_event_write.cpp
+[ 69% 1122/1626] //system/core/liblog:liblog clang++ logger_name.cpp
+[ 69% 1123/1626] //system/core/liblog:liblog clang++ logger_read.cpp
+[ 69% 1124/1626] //system/core/liblog:liblog header-abi-dumper log_event_list.cpp
+[ 69% 1125/1626] //system/core/liblog:liblog header-abi-dumper logger_read.cpp
+[ 69% 1126/1626] //system/core/liblog:liblog header-abi-dumper logger_name.cpp
+[ 69% 1127/1626] //system/core/liblog:liblog header-abi-dumper log_event_write.cpp
+[ 69% 1128/1626] //system/libhwbinder:libhwbinder-impl-internal header-abi-dumper Parcel.cpp
+[ 69% 1129/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_writer.cpp [linux_glibc]
+[ 69% 1130/1626] //system/core/liblog:liblog clang++ logger_write.cpp
+[ 69% 1131/1626] //system/core/liblog:liblog clang++ properties.cpp
+[ 69% 1132/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_value.cpp [linux_glibc]
+[ 69% 1133/1626] //external/jsoncpp:libjsoncpp clang++ src/lib_json/json_reader.cpp [linux_glibc]
+[ 69% 1134/1626] //system/core/liblog:liblog clang++ log_time.cpp
+[ 69% 1135/1626] //external/jsoncpp:libjsoncpp static link libjsoncpp.a [linux_glibc]
+[ 69% 1136/1626] //external/jsoncpp:libjsoncpp link libjsoncpp.so [linux_glibc]
+[ 69% 1137/1626] //external/jsoncpp:libjsoncpp install libjsoncpp.so [linux_glibc]
+[ 69% 1138/1626] //system/core/liblog:liblog header-abi-dumper logger_write.cpp
+[ 70% 1139/1626] //system/core/liblog:liblog clang++ pmsg_reader.cpp
+[ 70% 1140/1626] //system/core/liblog:liblog header-abi-dumper properties.cpp
+[ 70% 1141/1626] //system/core/liblog:liblog clang++ pmsg_writer.cpp
+[ 70% 1142/1626] //system/core/liblog:liblog header-abi-dumper log_time.cpp
+[ 70% 1143/1626] //system/core/liblog:liblog clang++ logd_writer.cpp
+[ 70% 1144/1626] //system/core/liblog:liblog header-abi-dumper pmsg_reader.cpp
+[ 70% 1145/1626] //system/core/liblog:liblog clang++ logd_reader.cpp
+[ 70% 1146/1626] //system/core/liblog:liblog header-abi-dumper pmsg_writer.cpp
+[ 70% 1147/1626] //system/core/liblog:liblog clang++ logger_name.cpp [linux_glibc]
+[ 70% 1148/1626] //system/core/liblog:liblog clang++ logprint.cpp
+[ 70% 1149/1626] //system/core/liblog:liblog clang++ log_event_list.cpp [linux_glibc]
+[ 70% 1150/1626] //system/core/liblog:liblog clang++ log_event_write.cpp [linux_glibc]
+[ 70% 1151/1626] //system/core/liblog:liblog clang++ logger_read.cpp [linux_glibc]
+[ 70% 1152/1626] //system/core/liblog:liblog header-abi-dumper logd_reader.cpp
+[ 70% 1153/1626] //system/core/liblog:liblog clang++ event_tag_map.cpp
+[ 70% 1154/1626] //system/core/liblog:liblog.llndk clang stub.c
+[ 71% 1155/1626] //system/core/liblog:liblog.llndk link liblog.so
+[ 71% 1156/1626] target Prebuilt: liblog.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/liblog.vendor_intermediates/liblog.vendor.so)
+[ 71% 1157/1626] //system/core/liblog:liblog header-abi-dumper logprint.cpp
+[ 71% 1158/1626] //system/core/liblog:liblog.llndk generate toc liblog.so
+[ 71% 1159/1626] //system/core/liblog:liblog clang++ logger_write.cpp [linux_glibc]
+[ 71% 1160/1626] //system/core/liblog:liblog clang++ properties.cpp [linux_glibc]
+[ 71% 1161/1626] //bionic/libm:libm clang stub.c
+[ 71% 1162/1626] //bionic/libm:libm.llndk clang stub.c
+[ 71% 1163/1626] //bionic/libm:libm link libm.so
+[ 71% 1164/1626] //bionic/libm:libm.llndk link libm.so
+[ 71% 1165/1626] target Prebuilt: libm.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libm.vendor_intermediates/libm.vendor.so)
+[ 71% 1166/1626] //bionic/libm:libm.llndk generate toc libm.so
+[ 71% 1167/1626] //bionic/libm:libm strip libm.so
+[ 71% 1168/1626] target Prebuilt: libm (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libm_intermediates/libm.so)
+[ 71% 1169/1626] //system/core/liblog:liblog header-abi-dumper logd_writer.cpp
+[ 71% 1170/1626] //system/core/liblog:liblog clang++ logprint.cpp [linux_glibc]
+[ 72% 1171/1626] //bionic/libm:libm generate toc libm.so
+[ 72% 1172/1626] //external/libcxx:libc++ link libc++.so
+[ 72% 1173/1626] //external/libcxx:libc++ link libc++.so
+[ 72% 1174/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libc++.so
+[ 72% 1175/1626] //system/core/liblog:liblog header-abi-dumper event_tag_map.cpp
+[ 72% 1176/1626] //external/libcxx:libc++ strip libc++.so
+[ 72% 1177/1626] //external/libcxx:libc++ generate toc libc++.so
+[ 72% 1178/1626] //external/libcxx:libc++ strip libc++.so
+[ 72% 1179/1626] //system/core/base:libbase link libbase.so
+[ 72% 1180/1626] target Prebuilt: libc++ (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libc++_intermediates/libc++.so)
+[ 72% 1181/1626] Install: out/target/product/RMX1901/system/lib64/libc++.so
+[ 72% 1182/1626] //system/core/base:libbase strip libbase.so
+[ 72% 1183/1626] //system/core/libprocessgroup:libprocessgroup clang++ sched_policy.cpp
+[ 72% 1184/1626] //system/core/base:libbase generate toc libbase.so
+[ 72% 1185/1626] //external/libcxx:libc++ generate toc libc++.so
+[ 72% 1186/1626] //system/core/libcutils:libcutils link libcutils.so
+[ 73% 1187/1626] //system/core/libcutils:libcutils strip libcutils.so
+[ 73% 1188/1626] //system/core/libcutils:libcutils generate toc libcutils.so
+[ 73% 1189/1626] //system/core/libcutils:libcutils header-abi-linker libcutils.so.lsdump
+[ 73% 1190/1626] //system/core/liblog:liblog clang++ event_tag_map.cpp [linux_glibc]
+[ 73% 1191/1626] target Prebuilt: libcutils.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libcutils.vendor_intermediates/libcutils.vendor.so)
+[ 73% 1192/1626] //system/core/liblog:liblog link liblog.so [linux_glibc]
+[ 73% 1193/1626] //system/core/liblog:liblog link liblog.so
+[ 73% 1194/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/liblog.so
+[ 73% 1195/1626] //system/core/liblog:liblog generate toc liblog.so [linux_glibc]
+[ 73% 1196/1626] //system/core/base:libbase header-abi-linker libbase.so.lsdump
+[ 73% 1197/1626] target Prebuilt: libbase.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libbase.vendor_intermediates/libbase.vendor.so)
+[ 73% 1198/1626] //system/core/base:libbase link libbase.so [linux_glibc]
+[ 73% 1199/1626] //system/core/liblog:liblog install liblog.so [linux_glibc]
+[ 73% 1200/1626] //system/core/liblog:liblog strip liblog.so
+[ 73% 1201/1626] //system/core/liblog:liblog static link liblog.a [linux_glibc]
+[ 73% 1202/1626] //system/core/base:libbase install libbase.so [linux_glibc]
+[ 73% 1203/1626] //system/core/liblog:liblog generate toc liblog.so
+[ 74% 1204/1626] //system/core/base:libbase link libbase.so
+[ 74% 1205/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libbase.so
+[ 74% 1206/1626] //system/tools/aidl:aidl-cpp link aidl-cpp [linux_glibc]
+[ 74% 1207/1626] //system/tools/aidl:aidl-cpp install aidl-cpp [linux_glibc]
+[ 74% 1208/1626] //system/core/base:libbase strip libbase.so
+[ 74% 1209/1626] target Prebuilt: libbase (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libbase_intermediates/libbase.so)
+[ 74% 1210/1626] //system/core/base:libbase generate toc libbase.so
+[ 74% 1211/1626] //system/tools/hidl:hidl-gen link hidl-gen [linux_glibc]
+[ 74% 1212/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc link libcgrouprc.so
+[ 74% 1213/1626] //frameworks/native/libs/binder:libbinder gen aidl
+[ 74% 1214/1626] //frameworks/native/libs/binder:libbinder gen aidl
+[ 74% 1215/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libcgrouprc.so
+[ 74% 1216/1626] //system/core/libprocessgroup:libprocessgroup clang++ processgroup.cpp
+[ 74% 1217/1626] //external/libcxx:libc++ header-abi-linker libc++.so.lsdump
+[ 74% 1218/1626] target Prebuilt: libc++.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libc++.vendor_intermediates/libc++.vendor.so)
+[ 74% 1219/1626] //system/core/libprocessgroup:libprocessgroup clang++ task_profiles.cpp
+[ 75% 1220/1626] //frameworks/native/libs/binder:libbinder clang++ BufferedTextOutput.cpp
+[ 75% 1221/1626] //frameworks/native/libs/binder:libbinder clang++ Debug.cpp
+[ 75% 1222/1626] //frameworks/native/libs/binder:libbinder clang++ IInterface.cpp
+[ 75% 1223/1626] //frameworks/native/libs/binder:libbinder clang++ Binder.cpp
+[ 75% 1224/1626] //frameworks/native/libs/binder:libbinder clang++ IResultReceiver.cpp
+[ 75% 1225/1626] //frameworks/native/libs/binder:libbinder clang++ IShellCallback.cpp
+[ 75% 1226/1626] //frameworks/native/libs/binder:libbinder clang++ IMemory.cpp
+[ 75% 1227/1626] //frameworks/native/libs/binder:libbinder clang++ IPCThreadState.cpp
+[ 75% 1228/1626] //frameworks/native/libs/binder:libbinder clang++ IServiceManager.cpp
+[ 75% 1229/1626] //frameworks/native/libs/binder:libbinder clang++ BpBinder.cpp
+[ 75% 1230/1626] //frameworks/native/libs/binder:libbinder clang++ MemoryBase.cpp
+[ 75% 1231/1626] //system/core/libprocessgroup:libprocessgroup clang++ cgroup_map.cpp
+[ 75% 1232/1626] //frameworks/native/libs/binder:libbinder clang++ LazyServiceRegistrar.cpp
+[ 75% 1233/1626] //frameworks/native/libs/binder:libbinder clang++ MemoryHeapBase.cpp
+[ 75% 1234/1626] //frameworks/native/libs/binder:libbinder clang++ MemoryDealer.cpp
+[ 75% 1235/1626] //system/core/libprocessgroup:libprocessgroup clang++ cgroup_map.cpp
+[ 76% 1236/1626] //frameworks/native/libs/binder:libbinder clang++ ParcelFileDescriptor.cpp
+[ 76% 1237/1626] //frameworks/native/libs/binder:libbinder clang++ ProcessState.cpp
+[ 76% 1238/1626] //frameworks/native/libs/binder:libbinder clang++ Static.cpp
+[ 76% 1239/1626] //frameworks/native/libs/binder:libbinder clang++ TextOutput.cpp
+[ 76% 1240/1626] //frameworks/native/libs/binder:libbinder clang++ Stability.cpp
+[ 76% 1241/1626] //frameworks/native/libs/binder:libbinder clang++ Status.cpp
+[ 76% 1242/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/content/pm/IPackageChangeObserver.cpp
+[ 76% 1243/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/content/pm/PackageChangeEvent.cpp
+[ 76% 1244/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/os/IClientCallback.cpp
+[ 76% 1245/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/os/IServiceCallback.cpp
+[ 76% 1246/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/os/IServiceManager.cpp
+[ 76% 1247/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/content/pm/IPackageManagerNative.cpp
+[ 76% 1248/1626] //frameworks/native/libs/binder:libbinder clang++ ActivityManager.cpp
+[ 76% 1249/1626] //frameworks/native/libs/binder:libbinder clang++ IActivityManager.cpp
+[ 76% 1250/1626] //frameworks/native/libs/binder:libbinder clang++ IAppOpsCallback.cpp
+[ 76% 1251/1626] //frameworks/native/libs/binder:libbinder clang++ IBatteryStats.cpp
+[ 76% 1252/1626] //frameworks/native/libs/binder:libbinder clang++ AppOpsManager.cpp
+[ 77% 1253/1626] //frameworks/native/libs/binder:libbinder clang++ IMediaResourceMonitor.cpp
+[ 77% 1254/1626] //frameworks/native/libs/binder:libbinder clang++ IPermissionController.cpp
+[ 77% 1255/1626] //frameworks/native/libs/binder:libbinder clang++ IProcessInfoService.cpp
+[ 77% 1256/1626] //frameworks/native/libs/binder:libbinder clang++ IAppOpsService.cpp
+[ 77% 1257/1626] //frameworks/native/libs/binder:libbinder clang++ ProcessInfoService.cpp
+[ 77% 1258/1626] //frameworks/native/libs/binder:libbinder clang++ PermissionCache.cpp
+[ 77% 1259/1626] //frameworks/native/libs/binder:libbinder clang++ IUidObserver.cpp
+[ 77% 1260/1626] //frameworks/native/libs/binder:libbinder clang++ IpPrefix.cpp
+[ 77% 1261/1626] //frameworks/native/libs/binder:libbinder clang++ PermissionController.cpp
+[ 77% 1262/1626] //frameworks/native/libs/binder:libbinder clang++ Debug.cpp
+[ 77% 1263/1626] //frameworks/native/libs/binder:libbinder clang++ IInterface.cpp
+[ 77% 1264/1626] //frameworks/native/libs/binder:libbinder clang++ BufferedTextOutput.cpp
+[ 77% 1265/1626] //frameworks/native/libs/binder:libbinder clang++ Binder.cpp
+[ 77% 1266/1626] //frameworks/native/libs/binder:libbinder clang++ BpBinder.cpp
+[ 77% 1267/1626] //frameworks/native/libs/binder:libbinder clang++ PersistableBundle.cpp
+[ 77% 1268/1626] //frameworks/native/libs/binder:libbinder clang++ IResultReceiver.cpp
+[ 78% 1269/1626] //frameworks/native/libs/binder:libbinder clang++ IMemory.cpp
+[ 78% 1270/1626] //frameworks/native/libs/binder:libbinder clang++ Parcel.cpp
+[ 78% 1271/1626] //frameworks/native/libs/binder:libbinder clang++ IServiceManager.cpp
+[ 78% 1272/1626] //frameworks/native/libs/binder:libbinder clang++ IShellCallback.cpp
+[ 78% 1273/1626] //frameworks/native/libs/binder:libbinder clang++ IPCThreadState.cpp
+[ 78% 1274/1626] //frameworks/native/libs/binder:libbinder clang++ MemoryHeapBase.cpp
+[ 78% 1275/1626] //frameworks/native/libs/binder:libbinder clang++ LazyServiceRegistrar.cpp
+[ 78% 1276/1626] //frameworks/native/libs/binder:libbinder clang++ MemoryDealer.cpp
+[ 78% 1277/1626] //frameworks/native/libs/binder:libbinder clang++ ParcelFileDescriptor.cpp
+[ 78% 1278/1626] //frameworks/native/libs/binder:libbinder clang++ MemoryBase.cpp
+[ 78% 1279/1626] //frameworks/native/libs/binder:libbinder clang++ Stability.cpp
+[ 78% 1280/1626] //frameworks/native/libs/binder:libbinder clang++ ProcessState.cpp
+[ 78% 1281/1626] //frameworks/native/libs/binder:libbinder clang++ TextOutput.cpp
+[ 78% 1282/1626] //frameworks/native/libs/binder:libbinder clang++ Static.cpp
+[ 78% 1283/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/content/pm/IPackageChangeObserver.cpp
+[ 78% 1284/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/content/pm/PackageChangeEvent.cpp
+[ 79% 1285/1626] //frameworks/native/libs/binder:libbinder clang++ Status.cpp
+[ 79% 1286/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc strip libcgrouprc.so
+[ 79% 1287/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc generate toc libcgrouprc.so
+[ 79% 1288/1626] //system/core/libcutils:libcutils link libcutils.so
+[ 79% 1289/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libcutils.so
+[ 79% 1290/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/os/IClientCallback.cpp
+[ 79% 1291/1626] //system/core/libprocessgroup/cgrouprc:libcgrouprc header-abi-linker libcgrouprc.so.lsdump
+[ 79% 1292/1626] target Prebuilt: libcgrouprc (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libcgrouprc_intermediates/libcgrouprc.so)
+[ 79% 1293/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/os/IServiceCallback.cpp
+[ 79% 1294/1626] //system/core/liblog:liblog header-abi-linker liblog.so.lsdump
+[ 79% 1295/1626] target Prebuilt: liblog (out/target/product/RMX1901/obj/SHARED_LIBRARIES/liblog_intermediates/liblog.so)
+[ 79% 1296/1626] //system/core/libprocessgroup:libprocessgroup link libprocessgroup.so
+[ 79% 1297/1626] //system/core/libcutils:libcutils strip libcutils.so
+[ 79% 1298/1626] Install: out/target/product/RMX1901/system/lib64/liblog.so
+[ 79% 1299/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libprocessgroup.so
+[ 79% 1300/1626] target Prebuilt: libcutils (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libcutils_intermediates/libcutils.so)
+[ 80% 1301/1626] Install: out/target/product/RMX1901/system/lib64/libbase.so
+[ 80% 1302/1626] //system/core/libcutils:libcutils generate toc libcutils.so
+[ 80% 1303/1626] Install: out/target/product/RMX1901/system/lib64/libcutils.so
+[ 80% 1304/1626] Install: out/target/product/RMX1901/system/lib64/libcgrouprc.so
+[ 80% 1305/1626] //system/core/libprocessgroup:libprocessgroup strip libprocessgroup.so
+[ 80% 1306/1626] target Prebuilt: libprocessgroup (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libprocessgroup_intermediates/libprocessgroup.so)
+[ 80% 1307/1626] Install: out/target/product/RMX1901/system/lib64/libprocessgroup.so
+[ 80% 1308/1626] //system/core/libprocessgroup:libprocessgroup generate toc libprocessgroup.so
+[ 80% 1309/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/content/pm/IPackageManagerNative.cpp
+[ 80% 1310/1626] //frameworks/native/libs/binder:libbinder clang++ aidl/frameworks/native/libs/binder/aidl/android/os/IServiceManager.cpp
+[ 80% 1311/1626] //external/boringssl:libssl clang++ src/ssl/bio_ssl.cc [linux_glibc]
+[ 80% 1312/1626] //external/boringssl:libssl clang++ src/ssl/d1_pkt.cc [linux_glibc]
+[ 80% 1313/1626] //external/boringssl:libssl clang++ src/ssl/d1_both.cc [linux_glibc]
+[ 80% 1314/1626] //external/boringssl:libssl clang++ src/ssl/d1_lib.cc [linux_glibc]
+[ 80% 1315/1626] //system/core/libprocessgroup:libprocessgroup clang++ sched_policy.cpp
+[ 80% 1316/1626] //system/core/libprocessgroup:libprocessgroup clang++ processgroup.cpp
+[ 80% 1317/1626] //external/boringssl:libssl clang++ src/ssl/d1_srtp.cc [linux_glibc]
+[ 81% 1318/1626] //external/boringssl:libssl clang++ src/ssl/dtls_record.cc [linux_glibc]
+[ 81% 1319/1626] //external/boringssl:libssl clang++ src/ssl/dtls_method.cc [linux_glibc]
+[ 81% 1320/1626] //external/boringssl:libssl clang++ src/ssl/handoff.cc [linux_glibc]
+[ 81% 1321/1626] //system/core/libprocessgroup:libprocessgroup clang++ task_profiles.cpp
+[ 81% 1322/1626] //system/core/libprocessgroup:libprocessgroup link libprocessgroup.so
+[ 81% 1323/1626] //system/core/libprocessgroup:libprocessgroup strip libprocessgroup.so
+[ 81% 1324/1626] //frameworks/native/libs/binder:libbinder clang++ Parcel.cpp
+[ 81% 1325/1626] //system/core/libprocessgroup:libprocessgroup generate toc libprocessgroup.so
+[ 81% 1326/1626] //external/boringssl:libssl clang++ src/ssl/handshake.cc [linux_glibc]
+[ 81% 1327/1626] //external/boringssl:libssl clang++ src/ssl/s3_lib.cc [linux_glibc]
+[ 81% 1328/1626] //external/boringssl:libssl clang++ src/ssl/s3_both.cc [linux_glibc]
+[ 81% 1329/1626] //external/boringssl:libssl clang++ src/ssl/handshake_client.cc [linux_glibc]
+[ 81% 1330/1626] //external/boringssl:libssl clang++ src/ssl/s3_pkt.cc [linux_glibc]
+[ 81% 1331/1626] //external/boringssl:libssl clang++ src/ssl/handshake_server.cc [linux_glibc]
+[ 81% 1332/1626] //external/boringssl:libssl clang++ src/ssl/ssl_aead_ctx.cc [linux_glibc]
+[ 81% 1333/1626] //frameworks/native/libs/binder:libbinder clang++ PersistableBundle.cpp
+[ 82% 1334/1626] //external/boringssl:libssl clang++ src/ssl/ssl_asn1.cc [linux_glibc]
+[ 82% 1335/1626] //external/boringssl:libssl clang++ src/ssl/ssl_buffer.cc [linux_glibc]
+[ 82% 1336/1626] //external/boringssl:libssl clang++ src/ssl/ssl_file.cc [linux_glibc]
+[ 82% 1337/1626] //external/boringssl:libssl clang++ src/ssl/ssl_cert.cc [linux_glibc]
+[ 82% 1338/1626] //external/boringssl:libssl clang++ src/ssl/ssl_key_share.cc [linux_glibc]
+[ 82% 1339/1626] //external/boringssl:libssl clang++ src/ssl/ssl_cipher.cc [linux_glibc]
+[ 82% 1340/1626] //external/boringssl:libssl clang++ src/ssl/ssl_privkey.cc [linux_glibc]
+[ 82% 1341/1626] //external/boringssl:libssl clang++ src/ssl/ssl_transcript.cc [linux_glibc]
+[ 82% 1342/1626] //external/boringssl:libssl clang++ src/ssl/ssl_versions.cc [linux_glibc]
+[ 82% 1343/1626] //external/boringssl:libssl clang++ src/ssl/ssl_session.cc [linux_glibc]
+[ 82% 1344/1626] //external/boringssl:libssl clang++ src/ssl/t1_enc.cc [linux_glibc]
+[ 82% 1345/1626] //external/boringssl:libssl clang++ src/ssl/ssl_stat.cc [linux_glibc]
+[ 82% 1346/1626] //external/boringssl:libssl clang++ src/ssl/ssl_x509.cc [linux_glibc]
+[ 82% 1347/1626] //external/boringssl:libssl clang++ src/ssl/ssl_lib.cc [linux_glibc]
+[ 82% 1348/1626] //external/boringssl:libssl clang++ src/ssl/tls13_both.cc [linux_glibc]
+[ 82% 1349/1626] //system/core/libutils:libutils clang++ FileMap.cpp
+[ 83% 1350/1626] //system/core/libutils:libutils clang++ JenkinsHash.cpp
+[ 83% 1351/1626] //external/boringssl:libssl clang++ src/ssl/tls13_client.cc [linux_glibc]
+[ 83% 1352/1626] //external/boringssl:libssl clang++ src/ssl/tls13_server.cc [linux_glibc]
+[ 83% 1353/1626] //system/core/libutils:libutils clang++ Errors.cpp
+[ 83% 1354/1626] //external/boringssl:libssl clang++ src/ssl/tls13_enc.cc [linux_glibc]
+[ 83% 1355/1626] //system/core/libutils:libutils clang++ NativeHandle.cpp
+[ 83% 1356/1626] //external/boringssl:libssl clang++ src/ssl/tls_method.cc [linux_glibc]
+[ 83% 1357/1626] //external/boringssl:libssl clang++ src/ssl/tls_record.cc [linux_glibc]
+[ 83% 1358/1626] //system/core/libutils:libutils clang++ StopWatch.cpp
+[ 83% 1359/1626] //system/core/libutils:libutils clang++ SharedBuffer.cpp
+[ 83% 1360/1626] //system/core/libutils:libutils clang++ StrongPointer.cpp
+[ 83% 1361/1626] //system/core/libutils:libutils clang++ SystemClock.cpp
+[ 83% 1362/1626] //system/core/libutils:libutils clang++ Printer.cpp
+[ 83% 1363/1626] //system/core/libutils:libutils clang++ Timers.cpp
+[ 83% 1364/1626] //external/boringssl:libssl clang++ src/ssl/t1_lib.cc [linux_glibc]
+[ 83% 1365/1626] //system/core/libutils:libutils clang++ PropertyMap.cpp
+[ 84% 1366/1626] //system/core/libutils:libutils clang++ RefBase.cpp
+[ 84% 1367/1626] //external/boringssl:libssl link libssl-host.so [linux_glibc]
+[ 84% 1368/1626] //external/boringssl:libssl install libssl-host.so [linux_glibc]
+[ 84% 1369/1626] //system/tools/hidl:hidl-gen install hidl-gen [linux_glibc]
+[ 84% 1370/1626] HIDL c++-sources: system/libhidl/transport/allocator/1.0/IAllocator.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/allocator/1.0/android.hidl.allocator@1.0_genc++/gen/android/hidl/allocator/1.0/AllocatorAll.cpp'
+[ 84% 1371/1626] HIDL c++-headers: system/libhidl/transport/allocator/1.0/IAllocator.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/allocator/1.0/android.hidl.allocator@1.0_genc++_headers/gen/android/hidl/allocator/1.0/IAllocator.h'
+[ 84% 1372/1626] //system/core/libutils:libutils clang++ Tokenizer.cpp
+[ 84% 1373/1626] //system/core/libutils:libutils clang++ Unicode.cpp
+[ 84% 1374/1626] HIDL c++-sources: system/libhidl/transport/base/1.0/types.hal system/libhidl/transport/base/1.0/IBase.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/base/1.0/android.hidl.base@1.0_genc++/gen/android/hidl/base/1.0/BaseAll.cpp'
+[ 84% 1375/1626] HIDL c++-headers: system/libhidl/transport/base/1.0/types.hal system/libhidl/transport/base/1.0/IBase.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/base/1.0/android.hidl.base@1.0_genc++_headers/gen/android/hidl/base/1.0/IBase.h'
+[ 84% 1376/1626] //system/core/libutils:libutils clang++ String8.cpp
+[ 84% 1377/1626] //system/core/libutils:libutils clang++ String16.cpp
+[ 84% 1378/1626] //system/core/libutils:libutils clang++ Threads.cpp
+[ 84% 1379/1626] //system/core/libutils:libutils clang++ VectorImpl.cpp
+[ 84% 1380/1626] //system/core/libutils:libutils clang++ misc.cpp
+[ 84% 1381/1626] HIDL c++-sources: system/libhidl/transport/manager/1.0/IServiceManager.hal system/libhidl/transport/manager/1.0/IServiceNotification.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/manager/1.0/android.hidl.manager@1.0_genc++/gen/android/hidl/manager/1.0/ServiceManagerAll.cpp'
+[ 84% 1382/1626] HIDL c++-headers: system/libhidl/transport/manager/1.0/IServiceManager.hal system/libhidl/transport/manager/1.0/IServiceNotification.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/manager/1.0/android.hidl.manager@1.0_genc++_headers/gen/android/hidl/manager/1.0/IServiceManager.h'
+[ 85% 1383/1626] HIDL c++-sources: system/libhidl/transport/manager/1.1/IServiceManager.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/manager/1.1/android.hidl.manager@1.1_genc++/gen/android/hidl/manager/1.1/ServiceManagerAll.cpp'
+[ 85% 1384/1626] HIDL c++-headers: system/libhidl/transport/manager/1.1/IServiceManager.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/manager/1.1/android.hidl.manager@1.1_genc++_headers/gen/android/hidl/manager/1.1/IServiceManager.h'
+[ 85% 1385/1626] HIDL c++-sources: system/libhidl/transport/manager/1.2/IClientCallback.hal system/libhidl/transport/manager/1.2/IServiceManager.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/manager/1.2/android.hidl.manager@1.2_genc++/gen/android/hidl/manager/1.2/ClientCallbackAll.cpp'
+[ 85% 1386/1626] HIDL c++-headers: system/libhidl/transport/manager/1.2/IClientCallback.hal system/libhidl/transport/manager/1.2/IServiceManager.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/manager/1.2/android.hidl.manager@1.2_genc++_headers/gen/android/hidl/manager/1.2/IClientCallback.h'
+[ 85% 1387/1626] HIDL c++-sources: system/libhidl/transport/memory/token/1.0/IMemoryToken.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/memory/token/1.0/android.hidl.memory.token@1.0_genc++/gen/android/hidl/memory/token/1.0/MemoryTokenAll.cpp'
+[ 85% 1388/1626] HIDL c++-headers: system/libhidl/transport/memory/token/1.0/IMemoryToken.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/memory/token/1.0/android.hidl.memory.token@1.0_genc++_headers/gen/android/hidl/memory/token/1.0/IMemoryToken.h'
+[ 85% 1389/1626] HIDL c++-sources: system/libhidl/transport/memory/1.0/IMapper.hal system/libhidl/transport/memory/1.0/IMemory.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/memory/1.0/android.hidl.memory@1.0_genc++/gen/android/hidl/memory/1.0/MapperAll.cpp'
+[ 85% 1390/1626] HIDL c++-headers: system/libhidl/transport/memory/1.0/IMapper.hal system/libhidl/transport/memory/1.0/IMemory.hal system/libhidl/transport/current.txt => 'out/soong/.intermediates/system/libhidl/transport/memory/1.0/android.hidl.memory@1.0_genc++_headers/gen/android/hidl/memory/1.0/IMapper.h'
+[ 85% 1391/1626] HIDL c++-sources: system/hardware/interfaces/suspend/1.0/types.hal system/hardware/interfaces/suspend/1.0/ISystemSuspend.hal system/hardware/interfaces/suspend/1.0/IWakeLock.hal system/hardware/interfaces/current.txt => 'out/soong/.intermediates/system/hardware/interfaces/suspend/1.0/android.system.suspend@1.0_genc++/gen/android/system/suspend/1.0/SystemSuspendAll.cpp'
+[ 85% 1392/1626] HIDL c++-headers: system/hardware/interfaces/suspend/1.0/types.hal system/hardware/interfaces/suspend/1.0/ISystemSuspend.hal system/hardware/interfaces/suspend/1.0/IWakeLock.hal system/hardware/interfaces/current.txt => 'out/soong/.intermediates/system/hardware/interfaces/suspend/1.0/android.system.suspend@1.0_genc++_headers/gen/android/system/suspend/1.0/ISystemSuspend.h'
+[ 85% 1393/1626] //system/core/libutils:libutils clang++ Looper.cpp
+[ 85% 1394/1626] //system/libhidl:libhidlbase clang++ base/HidlSupport.cpp
+[ 85% 1395/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 clang++ android/system/suspend/1.0/types.cpp
+[ 85% 1396/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 clang++ android/system/suspend/1.0/SystemSuspendAll.cpp
+[ 85% 1397/1626] //system/libhidl/transport/memory/token/1.0:android.hidl.memory.token@1.0 clang++ android/hidl/memory/token/1.0/MemoryTokenAll.cpp
+[ 85% 1398/1626] //system/libhidl/transport/memory/1.0:android.hidl.memory@1.0 clang++ android/hidl/memory/1.0/MemoryAll.cpp
+[ 86% 1399/1626] //system/libhidl:libhidlbase clang++ base/HidlInternal.cpp
+[ 86% 1400/1626] //system/libhidl/transport/allocator/1.0:android.hidl.allocator@1.0 clang++ android/hidl/allocator/1.0/AllocatorAll.cpp
+[ 86% 1401/1626] //hardware/libhardware_legacy:libhardware_legacy clang uevent.c
+[ 86% 1402/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 clang++ android/system/suspend/1.0/WakeLockAll.cpp
+[ 86% 1403/1626] //hardware/libhardware_legacy:libhardware_legacy clang uevent.c
+[ 86% 1404/1626] //hardware/libhardware_legacy:libhardware_legacy header-abi-dumper uevent.c
+[ 86% 1405/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 clang++ android/system/suspend/1.0/types.cpp
+[ 86% 1406/1626] //hardware/libhardware_legacy:libhardware_legacy clang++ power.cpp
+[ 86% 1407/1626] //system/libhidl/transport/memory/1.0:android.hidl.memory@1.0 clang++ android/hidl/memory/1.0/MapperAll.cpp
+[ 86% 1408/1626] //system/libhidl:libhidlbase clang++ base/Status.cpp
+[ 86% 1409/1626] //system/libhidl:libhidlbase clang++ base/TaskRunner.cpp
+[ 86% 1410/1626] //hardware/libhardware_legacy:libhardware_legacy clang++ power.cpp
+[ 86% 1411/1626] //system/libhidl:libhidlbase clang++ transport/HidlBinderSupport.cpp
+[ 86% 1412/1626] //system/libhidl:libhidlbase clang++ transport/HidlPassthroughSupport.cpp
+[ 86% 1413/1626] //system/libhidl:libhidlbase clang++ transport/HidlLazyUtils.cpp
+[ 86% 1414/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 clang++ android/system/suspend/1.0/SystemSuspendAll.cpp
+[ 87% 1415/1626] //system/libhidl:libhidlbase clang++ transport/HidlTransportSupport.cpp
+[ 87% 1416/1626] //hardware/libhardware_legacy:libhardware_legacy header-abi-dumper power.cpp
+[ 87% 1417/1626] //system/libhidl:libhidlbase clang++ transport/HidlTransportUtils.cpp
+[ 87% 1418/1626] //system/libhidl:libhidlbase clang++ transport/Static.cpp
+[ 87% 1419/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 clang++ android/system/suspend/1.0/WakeLockAll.cpp
+[ 87% 1420/1626] //system/libhidl:libhidlbase clang++ transport/LegacySupport.cpp
+[ 87% 1421/1626] //system/libhidl:libhidlbase clang++ android/hidl/base/1.0/types.cpp
+[ 87% 1422/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.0/ServiceNotificationAll.cpp
+[ 87% 1423/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.2/ClientCallbackAll.cpp
+[ 87% 1424/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.1/ServiceManagerAll.cpp
+[ 87% 1425/1626] //system/libhidl:libhidlbase clang++ base/HidlSupport.cpp
+[ 87% 1426/1626] //system/libhidl:libhidlbase clang++ base/Status.cpp
+[ 87% 1427/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.0/ServiceManagerAll.cpp
+[ 87% 1428/1626] //system/libhidl:libhidlbase header-abi-dumper base/Status.cpp
+[ 87% 1429/1626] //system/libhidl:libhidlbase header-abi-dumper base/HidlSupport.cpp
+[ 87% 1430/1626] //system/libhidl:libhidlbase clang++ android/hidl/base/1.0/BaseAll.cpp
+[ 88% 1431/1626] //system/libhidl:libhidlbase clang++ base/TaskRunner.cpp
+[ 88% 1432/1626] //system/libhidl:libhidlbase clang++ transport/ServiceManagement.cpp
+[ 88% 1433/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.2/ServiceManagerAll.cpp
+[ 88% 1434/1626] //system/libhidl:libhidlbase clang++ transport/HidlLazyUtils.cpp
+[ 88% 1435/1626] //system/libhidl:libhidlbase clang++ transport/HidlPassthroughSupport.cpp
+[ 88% 1436/1626] //system/libhidl:libhidlbase clang++ transport/HidlBinderSupport.cpp
+[ 88% 1437/1626] //system/libhidl:libhidlbase clang++ transport/HidlTransportUtils.cpp
+[ 88% 1438/1626] //system/libhidl:libhidlbase clang++ transport/HidlTransportSupport.cpp
+[ 88% 1439/1626] //system/libhidl:libhidlbase header-abi-dumper transport/HidlLazyUtils.cpp
+[ 88% 1440/1626] //system/libhidl:libhidlbase header-abi-dumper base/TaskRunner.cpp
+[ 88% 1441/1626] //system/libhidl:libhidlbase clang++ transport/LegacySupport.cpp
+[ 88% 1442/1626] //system/libhidl:libhidlbase header-abi-dumper transport/HidlPassthroughSupport.cpp
+[ 88% 1443/1626] //system/libhidl:libhidlbase clang++ base/HidlInternal.cpp
+[ 88% 1444/1626] //system/libhidl:libhidlbase header-abi-dumper transport/HidlTransportUtils.cpp
+[ 88% 1445/1626] //system/libhidl:libhidlbase header-abi-dumper transport/HidlBinderSupport.cpp
+[ 88% 1446/1626] //system/libhidl:libhidlbase header-abi-dumper transport/HidlTransportSupport.cpp
+[ 88% 1447/1626] //system/libhidl:libhidlbase header-abi-dumper transport/LegacySupport.cpp
+[ 89% 1448/1626] //system/libhidl:libhidlbase header-abi-dumper base/HidlInternal.cpp
+[ 89% 1449/1626] //system/libhidl:libhidlbase clang++ transport/Static.cpp
+[ 89% 1450/1626] //system/libhidl:libhidlbase header-abi-dumper transport/Static.cpp
+[ 89% 1451/1626] //system/libhidl:libhidlbase clang++ android/hidl/base/1.0/types.cpp
+[ 89% 1452/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.0/ServiceNotificationAll.cpp
+[ 89% 1453/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.2/ClientCallbackAll.cpp
+[ 89% 1454/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.1/ServiceManagerAll.cpp
+[ 89% 1455/1626] //system/libhidl:libhidlbase header-abi-dumper android/hidl/base/1.0/types.cpp
+[ 89% 1456/1626] //system/libhidl:libhidlbase header-abi-dumper android/hidl/manager/1.0/ServiceNotificationAll.cpp
+[ 89% 1457/1626] //system/libhidl/libhidlmemory:libhidlmemory clang++ HidlMemoryToken.cpp
+[ 89% 1458/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.0/ServiceManagerAll.cpp
+[ 89% 1459/1626] //system/core/libutils:libutils clang++ Trace.cpp
+[ 89% 1460/1626] //system/core/libutils:libutils clang++ Errors.cpp
+[ 89% 1461/1626] //system/libhidl:libhidlbase clang++ android/hidl/manager/1.2/ServiceManagerAll.cpp
+[ 89% 1462/1626] //system/libhidl:libhidlbase header-abi-dumper android/hidl/manager/1.2/ClientCallbackAll.cpp
+[ 89% 1463/1626] //system/core/libutils:libutils clang++ FileMap.cpp
+[ 90% 1464/1626] //system/libhidl:libhidlbase header-abi-dumper android/hidl/manager/1.1/ServiceManagerAll.cpp
+[ 90% 1465/1626] //system/core/libutils:libutils clang++ JenkinsHash.cpp
+[ 90% 1466/1626] //system/core/libutils:libutils header-abi-dumper FileMap.cpp
+[ 90% 1467/1626] //system/core/libutils:libutils header-abi-dumper JenkinsHash.cpp
+[ 90% 1468/1626] //system/libhidl/libhidlmemory:libhidlmemory clang++ mapping.cpp
+[ 90% 1469/1626] //system/core/libutils:libutils header-abi-dumper Errors.cpp
+[ 90% 1470/1626] //system/core/libutils:libutils clang++ NativeHandle.cpp
+[ 90% 1471/1626] //system/core/libutils:libutils clang++ Printer.cpp
+[ 90% 1472/1626] //system/core/libutils:libutils clang++ RefBase.cpp
+[ 90% 1473/1626] //system/core/libutils:libutils clang++ PropertyMap.cpp
+[ 90% 1474/1626] //system/core/libutils:libutils header-abi-dumper NativeHandle.cpp
+[ 90% 1475/1626] //system/core/libutils:libutils clang++ SharedBuffer.cpp
+[ 90% 1476/1626] //system/libhidl:libhidlbase header-abi-dumper android/hidl/manager/1.0/ServiceManagerAll.cpp
+[ 90% 1477/1626] //system/core/libutils:libutils header-abi-dumper RefBase.cpp
+[ 90% 1478/1626] //system/core/libutils:libutils header-abi-dumper SharedBuffer.cpp
+[ 90% 1479/1626] //system/core/libutils:libutils clang++ StopWatch.cpp
+[ 91% 1480/1626] //system/core/libutils:libutils header-abi-dumper StopWatch.cpp
+[ 91% 1481/1626] //system/core/libutils:libutils clang++ StrongPointer.cpp
+[ 91% 1482/1626] //system/core/libutils:libutils header-abi-dumper PropertyMap.cpp
+[ 91% 1483/1626] //system/core/libutils:libutils header-abi-dumper StrongPointer.cpp
+[ 91% 1484/1626] //system/core/libutils:libutils header-abi-dumper Printer.cpp
+[ 91% 1485/1626] //system/core/libutils:libutils clang++ SystemClock.cpp
+[ 91% 1486/1626] //system/core/libutils:libutils clang++ Timers.cpp
+[ 91% 1487/1626] //system/libhidl:libhidlbase header-abi-dumper android/hidl/manager/1.2/ServiceManagerAll.cpp
+[ 91% 1488/1626] //system/core/libutils:libutils header-abi-dumper SystemClock.cpp
+[ 91% 1489/1626] //system/core/libutils:libutils header-abi-dumper Timers.cpp
+[ 91% 1490/1626] //system/libhidl:libhidlbase clang++ android/hidl/base/1.0/BaseAll.cpp
+[ 91% 1491/1626] //system/core/libutils:libutils clang++ String16.cpp
+[ 91% 1492/1626] //system/core/libutils:libutils clang++ Unicode.cpp
+[ 91% 1493/1626] //system/core/libutils:libutils clang++ Tokenizer.cpp
+[ 91% 1494/1626] //system/core/libutils:libutils clang++ String8.cpp
+[ 91% 1495/1626] //system/core/libutils:libutils header-abi-dumper Unicode.cpp
+[ 92% 1496/1626] //system/libhidl:libhidlbase clang++ transport/ServiceManagement.cpp
+[ 92% 1497/1626] //system/core/libutils:libutils header-abi-dumper Tokenizer.cpp
+[ 92% 1498/1626] //system/core/libutils:libutils clang++ Threads.cpp
+[ 92% 1499/1626] //system/core/libutils:libutils clang++ misc.cpp
+[ 92% 1500/1626] //system/core/libutils:libutils header-abi-dumper String8.cpp
+[ 92% 1501/1626] //system/core/libutils:libutils clang++ VectorImpl.cpp
+[ 92% 1502/1626] //system/core/libutils:libutils clang++ Trace.cpp
+[ 92% 1503/1626] //system/core/libutils:libutils header-abi-dumper Threads.cpp
+[ 92% 1504/1626] //system/core/libutils:libutils header-abi-dumper Trace.cpp
+[ 92% 1505/1626] //system/core/libvndksupport:libvndksupport.llndk clang stub.c
+[ 92% 1506/1626] //system/core/libutils:libutils header-abi-dumper misc.cpp
+[ 92% 1507/1626] //system/core/libvndksupport:libvndksupport clang++ linker.cpp
+[ 92% 1508/1626] //system/core/libvndksupport:libvndksupport.llndk link libvndksupport.so
+[ 92% 1509/1626] //system/core/libvndksupport:libvndksupport link libvndksupport.so
+[ 92% 1510/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libvndksupport.so
+[ 92% 1511/1626] //system/core/libvndksupport:libvndksupport.llndk generate toc libvndksupport.so
+[ 92% 1512/1626] //hardware/libhardware:libhardware link libhardware.so
+[ 93% 1513/1626] //system/core/libutils:libutils header-abi-dumper VectorImpl.cpp
+[ 93% 1514/1626] //system/core/libvndksupport:libvndksupport strip libvndksupport.so
+[ 93% 1515/1626] //hardware/libhardware:libhardware strip libhardware.so
+[ 93% 1516/1626] //system/core/libvndksupport:libvndksupport generate toc libvndksupport.so
+[ 93% 1517/1626] //system/core/libvndksupport:libvndksupport header-abi-dumper linker.cpp
+[ 93% 1518/1626] //hardware/libhardware:libhardware header-abi-linker libhardware.so.lsdump
+[ 93% 1519/1626] //system/core/libvndksupport:libvndksupport header-abi-linker libvndksupport.so.lsdump
+[ 93% 1520/1626] //hardware/libhardware:libhardware link libhardware.so
+[ 93% 1521/1626] target Prebuilt: libhardware.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libhardware.vendor_intermediates/libhardware.vendor.so)
+[ 93% 1522/1626] target Prebuilt: libvndksupport (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libvndksupport_intermediates/libvndksupport.so)
+[ 93% 1523/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libhardware.so
+[ 93% 1524/1626] //system/core/libutils:libutils link libutils.so
+[ 93% 1525/1626] Install: out/target/product/RMX1901/system/lib64/libvndksupport.so
+[ 93% 1526/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libutils.so
+[ 93% 1527/1626] //hardware/libhardware:libhardware strip libhardware.so
+[ 93% 1528/1626] target Prebuilt: libhardware (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libhardware_intermediates/libhardware.so)
+[ 94% 1529/1626] Install: out/target/product/RMX1901/system/lib64/libhardware.so
+[ 94% 1530/1626] //system/core/libutils:libutils strip libutils.so
+[ 94% 1531/1626] target Prebuilt: libutils (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libutils_intermediates/libutils.so)
+[ 94% 1532/1626] Install: out/target/product/RMX1901/system/lib64/libutils.so
+[ 94% 1533/1626] //system/core/libutils:libutils clang++ Looper.cpp
+[ 94% 1534/1626] //system/core/libutils:libutils generate toc libutils.so
+[ 94% 1535/1626] //system/core/libutils:libutils header-abi-dumper String16.cpp
+[ 94% 1536/1626] //system/core/libutils:libutils link libutils.so
+[ 94% 1537/1626] //frameworks/native/libs/binder:libbinder link libbinder.so
+[ 94% 1538/1626] //system/core/libutils:libutils strip libutils.so
+[ 94% 1539/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libbinder.so
+[ 94% 1540/1626] //system/core/libutils:libutils generate toc libutils.so
+[ 94% 1541/1626] //frameworks/native/libs/binder:libbinder link libbinder.so
+[ 94% 1542/1626] //frameworks/native/libs/binder:libbinder strip libbinder.so
+[ 94% 1543/1626] target Prebuilt: libbinder (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libbinder_intermediates/libbinder.so)
+[ 94% 1544/1626] Install: out/target/product/RMX1901/system/lib64/libbinder.so
+[ 95% 1545/1626] //frameworks/native/libs/binder:libbinder generate toc libbinder.so
+[ 95% 1546/1626] //system/libhidl:libhidlbase header-abi-dumper android/hidl/base/1.0/BaseAll.cpp
+[ 95% 1547/1626] //frameworks/native/libs/binder:libbinder strip libbinder.so
+[ 95% 1548/1626] //frameworks/native/libs/binder:libbinder generate toc libbinder.so
+[ 95% 1549/1626] //system/core/libutils:libutils header-abi-dumper Looper.cpp
+[ 95% 1550/1626] //system/core/libutils:libutils header-abi-linker libutils.so.lsdump
+[ 95% 1551/1626] target Prebuilt: libutils.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libutils.vendor_intermediates/libutils.vendor.so)
+[ 95% 1552/1626] //system/libhidl:libhidlbase header-abi-dumper transport/ServiceManagement.cpp
+[ 95% 1553/1626] //system/libhidl:libhidlbase link libhidlbase.so
+[ 95% 1554/1626] //system/libhidl:libhidlbase link libhidlbase.so
+[ 95% 1555/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libhidlbase.so
+[ 95% 1556/1626] //system/libhidl:libhidlbase strip libhidlbase.so
+[ 95% 1557/1626] target Prebuilt: libhidlbase (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libhidlbase_intermediates/libhidlbase.so)
+[ 95% 1558/1626] //system/libhidl:libhidlbase strip libhidlbase.so
+[ 95% 1559/1626] Install: out/target/product/RMX1901/system/lib64/libhidlbase.so
+[ 95% 1560/1626] //system/libhidl:libhidlbase generate toc libhidlbase.so
+[ 96% 1561/1626] //system/libhidl:libhidlbase generate toc libhidlbase.so
+[ 96% 1562/1626] //system/libhidl/transport/memory/token/1.0:android.hidl.memory.token@1.0 link android.hidl.memory.token@1.0.so
+[ 96% 1563/1626] //system/libhidl/transport/allocator/1.0:android.hidl.allocator@1.0 link android.hidl.allocator@1.0.so
+[ 96% 1564/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 link android.system.suspend@1.0.so
+[ 96% 1565/1626] //system/libhidl/transport/memory/1.0:android.hidl.memory@1.0 link android.hidl.memory@1.0.so
+[ 96% 1566/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/android.hidl.allocator@1.0.so
+[ 96% 1567/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/android.hidl.memory.token@1.0.so
+[ 96% 1568/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/android.system.suspend@1.0.so
+[ 96% 1569/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/android.hidl.memory@1.0.so
+[ 96% 1570/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 link android.system.suspend@1.0.so
+[ 96% 1571/1626] //system/libhidl/transport/allocator/1.0:android.hidl.allocator@1.0 strip android.hidl.allocator@1.0.so
+[ 96% 1572/1626] //system/libhidl/transport/memory/token/1.0:android.hidl.memory.token@1.0 strip android.hidl.memory.token@1.0.so
+[ 96% 1573/1626] target Prebuilt: android.hidl.memory.token@1.0 (out/target/product/RMX1901/obj/SHARED_LIBRARIES/android.hidl.memory.token@1.0_intermediates/android.hidl.memory.token@1.0.so)
+[ 96% 1574/1626] target Prebuilt: android.hidl.allocator@1.0 (out/target/product/RMX1901/obj/SHARED_LIBRARIES/android.hidl.allocator@1.0_intermediates/android.hidl.allocator@1.0.so)
+[ 96% 1575/1626] Install: out/target/product/RMX1901/system/lib64/android.hidl.allocator@1.0.so
+[ 96% 1576/1626] Install: out/target/product/RMX1901/system/lib64/android.hidl.memory.token@1.0.so
+[ 96% 1577/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 strip android.system.suspend@1.0.so
+[ 97% 1578/1626] //system/libhidl/transport/memory/1.0:android.hidl.memory@1.0 strip android.hidl.memory@1.0.so
+[ 97% 1579/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 strip android.system.suspend@1.0.so
+[ 97% 1580/1626] target Prebuilt: android.system.suspend@1.0 (out/target/product/RMX1901/obj/SHARED_LIBRARIES/android.system.suspend@1.0_intermediates/android.system.suspend@1.0.so)
+[ 97% 1581/1626] target Prebuilt: android.hidl.memory@1.0 (out/target/product/RMX1901/obj/SHARED_LIBRARIES/android.hidl.memory@1.0_intermediates/android.hidl.memory@1.0.so)
+[ 97% 1582/1626] //system/libhidl/transport/memory/token/1.0:android.hidl.memory.token@1.0 generate toc android.hidl.memory.token@1.0.so
+[ 97% 1583/1626] Install: out/target/product/RMX1901/system/lib64/android.hidl.memory@1.0.so
+[ 97% 1584/1626] Install: out/target/product/RMX1901/system/lib64/android.system.suspend@1.0.so
+[ 97% 1585/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 generate toc android.system.suspend@1.0.so
+[ 97% 1586/1626] //system/libhidl/transport/memory/1.0:android.hidl.memory@1.0 generate toc android.hidl.memory@1.0.so
+[ 97% 1587/1626] //system/hardware/interfaces/suspend/1.0:android.system.suspend@1.0 generate toc android.system.suspend@1.0.so
+[ 97% 1588/1626] //system/libhidl/libhidlmemory:libhidlmemory link libhidlmemory.so
+[ 97% 1589/1626] //hardware/libhardware_legacy:libhardware_legacy link libhardware_legacy.so
+[ 97% 1590/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libhidlmemory.so
+[ 97% 1591/1626] //hardware/libhardware_legacy:libhardware_legacy link libhardware_legacy.so
+[ 97% 1592/1626] //system/libhidl:libhidlbase header-abi-linker libhidlbase.so.lsdump
+[ 97% 1593/1626] Copy: out/target/product/RMX1901/symbols/system/lib64/libhardware_legacy.so
+[ 98% 1594/1626] target Prebuilt: libhidlbase.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libhidlbase.vendor_intermediates/libhidlbase.vendor.so)
+[ 98% 1595/1626] //system/libhidl/libhidlmemory:libhidlmemory strip libhidlmemory.so
+[ 98% 1596/1626] //hardware/libhardware_legacy:libhardware_legacy strip libhardware_legacy.so
+[ 98% 1597/1626] target Prebuilt: libhidlmemory (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libhidlmemory_intermediates/libhidlmemory.so)
+[ 98% 1598/1626] Install: out/target/product/RMX1901/system/lib64/libhidlmemory.so
+[ 98% 1599/1626] //hardware/libhardware_legacy:libhardware_legacy strip libhardware_legacy.so
+[ 98% 1600/1626] //hardware/libhardware_legacy:libhardware_legacy header-abi-linker libhardware_legacy.so.lsdump
+[ 98% 1601/1626] target Prebuilt: libhardware_legacy (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libhardware_legacy_intermediates/libhardware_legacy.so)
+[ 98% 1602/1626] Install: out/target/product/RMX1901/system/lib64/libhardware_legacy.so
+[ 98% 1603/1626] Check prebuilt ELF binary: vendor/realme/RMX1901/proprietary/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+[ 98% 1604/1626] target Prebuilt: com.qualcomm.qti.dpm.api@1.0 (out/target/product/RMX1901/obj/SHARED_LIBRARIES/com.qualcomm.qti.dpm.api@1.0_intermediates/com.qualcomm.qti.dpm.api@1.0.so)
+[ 98% 1605/1626] Install: out/target/product/RMX1901/system/system_ext/lib64/com.qualcomm.qti.dpm.api@1.0.so
+[ 98% 1606/1626] Copy: out/target/product/RMX1901/obj/SHARED_LIBRARIES/com.qualcomm.qti.dpm.api@1.0_intermediates/com.qualcomm.qti.dpm.api@1.0.so.toc
+[ 98% 1607/1626] Checking VNDK vendor variant:  out/soong/.intermediates/hardware/libhardware_legacy/libhardware_legacy/android_vendor.30_arm64_armv8-2a_shared/libhardware_legacy.so
+[ 98% 1608/1626] Check prebuilt ELF binary: vendor/realme/RMX1901/proprietary/system_ext/lib64/vendor.qti.diaghal@1.0.so
+[ 98% 1609/1626] target Prebuilt: libhardware_legacy.vendor (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libhardware_legacy.vendor_intermediates/libhardware_legacy.vendor.so)
+[ 99% 1610/1626] target Prebuilt: vendor.qti.diaghal@1.0 (out/target/product/RMX1901/obj/SHARED_LIBRARIES/vendor.qti.diaghal@1.0_intermediates/vendor.qti.diaghal@1.0.so)
+[ 99% 1611/1626] Install: out/target/product/RMX1901/system/system_ext/lib64/vendor.qti.diaghal@1.0.so
+[ 99% 1612/1626] Copy: out/target/product/RMX1901/obj/SHARED_LIBRARIES/vendor.qti.diaghal@1.0_intermediates/vendor.qti.diaghal@1.0.so.toc
+[ 99% 1613/1626] Check prebuilt ELF binary: out/soong/.intermediates/vendor/realme/RMX1901/dpmQmiMgr/android_vendor.30_arm64_armv8-2a/dpmQmiMgr
+[ 99% 1614/1626] Check prebuilt ELF binary: vendor/realme/RMX1901/proprietary/system_ext/lib64/libdiag_system.so
+[ 99% 1615/1626] target Prebuilt: libdiag_system (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdiag_system_intermediates/libdiag_system.so)
+[ 99% 1616/1626] target Prebuilt: dpmQmiMgr (out/target/product/RMX1901/obj/EXECUTABLES/dpmQmiMgr_intermediates/dpmQmiMgr)
+[ 99% 1617/1626] Install: out/target/product/RMX1901/system/system_ext/lib64/libdiag_system.so
+[ 99% 1618/1626] Copy: out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdiag_system_intermediates/libdiag_system.so.toc
+[ 99% 1619/1626] Install: out/target/product/RMX1901/vendor/bin/dpmQmiMgr
+[ 99% 1620/1626] Check prebuilt ELF binary: vendor/realme/RMX1901/proprietary/system_ext/lib64/libdpmframework.so
+[ 99% 1621/1626] target Prebuilt: libdpmframework (out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdpmframework_intermediates/libdpmframework.so)
+[ 99% 1622/1626] Install: out/target/product/RMX1901/system/system_ext/lib64/libdpmframework.so
+[ 99% 1623/1626] Copy: out/target/product/RMX1901/obj/SHARED_LIBRARIES/libdpmframework_intermediates/libdpmframework.so.toc
+[ 99% 1624/1626] Check prebuilt ELF binary: out/soong/.intermediates/vendor/realme/RMX1901/dpmd/android_arm64_armv8-2a/dpmd
+[ 99% 1625/1626] target Prebuilt: dpmd (out/target/product/RMX1901/obj/EXECUTABLES/dpmd_intermediates/dpmd)
+[100% 1626/1626] Install: out/target/product/RMX1901/system/system_ext/bin/dpmd
+
+#### build completed successfully (03:24 (mm:ss)) ####

@@ -1,0 +1,23 @@
+[Unit]
+Description=RMX1901 M1 root control-plane capture health gate
+Documentation=file:/usr/local/share/doc/rmx1901-m1-control/README
+After=local-fs.target
+
+[Service]
+Type=oneshot
+User=root
+Group=root
+Environment=PATH=/usr/bin:/bin
+Environment=HOME=/nonexistent
+Environment=LANG=C
+Environment=LC_ALL=C
+UnsetEnvironment=BASH_ENV ENV LD_PRELOAD LD_LIBRARY_PATH PYTHONHOME PYTHONPATH
+NoNewPrivileges=yes
+PrivateTmp=yes
+ProtectHome=yes
+ProtectSystem=strict
+ReadWritePaths=/var/lib/rmx1901-m1-control
+ExecStart=/usr/bin/env -i PATH=/usr/bin:/bin HOME=/nonexistent LANG=C LC_ALL=C /usr/local/libexec/rmx1901-m1-control/capture-witness --health
+
+[Install]
+WantedBy=multi-user.target

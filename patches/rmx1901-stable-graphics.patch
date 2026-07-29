@@ -1,0 +1,118 @@
+--- a/init
++++ b/init
+@@ -356,0 +357,2 @@
++cp /compat/systemd249/systemd-logind249 "${rootmnt}/userdata/systemd249/systemd-logind"
++cp /compat/systemd249/rmx1901-touch-bridge.py "${rootmnt}/userdata/systemd249/rmx1901-touch-bridge.py"
+@@ -364,0 +367,2 @@
++    "${rootmnt}/userdata/systemd249/systemd-logind" \
++    "${rootmnt}/userdata/systemd249/rmx1901-touch-bridge.py" \
+@@ -370,0 +375,29 @@
++
++# Start phablet's user manager before LightDM and expose its bus explicitly.
++# A matching systemd 249 logind still creates the real seat0/Mir PAM session.
++var_systemd_dir="${rootmnt}/var/lib/systemd"
++var_systemd_save=/tmp/rmx1901-var-lib-systemd
++rm -rf "$var_systemd_save"
++mkdir -p "$var_systemd_save"
++cp -a "$var_systemd_dir"/. "$var_systemd_save"/
++mount -t tmpfs -o mode=755 tmpfs "$var_systemd_dir" || panic "RMX1901 var/lib/systemd tmpfs mount failed"
++cp -a "$var_systemd_save"/. "$var_systemd_dir"/
++rm -rf "${rootmnt}/userdata/rmx1901-linger"
++mkdir -p "${rootmnt}/userdata/rmx1901-linger" "$var_systemd_dir/linger"
++touch "${rootmnt}/userdata/rmx1901-linger/phablet"
++mount -n -o bind "${rootmnt}/userdata/rmx1901-linger" "$var_systemd_dir/linger" || panic "RMX1901 phablet linger bind failed"
++{
++    IFS= read -r first_line
++    printf '%s\n' "$first_line"
++    cat <<'EOF'
++if [ "$(id -u)" = 32011 ]; then
++    export XDG_RUNTIME_DIR=/run/user/32011
++    export DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/32011/bus
++    export HYBRIS_LD_LIBRARY_PATH=/vendor/lib64/hw:/vendor/lib64/egl:/vendor/lib64:/system/lib64
++fi
++EOF
++    cat
++} <"${rootmnt}/usr/sbin/ubuntu-touch-lightdm-session" >"${rootmnt}/userdata/systemd249/ubuntu-touch-lightdm-session"
++chmod 0755 "${rootmnt}/userdata/systemd249/ubuntu-touch-lightdm-session"
++mount -n -o bind "${rootmnt}/userdata/systemd249/ubuntu-touch-lightdm-session" "${rootmnt}/usr/sbin/ubuntu-touch-lightdm-session" || panic "RMX1901 LightDM session environment bind failed"
++
+@@ -379,0 +413 @@
++    [ ! -e /dev/hwbinder ] || chmod 0666 /dev/hwbinder
+@@ -385 +419 @@
+-                ls -l /dev/ion /dev/kgsl-3d0
++                ls -l /dev/ion /dev/kgsl-3d0 /dev/hwbinder
+@@ -397 +431 @@
+-    ls -l /dev/ion /dev/kgsl-3d0 2>&1 || true
++    ls -l /dev/ion /dev/kgsl-3d0 /dev/hwbinder 2>&1 || true
+@@ -425,0 +460,22 @@
++
++cat >"${rootmnt}/userdata/systemd249/rmx1901-wait-user-bus.sh" <<'EOF'
++#!/bin/sh
++set -u
++log=/run/rmxcache/user-session-ready.log
++mkdir -p "$(dirname "$log")"
++i=0
++while [ "$i" -lt 100 ]; do
++    if [ -S /run/user/32011/bus ] && \
++       /usr/sbin/runuser -u phablet -- env \
++           XDG_RUNTIME_DIR=/run/user/32011 \
++           DBUS_SESSION_BUS_ADDRESS=unix:path=/run/user/32011/bus \
++           /usr/bin/systemctl --user list-units >/dev/null 2>&1; then
++        echo "phablet user bus ready after ${i}00ms" >"$log"
++        exit 0
++    fi
++    i=$((i + 1))
++    sleep 0.1
++done
++echo "phablet user bus readiness timeout" >"$log"
++exit 1
++EOF
+@@ -428 +484,2 @@
+-    "${rootmnt}/userdata/systemd249/rmx1901-wait-graphics-hal.sh"
++    "${rootmnt}/userdata/systemd249/rmx1901-wait-graphics-hal.sh" \
++    "${rootmnt}/userdata/systemd249/rmx1901-wait-user-bus.sh"
+@@ -492,0 +550,30 @@
++
++cat >"${rootmnt}/etc/systemd/system/rmx1901-touch-bridge.service" <<'EOF'
++[Unit]
++Description=Normalize RMX1901 touchpanel events for Lomiri
++After=systemd-udevd.service systemd-udev-trigger.service
++Before=lightdm.service
++
++[Service]
++Type=notify
++NotifyAccess=main
++TimeoutStartSec=30
++ExecStart=/usr/bin/python3 /userdata/systemd249/rmx1901-touch-bridge.py
++Restart=on-failure
++RestartSec=1
++EOF
++
++
++cat >"${rootmnt}/etc/systemd/system/rmx1901-user-session-ready.service" <<'EOF'
++[Unit]
++Description=Prepare phablet user manager and session bus for LightDM
++Requires=user-runtime-dir@32011.service user@32011.service
++After=systemd-user-sessions.service user-runtime-dir@32011.service user@32011.service
++Before=lightdm.service
++
++[Service]
++Type=oneshot
++ExecStart=/userdata/systemd249/rmx1901-wait-user-bus.sh
++RemainAfterExit=yes
++EOF
++
+@@ -496,0 +584 @@
++KERNEL=="hwbinder", MODE="0666"
+@@ -502,2 +590,2 @@
+-Requires=rmx1901-graphics-hal-ready.service
+-After=rmx1901-graphics-hal-ready.service
++Requires=rmx1901-graphics-hal-ready.service rmx1901-user-session-ready.service rmx1901-touch-bridge.service
++After=rmx1901-graphics-hal-ready.service rmx1901-user-session-ready.service rmx1901-touch-bridge.service
+@@ -512,0 +601 @@
++mount -n -o bind "${rootmnt}/userdata/systemd249/systemd-logind" "${rootmnt}/usr/lib/systemd/systemd-logind" || panic "RMX1901 systemd-logind 249 bind failed"
+--- a/compat/systemd249/apply-vendor-compat.sh
++++ b/compat/systemd249/apply-vendor-compat.sh
+@@ -77 +77 @@
+-    libhwc2on1adapter.so libsdmcore.so libEGL_adreno.so
++    libhwc2on1adapter.so libsdmcore.so libsdedrm.so libEGL_adreno.so

@@ -1,0 +1,13 @@
+{
+  "schema": "rmx1901-m1-deployment-v1",
+  "device": "RMX1901",
+  "serial": "7b0c1c49",
+  "product": "fox_RMX1901",
+  "model": "RMX1901",
+  "target": "/dev/block/sde10",
+  "target_size": 67108864,
+  "target_major_minor": "8:4a",
+  "predecessor_sha256": "c4d2b165855f6ec65fb1f606a349192fe254f9e98ad7d4c34d370bcbef08672f",
+  "candidate_sha256": "58abf0069b3c37f01779543932a2eee3bc894282778566d1a4f2b77c5e667aec",
+  "candidate_size": 67108864
+}

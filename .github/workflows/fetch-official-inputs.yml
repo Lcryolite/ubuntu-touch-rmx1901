@@ -1,0 +1,61 @@
+name: Fetch pinned-channel official UBports inputs
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  fetch:
+    runs-on: ubuntu-24.04
+    timeout-minutes: 60
+    env:
+      ROOTFS_URL: https://ci.ubports.com/job/ubuntu-touch-rootfs/job/ubports%252F24.04-1.x/lastSuccessfulBuild/artifact/ubuntu-touch-android9plus-rootfs-arm64.tar.gz
+      GENERIC_URL: https://ci.ubports.com/job/UBportsCommunityPortsJenkinsCI/job/ubports%252Fporting%252Fcommunity-ports%252Fjenkins-ci%252Fgeneric_arm64/job/halium-11.0/lastSuccessfulBuild/artifact/halium_halium_arm64.tar.xz
+    steps:
+      - name: Download official inputs and verify archive structure
+        shell: bash
+        run: |
+          set -euo pipefail
+          mkdir -p official-inputs
+          curl --fail --location --retry 5 --retry-all-errors \
+            --connect-timeout 20 --output official-inputs/ubuntu-touch-rootfs-arm64.tar.gz \
+            "$ROOTFS_URL"
+          curl --fail --location --retry 5 --retry-all-errors \
+            --connect-timeout 20 --output official-inputs/halium-11.0-arm64.tar.xz \
+            "$GENERIC_URL"
+          gzip --test official-inputs/ubuntu-touch-rootfs-arm64.tar.gz
+          xz --test official-inputs/halium-11.0-arm64.tar.xz
+          tar -tzf official-inputs/ubuntu-touch-rootfs-arm64.tar.gz >/dev/null
+          tar -tJf official-inputs/halium-11.0-arm64.tar.xz >/dev/null
+          printf '%s\n' "$ROOTFS_URL" >official-inputs/rootfs.source-url
+          printf '%s\n' "$GENERIC_URL" >official-inputs/halium-generic.source-url
+          sha256sum \
+            official-inputs/ubuntu-touch-rootfs-arm64.tar.gz \
+            official-inputs/halium-11.0-arm64.tar.xz \
+            >official-inputs/SHA256SUMS
+          stat --format='%n %s bytes' official-inputs/*
+          cat official-inputs/SHA256SUMS
+
+      - name: Upload rootfs transfer artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ubports-24.04-1.x-rootfs-arm64
+          path: |
+            official-inputs/ubuntu-touch-rootfs-arm64.tar.gz
+            official-inputs/rootfs.source-url
+            official-inputs/SHA256SUMS
+          compression-level: 0
+          retention-days: 1
+
+      - name: Upload Halium 11 generic transfer artifact
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: ubports-halium-11.0-generic-arm64
+          path: |
+            official-inputs/halium-11.0-arm64.tar.xz
+            official-inputs/halium-generic.source-url
+            official-inputs/SHA256SUMS
+          compression-level: 0
+          retention-days: 1

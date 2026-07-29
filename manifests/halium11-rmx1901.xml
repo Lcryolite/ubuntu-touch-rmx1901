@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="https://github.com/" />
+  <remove-project path="art" optional="true" />
+  <remove-project path="bionic" optional="true" />
+  <remove-project path="build/make" optional="true" />
+  <remove-project path="build/soong" optional="true" />
+  <remove-project path="device/lineage/sepolicy" optional="true" />
+  <remove-project path="external/e2fsprogs" optional="true" />
+  <remove-project path="external/libcxx" optional="true" />
+  <remove-project path="frameworks/av" optional="true" />
+  <remove-project path="frameworks/base" optional="true" />
+  <remove-project path="frameworks/native" optional="true" />
+  <remove-project path="hardware/libhardware" optional="true" />
+  <remove-project path="system/core" optional="true" />
+  <remove-project path="system/hwservicemanager" optional="true" />
+  <remove-project path="system/libhwbinder" optional="true" />
+  <remove-project path="system/linkerconfig" optional="true" />
+  <remove-project path="system/vold" optional="true" />
+  <extend-project name="Halium/hybris-patches" path="hybris-patches" revision="0b07bd1d2f0a8468b2b101bddfc9c4cba14edde0" />
+  <project name="Lcryolite/android_art" path="art" remote="github" revision="70edec040ae3fcee67de5f497614f7110a195fb3" groups="pdk" />
+  <project name="Lcryolite/android_bionic" path="bionic" remote="github" revision="f0abd0b66ae263d4b12018a285c5c447e1150d48" groups="pdk" />
+  <project name="Lcryolite/android_build" path="build/make" remote="github" revision="7a4350d43dacffa104d0e870d49748d4ef5c77da" groups="pdk">
+    <copyfile src="core/root.mk" dest="Makefile" />
+    <linkfile src="CleanSpec.mk" dest="build/CleanSpec.mk" />
+    <linkfile src="buildspec.mk.default" dest="build/buildspec.mk.default" />
+    <linkfile src="core" dest="build/core" />
+    <linkfile src="envsetup.sh" dest="build/envsetup.sh" />
+    <linkfile src="target" dest="build/target" />
+    <linkfile src="tools" dest="build/tools" />
+  </project>
+  <project name="Lcryolite/android_build_soong" path="build/soong" remote="github" revision="a1d78590189fe5c8edd6c0c690b983d0acc8dbf7" groups="pdk,tradefed">
+    <linkfile src="root.bp" dest="Android.bp" />
+    <linkfile src="bootstrap.bash" dest="bootstrap.bash" />
+  </project>
+  <project name="Lcryolite/android_device_lineage_sepolicy" path="device/lineage/sepolicy" remote="github" revision="04ab50816e0ab9ae7ed5aa094c70e276e1175479" />
+  <project name="Lcryolite/device_realme_RMX1901" path="device/realme/RMX1901" remote="github" revision="1649abb8287047df96c10a1bd9d31b80214570d9" />
+  <project name="Lcryolite/android_external_e2fsprogs" path="external/e2fsprogs" remote="github" revision="c03900b3f7247981f4f0e768cfd5bdf288964143" groups="pdk" />
+  <project name="Lcryolite/android_external_libcxx" path="external/libcxx" remote="github" revision="17c9d2048cf121a25b75e0117332261a9dec9f24" groups="pdk" />
+  <project name="Lcryolite/android_frameworks_av" path="frameworks/av" remote="github" revision="d386f41c90b53de58db814f3afdce48acae649af" groups="pdk" />
+  <project name="Lcryolite/android_frameworks_base" path="frameworks/base" remote="github" revision="d46b623b60d9dcf1496b0e131433d92f09853c89" groups="pdk-cw-fs,pdk-fs" />
+  <project name="Lcryolite/android_frameworks_native" path="frameworks/native" remote="github" revision="3804c142675cdc6fb3c7dbfc3df907433881bfcf" groups="pdk" />
+  <project name="Lcryolite/halium-boot" path="halium/halium-boot" remote="github" revision="9295810bfdde5b50eaf38bbd9b4a7ea4de7ace10" />
+  <project name="Lcryolite/android_hardware_libhardware" path="hardware/libhardware" remote="github" revision="9ac5435fac5e2a607909f73813bb9693896af0f4" groups="pdk" />
+  <project name="Lcryolite/kernel_realme_sdm710_ubuntu_touch" path="kernel/realme/sdm710" remote="github" revision="a0b817e2e6929cc7e60feeba0f271dd07e7bfa01" />
+  <project name="Lcryolite/android_system_core" path="system/core" remote="github" revision="2aedd07dfd2c6321b87b37d3ec3911f9d626c155" groups="pdk" />
+  <project name="Lcryolite/android_system_hwservicemanager" path="system/hwservicemanager" remote="github" revision="9160d7ccf6cbf82bf217fb439dbb477cc6dd0c5b" groups="pdk" />
+  <project name="Lcryolite/android_system_libhwbinder" path="system/libhwbinder" remote="github" revision="e161180057bc9f838f0219d85feadc09b7a97ed0" groups="pdk" />
+  <project name="Lcryolite/android_system_linkerconfig" path="system/linkerconfig" remote="github" revision="37321b97a57bf25bb6691c9489949b72ed7cbfd1" groups="pdk" />
+  <project name="Lcryolite/android_system_vold" path="system/vold" remote="github" revision="48a323c23fd3d722005ac01390df09e5a47d536c" groups="pdk" />
+  <project name="Lcryolite/1vendor_realme_RMX1901" path="vendor/realme/RMX1901" remote="github" revision="1de6c5364d6ac44ae205276bc43c425a6ee946e5" />
+</manifest>

@@ -1,0 +1,49 @@
+# path	modules	action
+system/framework/WfdCommon.jar	WfdCommon	filter package and boot jar
+system_ext/bin/wfdservice	wfdservice	filter package
+system_ext/etc/init/wfdservice.rc	COPY_FILE	filter copy file
+system_ext/etc/permissions/wfd-system-ext-privapp-permissions-qti.xml	COPY_FILE	filter copy file
+system_ext/etc/seccomp_policy/wfdservice.policy	COPY_FILE	filter copy file
+system_ext/etc/wfdconfigsink.xml	COPY_FILE	filter copy file
+system_ext/lib/libmmosal.so	libmmosal	filter package
+system_ext/lib/libmmparser_lite.so	libmmparser_lite	filter package
+system_ext/lib/libmmrtpdecoder.so	libmmrtpdecoder	filter package
+system_ext/lib/libmmrtpencoder.so	libmmrtpencoder	filter package
+system_ext/lib/libwfdavenhancements.so	libwfdavenhancements	filter package
+system_ext/lib/libwfdclient.so	libwfdclient	filter package
+system_ext/lib/libwfdcommonutils.so	libwfdcommonutils	filter package
+system_ext/lib/libwfdconfigutils.so	libwfdconfigutils	filter package
+system_ext/lib/libwfddisplayconfig.so	libwfddisplayconfig	filter package
+system_ext/lib/libwfdmminterface.so	libwfdmminterface	filter package
+system_ext/lib/libwfdmmsink.so	libwfdmmsink	filter package
+system_ext/lib/libwfdmmsrc_system.so	libwfdmmsrc_system	filter package
+system_ext/lib/libwfdrtsp.so	libwfdrtsp	filter package
+system_ext/lib/libwfdservice.so	libwfdservice	filter package
+system_ext/lib/libwfdsinksm.so	libwfdsinksm	filter package
+system_ext/lib/libwfduibcinterface.so	libwfduibcinterface	filter package
+system_ext/lib/libwfduibcsink.so	libwfduibcsink	filter package
+system_ext/lib/libwfduibcsinkinterface.so	libwfduibcsinkinterface	filter package
+system_ext/lib/libwfduibcsrc.so	libwfduibcsrc	filter package
+system_ext/lib/libwfduibcsrcinterface.so	libwfduibcsrcinterface	filter package
+system_ext/lib/vendor.qti.hardware.wifidisplaysession@1.0.so	vendor.qti.hardware.wifidisplaysession@1.0	filter package
+system_ext/lib/vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk.so	vendor.qti.hardware.wifidisplaysession_aidl-V1-ndk	filter package
+system_ext/lib64/libwfdnative.so	libwfdnative,system_ext_priv-app_WfdService_lib_arm64_libwfdnative_so	filter package and JNI install helper
+system_ext/lib64/libmmosal.so	libmmosal	filter package
+system_ext/lib64/libmmparser_lite.so	libmmparser_lite	filter package
+system_ext/lib64/libmmrtpdecoder.so	libmmrtpdecoder	filter package
+system_ext/lib64/libmmrtpencoder.so	libmmrtpencoder	filter package
+system_ext/lib64/libwfdclient.so	libwfdclient	filter package
+system_ext/lib64/libwfdcommonutils.so	libwfdcommonutils	filter package
+system_ext/lib64/libwfdconfigutils.so	libwfdconfigutils	filter package
+system_ext/lib64/libwfddisplayconfig.so	libwfddisplayconfig	filter package
+system_ext/lib64/libwfdmminterface.so	libwfdmminterface	filter package
+system_ext/lib64/libwfdmmsink.so	libwfdmmsink	filter package
+system_ext/lib64/libwfdrtsp.so	libwfdrtsp	filter package
+system_ext/lib64/libwfdsinksm.so	libwfdsinksm	filter package
+system_ext/lib64/libwfduibcinterface.so	libwfduibcinterface	filter package
+system_ext/lib64/libwfduibcsink.so	libwfduibcsink	filter package
+system_ext/lib64/libwfduibcsinkinterface.so	libwfduibcsinkinterface	filter package
+system_ext/lib64/libwfduibcsrc.so	libwfduibcsrc	filter package
+system_ext/lib64/libwfduibcsrcinterface.so	libwfduibcsrcinterface	filter package
+system_ext/lib64/vendor.qti.hardware.wifidisplaysession@1.0.so	vendor.qti.hardware.wifidisplaysession@1.0	filter package
+system_ext/priv-app/WfdService/WfdService.apk	WfdService	filter package

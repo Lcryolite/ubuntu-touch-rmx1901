@@ -1,0 +1,17 @@
+In file included from build/make/core/config.mk:291:
+In file included from build/make/core/envsetup.mk:266:
+[1mbuild/make/core/product_config.mk:155: [31merror: [0m[1mCan not locate config makefile for product "halium_RMX1901".[0m
+22:50:25 dumpvars failed with: exit status 1
+Device RMX1901 not found. Attempting to retrieve device repository from LineageOS Github (http://github.com/LineageOS).
+Repository for RMX1901 not found in the LineageOS Github repository list. If this is in error, you may need to manually add it to your local_manifests/roomservice.xml.
+In file included from build/make/core/config.mk:291:
+In file included from build/make/core/envsetup.mk:266:
+[1mbuild/make/core/product_config.mk:155: [31merror: [0m[1mCan not locate config makefile for product "halium_RMX1901".[0m
+22:50:26 dumpvars failed with: exit status 1
+In file included from build/make/core/config.mk:291:
+In file included from build/make/core/envsetup.mk:266:
+[1mbuild/make/core/product_config.mk:155: [31merror: [0m[1mCan not locate config makefile for product "halium_RMX1901".[0m
+22:50:26 dumpvars failed with: exit status 1
+
+** Don't have a product spec for: 'halium_RMX1901'
+** Do you have the right repo manifest?

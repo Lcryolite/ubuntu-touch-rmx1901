@@ -1,0 +1,7 @@
+{
+  "schema": "rmx1901-m1-predecessor-v1",
+  "device": "RMX1901",
+  "boot_partition_size": 67108864,
+  "boot_sha256": "f17927eb626b574fc473896879450e740db9271cdca206c7dadd64050ddff016",
+  "kernel_payload_sha256": "669a926e34e3fc67e4d294c16bde2a34fc222919960f85d50ad6a567f3a2de8b"
+}

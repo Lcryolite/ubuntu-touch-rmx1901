@@ -1,0 +1,4 @@
+ls_remote=d46b623b60d9dcf1496b0e131433d92f09853c89
+verify_dir=/var/tmp/frameworks-base-remote-verify.prVswB
+fresh_head=d46b623b60d9dcf1496b0e131433d92f09853c89
+fresh_tree=7961e45d94b8859066be3f1f03b4f95bf10d93e3

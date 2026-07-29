@@ -1,0 +1,53 @@
+01:57:31 ************************************************************
+01:57:31 You are building on a machine with 15.2GB of RAM
+01:57:31
+01:57:31 The minimum required amount of free memory is around 16GB,
+01:57:31 and even with that, some configurations may not work.
+01:57:31
+01:57:31 If you run into segfaults or other errors, try reducing your
+01:57:31 -j value.
+01:57:31 ************************************************************
+============================================
+PLATFORM_VERSION_CODENAME=REL
+PLATFORM_VERSION=11
+TARGET_PRODUCT=halium_RMX1901
+TARGET_BUILD_VARIANT=userdebug
+TARGET_BUILD_TYPE=release
+TARGET_ARCH=arm64
+TARGET_ARCH_VARIANT=armv8-2a
+TARGET_CPU_VARIANT=generic
+TARGET_2ND_ARCH=arm
+TARGET_2ND_ARCH_VARIANT=armv8-a
+TARGET_2ND_CPU_VARIANT=generic
+HOST_ARCH=x86_64
+HOST_2ND_ARCH=x86
+HOST_OS=linux
+HOST_OS_EXTRA=Linux-7.1.3-2-cachyos-x86_64-CachyOS
+HOST_CROSS_OS=windows
+HOST_CROSS_ARCH=x86
+HOST_CROSS_2ND_ARCH=x86_64
+HOST_BUILD_TYPE=release
+BUILD_ID=RQ3A.211001.001
+OUT_DIR=out
+PRODUCT_SOONG_NAMESPACES=vendor/realme/RMX1901 device/realme/RMX1901 vendor/qcom/opensource/usb/etc hardware/qcom-caf/sdm845 hardware/google/interfaces hardware/google/pixel/pixelstats hardware/google/pixel/power-libperfmgr hardware/qcom-caf/common/libqti-perfd-client hardware/nxp hardware/qcom-caf/sdm845 vendor/qcom/opensource/commonsys-intf/display vendor/qcom/opensource/data-ipa-cfg-mgr vendor/qcom/opensource/dataservices packages/apps/Bluetooth
+============================================
+ninja: no work to do.
+ninja: no work to do.
+No need to regenerate ninja file
+No need to regenerate ninja file
+No need to regenerate ninja file
+Starting ninja...
+[  8% 1/12] Install: out/target/product/RMX1901/vendor/lib/libGLESv2_adreno.so
+[ 16% 2/12] Install: out/target/product/RMX1901/vendor/lib64/libEGL_adreno.so
+[ 25% 3/12] Install: out/target/product/RMX1901/vendor/firmware/wlan/qca_cld/WCNSS_qcom_cfg.ini
+[ 33% 4/12] Install: out/target/product/RMX1901/vendor/lib/libstdc++_vendor.so
+[ 41% 5/12] Install: out/target/product/RMX1901/system/system_ext/priv-app/ims/lib/arm64/libimsmedia_jni.so
+[ 50% 6/12] Install: out/target/product/RMX1901/vendor/firmware/wlan/qca_cld/wlan_mac.bin
+[ 58% 7/12] Install: out/target/product/RMX1901/vendor/lib64/libGLESv2_adreno.so
+[ 66% 8/12] Install: out/target/product/RMX1901/vendor/lib64/libq3dtools_adreno.so
+[ 75% 9/12] Install: out/target/product/RMX1901/vendor/lib/libEGL_adreno.so
+[ 83% 10/12] Install: out/target/product/RMX1901/system/system_ext/priv-app/WfdService/lib/arm64/libwfdnative.so
+[ 91% 11/12] Install: out/target/product/RMX1901/vendor/lib/libq3dtools_adreno.so
+[100% 12/12] Install: out/target/product/RMX1901/system/system_ext/priv-app/ims/lib/arm64/libimscamera_jni.so
+
+#### build completed successfully (4 seconds) ####
