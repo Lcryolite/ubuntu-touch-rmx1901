@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-limit="${RMX1901_BUILD_JOBS:-16}"
+limit="${RMX1901_BUILD_JOBS:-4}"
 [[ "$limit" =~ ^[1-9][0-9]*$ ]] || {
   printf 'RMX1901_BUILD_JOBS must be a positive integer\n' >&2
   exit 2

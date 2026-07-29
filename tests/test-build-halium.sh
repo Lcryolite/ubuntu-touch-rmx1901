@@ -240,13 +240,13 @@ LD_LIBRARY_PATH=/untrusted/caller/lib ALLOW_NINJA_ENV=true \
 expected_calls="$tmp_root/expected-calls.txt"
 printf '%s\n' \
   'lunch:halium_RMX1901-userdebug' \
-  'm:-j16 halium-boot systemimage' \
+  'm:-j4 halium-boot systemimage' \
   'USE_CCACHE:1' \
   'CCACHE_EXEC:/usr/bin/ccache' \
   'CCACHE_DIRECT:true' \
   "CCACHE_TEMPDIR:$tmp_root/non-source nvme/ccache tmp" \
   "TMPDIR:$tmp_root/non-source nvme/build tmp" \
-  'NINJA_ARGS:-l20' \
+  'NINJA_ARGS:-l6' \
   "LD_LIBRARY_PATH:$host_compat_lib" \
   'ALLOW_NINJA_ENV:' >"$expected_calls"
 if ! head -n 10 "$calls" | cmp "$expected_calls" -; then
@@ -278,7 +278,7 @@ HALIUM_BUILD_SCOPE=safe-boot-only CCACHE_TEMPDIR="$tmp_root/safe ccache" \
 test "$(sed -n '1p' "$lifecycle")" = m
 test "$(sed -n '2p' "$lifecycle")" = \
   "verify:$fake_halium/out/target/product/RMX1901/halium-boot.img"
-grep -Fx 'm:-j16 halium-boot' "$calls" >/dev/null
+grep -Fx 'm:-j4 halium-boot' "$calls" >/dev/null
 if grep -Fq systemimage "$calls"; then
   echo 'safe-boot-only requested systemimage' >&2
   exit 1

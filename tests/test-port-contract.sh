@@ -72,7 +72,7 @@ grep -Fq "test -z \"\$(git -C \"\$destination\" status --porcelain --untracked-f
   "$repo_root/build.sh"
 grep -Fq 'expected_tools_url=' "$repo_root/scripts/verify-source-pins.sh"
 grep -Fq 'status --porcelain --untracked-files=all' "$repo_root/scripts/verify-source-pins.sh"
-test "$(PATH="$repo_root/scripts/build-tools:$PATH" nproc --all)" -le 16
+test "$(PATH="$repo_root/scripts/build-tools:$PATH" nproc --all)" -le 4
 test "$(RMX1901_BUILD_JOBS=12 PATH="$repo_root/scripts/build-tools:$PATH" nproc --all)" -le 12
 grep -Fq 'scripts/build-tools' "$repo_root/build.sh"
 grep -Fq 'https://ci.ubports.com/job/ubuntu-touch-rootfs/job/ubports%252F24.04-1.x/lastSuccessfulBuild/artifact/ubuntu-touch-android9plus-rootfs-arm64.tar.gz' \

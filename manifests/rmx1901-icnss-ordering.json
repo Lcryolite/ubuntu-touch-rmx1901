@@ -1,0 +1,95 @@
+{
+  "schema": "rmx1901-icnss-ordering-v1",
+  "status": "source-proven",
+  "conclusion": {
+    "pre_hal_gate": "Require the ICNSS platform device and /dev/wlan control node, but do not require REGISTER_DRIVER, FW_READY, driver probe, wlan0, or PHY counters before a client invokes IWifi.start().",
+    "trigger": "A client call to android.hardware.wifi@1.0::IWifi.start, not HIDL service registration alone, begins the driver-load chain.",
+    "post_trigger_gate": "After exactly one accepted IWifi.start call, require the /dev/wlan ON write, ICNSS REGISTER_DRIVER posted/processed, WLFW/FW_READY progress, successful qcacld probe, and a real WLAN interface within the bounded P5 window.",
+    "fw_ready_order": "ICNSS accepts either order: REGISTER_DRIVER stores ops and waits when firmware is not ready; FW_READY later calls probe. If FW_READY exists first, REGISTER_DRIVER calls probe immediately."
+  },
+  "call_chain": [
+    {
+      "step": 1,
+      "symbol": "Wifi::startInternal",
+      "path": "hardware/interfaces/wifi/1.4/default/wifi.cpp",
+      "effect": "Calls initializeModeControllerAndLegacyHal."
+    },
+    {
+      "step": 2,
+      "symbol": "WifiModeController::initialize",
+      "path": "hardware/interfaces/wifi/1.4/default/wifi_mode_controller.cpp",
+      "effect": "Calls DriverTool::LoadDriver."
+    },
+    {
+      "step": 3,
+      "symbol": "DriverTool::LoadDriver",
+      "path": "frameworks/opt/net/wifi/libwifi_hal/driver_tool.cpp",
+      "effect": "Calls wifi_load_driver."
+    },
+    {
+      "step": 4,
+      "symbol": "wifi_load_driver",
+      "path": "frameworks/opt/net/wifi/libwifi_hal/wifi_hal_common.cpp",
+      "effect": "With the RMX1901 build flags, writes ON to WIFI_DRIVER_STATE_CTRL_PARAM."
+    },
+    {
+      "step": 5,
+      "symbol": "WIFI_DRIVER_STATE_CTRL_PARAM",
+      "path": "device/realme/RMX1901/BoardConfig.mk",
+      "effect": "Resolves the control path to /dev/wlan and values to ON/OFF."
+    },
+    {
+      "step": 6,
+      "symbol": "wlan_hdd_state_ctrl_param_write",
+      "path": "drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_main.c",
+      "effect": "ON calls hdd_driver_load when the built-in qcacld driver is not loaded."
+    },
+    {
+      "step": 7,
+      "symbol": "hdd_driver_load",
+      "path": "drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_main.c",
+      "effect": "Initializes PLD and registers the WLAN driver."
+    },
+    {
+      "step": 8,
+      "symbol": "pld_register_driver",
+      "path": "drivers/staging/qcacld-3.0/core/pld/src/pld_common.c",
+      "effect": "Registers SNOC/IPCI callbacks through icnss_register_driver."
+    },
+    {
+      "step": 9,
+      "symbol": "__icnss_register_driver",
+      "path": "drivers/soc/qcom/icnss.c",
+      "effect": "Posts ICNSS_DRIVER_EVENT_REGISTER_DRIVER."
+    },
+    {
+      "step": 10,
+      "symbol": "icnss_driver_event_register_driver",
+      "path": "drivers/soc/qcom/icnss.c",
+      "effect": "Stores ops; probes immediately only when ICNSS_FW_READY is set."
+    },
+    {
+      "step": 11,
+      "symbol": "icnss_driver_event_fw_ready_ind",
+      "path": "drivers/soc/qcom/icnss.c",
+      "effect": "Sets ICNSS_FW_READY and calls driver probe when firmware becomes ready."
+    }
+  ],
+  "source_revisions": {
+    "device_realme_RMX1901": "1649abb8287047df96c10a1bd9d31b80214570d9",
+    "hardware_interfaces": "203e87a39c04f30bc1f09f6c2306b701d6b97fe0",
+    "frameworks_opt_net_wifi": "18e932aec8672fef4f9fbeb6bb0d19ae20558898",
+    "kernel_base": "a0b817e2e6929cc7e60feeba0f271dd07e7bfa01"
+  },
+  "source_hashes": {
+    "device/realme/RMX1901/BoardConfig.mk": "1fcd540ca0d653de6b146b5ecab6f573644cdfb4025304254be51d4f7438e1cf",
+    "hardware/interfaces/wifi/1.4/default/wifi.cpp": "03ab61aa0c098bb9620dc3c111d0deb58a32ae762a40afb261304609c10819ae",
+    "hardware/interfaces/wifi/1.4/default/wifi_mode_controller.cpp": "4d9c881bea61cc290316c6307ee786abd2d3e6ea4a7ffd39fe75e8f4a0e3fc01",
+    "frameworks/opt/net/wifi/libwifi_hal/driver_tool.cpp": "63ec300017aab867e92cbbfb70c77b0453f8e56143cb4750918ca3fd4c9fc608",
+    "frameworks/opt/net/wifi/libwifi_hal/wifi_hal_common.cpp": "cb376d1bd95fb26078df5cfea03ecedd3df2759419bf8794c7b54ea92a18d04a",
+    "drivers/staging/qcacld-3.0/core/hdd/src/wlan_hdd_main.c": "98b6289f6125e9dd441e66a5ee79e045e19d9bf3ccadb5956ba5593e571833b4",
+    "drivers/staging/qcacld-3.0/core/pld/src/pld_common.c": "63129edd322a1bb8b3e18fa55c5eb7d4d2a5bb1f7b713d7d4f4f7ebeb621cd33",
+    "drivers/soc/qcom/icnss.c": "4347fa552d4ee2babbb0ac037231d649ea62faaa8fe9ae62037cde13ecfd3937"
+  },
+  "runtime_status": "not-run-after-source-reconciliation"
+}
