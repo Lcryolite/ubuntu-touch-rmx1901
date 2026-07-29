@@ -4,7 +4,7 @@
 set -euo pipefail
 
 usage() {
-    echo "usage: $0 BASE_QTI_BOOT A11_LIBSDEDRM SYSTEMD249_LOGIND OUTPUT_DIR [DTS_OUTPUT_DIR]" >&2
+    echo "usage: KERNEL_IMAGE=/path/to/Image.gz-dtb $0 BASE_QTI_BOOT A11_LIBSDEDRM SYSTEMD249_LOGIND OUTPUT_DIR [DTS_OUTPUT_DIR]" >&2
     exit 2
 }
 
@@ -16,6 +16,11 @@ libsdedrm="$(realpath -e "$2")"
 systemd_logind="$(realpath -e "$3")"
 out_dir="$4"
 dts_output="${5:-}"
+kernel_image="${KERNEL_IMAGE:-}"
+if [[ -n "$kernel_image" ]]; then
+    kernel_image="$(realpath -e "$kernel_image")"
+    [[ -s "$kernel_image" ]] || { echo "error: empty kernel override: $kernel_image" >&2; exit 1; }
+fi
 patch_file="${repo_root}/patches/rmx1901-stable-graphics.patch"
 userdata_patch="${repo_root}/patches/rmx1901-real-userdata.patch"
 touch_bridge="${repo_root}/scripts/rmx1901-touch-bridge.py"
@@ -75,6 +80,11 @@ unpack_bootimg --boot_img "$base_boot" --out "$work_dir/unpack" --format=mkbooti
     exit 1
 }
 gzip -t "$work_dir/unpack/ramdisk"
+selected_kernel="$work_dir/unpack/kernel"
+if [[ -n "$kernel_image" ]]; then
+    install -m 0644 "$kernel_image" "$work_dir/kernel-override"
+    selected_kernel="$work_dir/kernel-override"
+fi
 (
     cd "$work_dir/ramdisk-root"
     gzip -dc "$work_dir/unpack/ramdisk" | cpio -idm --no-absolute-filenames \
@@ -134,7 +144,7 @@ done <"$work_dir/base-mkbootimg-args.bin"
 for ((index = 0; index < ${#mkbootimg_args[@]}; index++)); do
     case "${mkbootimg_args[index]}" in
         --kernel)
-            mkbootimg_args[index + 1]="$work_dir/unpack/kernel"
+            mkbootimg_args[index + 1]="$selected_kernel"
             ;;
         --ramdisk)
             mkbootimg_args[index + 1]="$work_dir/ramdisk.img"
@@ -198,7 +208,7 @@ if base != built:
     raise SystemExit(1)
 print("header_args_match=pass")
 PY
-cmp "$work_dir/unpack/kernel" "$out_dir/verify/unpack/kernel"
+cmp "$selected_kernel" "$out_dir/verify/unpack/kernel"
 
 if [[ -n "$dts_output" ]]; then
     dts_output="$(realpath -e "$dts_output")"
@@ -211,6 +221,8 @@ fi
 
 {
     echo "base_boot_sha256=$(sha256_of "$base_boot")"
+    echo "kernel_sha256=$(sha256_of "$selected_kernel")"
+    echo "kernel_override=$([[ -n "$kernel_image" ]] && echo yes || echo no)"
     echo "libsdedrm_sha256=$(sha256_of "$libsdedrm")"
     echo "systemd_logind_sha256=$(sha256_of "$systemd_logind")"
     echo "touch_bridge_sha256=$(sha256_of "$touch_bridge")"

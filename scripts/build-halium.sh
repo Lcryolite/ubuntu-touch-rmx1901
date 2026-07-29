@@ -101,8 +101,8 @@ fi
 
 "$HALIUM_INITRD_FETCHER"
 
-: "${HALIUM_JOBS:=16}"
-: "${NINJA_LOAD_LIMIT:=20}"
+: "${HALIUM_JOBS:=4}"
+: "${NINJA_LOAD_LIMIT:=6}"
 : "${CCACHE_TEMPDIR:=/var/tmp/rmx1901-ccache-tmp}"
 export USE_CCACHE=1
 export CCACHE_EXEC=/usr/bin/ccache

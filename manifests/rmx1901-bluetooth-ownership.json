@@ -1,0 +1,52 @@
+{
+  "schema": "rmx1901-bluetooth-ownership-v1",
+  "status": {
+    "architecture": "source-proven",
+    "kernel_prerequisite": "implemented-not-runtime-validated",
+    "runtime": "blocked-device-physically-off-usb"
+  },
+  "ownership": {
+    "physical_transport_owner": "android.hardware.bluetooth@1.0-service-qti",
+    "binder_proxy": "bluebinder",
+    "linux_stack_owner": "bluetoothd",
+    "path": "WCN3990 UART -> Android HIDL IBluetoothHci/default -> bluebinder -> /dev/vhci -> one Linux hci controller -> BlueZ",
+    "forbidden": [
+      "BlueZ or hciattach opening the physical WCN3990 UART directly while the Android HAL runs",
+      "more than one android.hardware.bluetooth@1.0::IBluetoothHci/default instance",
+      "more than one bluebinder process or Linux HCI controller for the internal radio"
+    ]
+  },
+  "kernel": {
+    "base_commit": "a0b817e2e6929cc7e60feeba0f271dd07e7bfa01",
+    "defconfig": "arch/arm64/configs/sdm670-perf_defconfig",
+    "defconfig_sha256": "ee90689d28b95c91e28165d28052059aebb9aedcf18a7458c076b0d329a94fff",
+    "required_config": "CONFIG_BT_HCIVHCI=y",
+    "direct_uart_config": "CONFIG_BT_HCIUART is not enabled",
+    "driver": "drivers/bluetooth/hci_vhci.c",
+    "device": "/dev/vhci",
+    "vhci_object_sha256": "8e56e3638a9427f25f6e78def3818787435e0c09041c7f3ee6376968c8742747",
+    "kernel_image_sha256": "45859bb8b1eddced64455386e7e5531e15ee16bbf64901b4c2e6dca60d64564c",
+    "boot_image": "workdir/hardware-kernel-v7-boot-20260729T054137Z/boot.img",
+    "boot_image_sha256": "be75c064be100b190ba1c288d0fa85f01831d0ee14b211506ca62309b1e17d64"
+  },
+  "ubuntu_touch_source": {
+    "packaging_repository": "https://gitlab.com/ubports/development/core/packaging/bluebinder.git",
+    "packaging_commit": "004a15580634b32a85442be35058ce0b21ab8415",
+    "upstream_archive": "https://github.com/mer-hybris/bluebinder/archive/refs/tags/1.0.20.tar.gz",
+    "upstream_archive_sha256": "8031678630e5825391ef909c5bdc6b5fe98e04652468c3055f6ecde258d2d6f8",
+    "bluebinder_c_sha256": "7cd90d5f03f3151f4eb42606b55f17bfae32f6775709c0695acd9fe357b3a47b",
+    "source_facts": [
+      "The UBports package declares CONFIG_BT_HCIVHCI as a kernel dependency.",
+      "bluebinder opens /dev/hwbinder and android.hardware.bluetooth@1.0::IBluetoothHci.",
+      "bluebinder opens /dev/vhci and proxies HCI packets between Binder and Linux VHCI.",
+      "The packaged systemd unit orders bluebinder after lxc-android-config and before bluetooth.service."
+    ]
+  },
+  "runtime_gate": {
+    "processes": "exactly one Android Bluetooth HAL, one bluebinder, and one bluetoothd",
+    "binder": "exactly one IBluetoothHci/default registration with zero restarts",
+    "devices": "/dev/vhci exists before bluebinder; exactly one internal HCI controller exists after bluebinder",
+    "functional": "pair, integrity-checked transfer, controller reset/reconnect, and cold-boot reconnect",
+    "current_result": "not-run-after-kernel-config-change"
+  }
+}

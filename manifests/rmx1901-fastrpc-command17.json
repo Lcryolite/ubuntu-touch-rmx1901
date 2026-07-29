@@ -1,0 +1,86 @@
+{
+  "schema": "rmx1901-fastrpc-command17-provenance-v1",
+  "status": {
+    "source_reconciliation": "pass",
+    "native_compat_build": "pass",
+    "runtime_postcondition": "blocked-device-physically-off-usb",
+    "p3_exit_gate": "blocked"
+  },
+  "candidate": {
+    "source_release": "rmx1901-rui2-qssi-api30-f97fae29",
+    "path": "/vendor/bin/adsprpcd",
+    "sha256": "bc760118a85d48a706787893228e73d64b7ecb9619cfc06e1f8d9ed143f67345",
+    "observed_ioctl": "0xc00c5211",
+    "observed_domain": 0,
+    "observed_attribute_ids": [128, 256, 257],
+    "observation_evidence": "workdir/hardware-evidence/20260729T052100Z-p3-fastrpc-source-provenance/observed"
+  },
+  "decoded_abi": {
+    "direction": 3,
+    "size": 12,
+    "type": 82,
+    "number": 17,
+    "fields": [
+      {"name": "domain", "type": "uint32_t", "offset": 0},
+      {"name": "attribute_ID", "type": "uint32_t", "offset": 4},
+      {"name": "capability", "type": "uint32_t", "offset": 8}
+    ]
+  },
+  "matching_vendor_source": {
+    "repository": "https://github.com/xiaomi-sm6375-devs/android_kernel_xiaomi_sm6375.git",
+    "branch": "lineage-20",
+    "commit": "8050fa5150de3697e54e1366e968a3af0a6911ec",
+    "command_name": "FASTRPC_IOCTL_GET_DSP_INFO",
+    "dsp_attribute_count": 256,
+    "total_attribute_count": 258,
+    "files": [
+      {
+        "path": "drivers/char/adsprpc_shared.h",
+        "sha256": "71e229a40982549d5de026d6ed6a09cdba3a5f1439ff83214a44dddf20cfc38a"
+      },
+      {
+        "path": "drivers/char/adsprpc.c",
+        "sha256": "c00f14c4982e6b78d2c5e7e0597f7501771afe7e42d224a210650561b241c05b"
+      },
+      {
+        "path": "drivers/char/adsprpc_compat.c",
+        "sha256": "81c74f9cc79ac50724f08f957507fdd3d3648529583696096d29d244bc2ca5dd"
+      }
+    ],
+    "saved_source": "workdir/hardware-evidence/20260729T052100Z-p3-fastrpc-source-provenance/upstream"
+  },
+  "local_implementation": {
+    "kernel_base_commit": "a0b817e2e6929cc7e60feeba0f271dd07e7bfa01",
+    "files": [
+      "drivers/char/adsprpc_shared.h",
+      "drivers/char/adsprpc.c",
+      "drivers/char/adsprpc_compat.c"
+    ],
+    "local_command_name": "FASTRPC_IOCTL_GET_DSP_CAPABILITY",
+    "name_rationale": "The pinned 4.9 tree already assigns FASTRPC_IOCTL_GET_DSP_INFO to legacy command 16; the local suffix preserves that ABI while command 17 implements the sourced per-attribute GET_DSP_INFO semantics.",
+    "legacy_command16_preserved": true,
+    "patch_sha256": "0ee3fb9f8dc83baebcfbd13188d88bf238540ba28ef8a88da4c516f9057333bd",
+    "kernel_image_sha256": "45859bb8b1eddced64455386e7e5531e15ee16bbf64901b4c2e6dca60d64564c",
+    "boot_image": "workdir/hardware-kernel-v7-boot-20260729T054137Z/boot.img",
+    "boot_image_sha256": "be75c064be100b190ba1c288d0fa85f01831d0ee14b211506ca62309b1e17d64",
+    "source_test": "tests/test-rmx1901-fastrpc-command17-source.sh"
+  },
+  "device_probe": {
+    "source": "scripts/rmx1901-fastrpc-command17-probe.c",
+    "source_sha256": "4afd909392ceed6b2207f976348a77644f529a34306f8a754cdc3945a81178c5",
+    "aarch64_static_binary": "workdir/probes/rmx1901-fastrpc-command17-probe-aarch64",
+    "aarch64_static_binary_sha256": "0afdf5ac384a008caf77c083b2a31d595d4b2ab3450a36be10d6fa3bda2b7dc7",
+    "source_test": "tests/test-rmx1901-fastrpc-command17-probe.sh",
+    "positive_queries": ["0x080", "0x100", "0x101"],
+    "repeat_query_gate": "both results must be identical",
+    "negative_gates": ["cross-domain returns EINVAL", "attribute 258 returns EOVERFLOW"],
+    "required_result": "overall=PASS"
+  },
+  "required_runtime_postcondition": {
+    "sensorspd": "60 seconds, zero bad ioctl/crash/restart, attributes 0x100 and 0x80 return once then daemon advances",
+    "audiopd": "60 seconds, zero bad ioctl/crash/restart, attribute 0x101 returns once then daemon advances",
+    "kernel": "no command-17 ENOTTY and cached per-domain capabilities survive repeated queries until SSR",
+    "current_result": "not-run-after-hardware-kernel-v7-build"
+  },
+  "evidence_bundle": "workdir/hardware-evidence/20260729T052100Z-p3-fastrpc-source-provenance"
+}
