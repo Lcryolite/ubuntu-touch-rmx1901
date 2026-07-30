@@ -46,6 +46,10 @@ FORBIDDEN_BASENAMES_OUTSIDE_COHORT = {
     "libgui.so",
     "libvndksupport.so",
 }
+# A strict cohort must bring its own Android ABI providers.  These three are
+# bionic's stable runtime libraries and are supplied by the process linker;
+# staging replacements for them would be both unsafe and unnecessary.
+STRICT_FEATURE_ALLOWED_SYSTEM_LIBRARIES = {"libc.so", "libdl.so", "libm.so"}
 
 
 class VerificationError(Exception):
@@ -177,6 +181,7 @@ def validate_manifest(manifest_path: Path, readelf: str, allow_incomplete: bool)
     roots_raw = manifest.get("source_roots")
     entries = manifest.get("entries")
     allowed_raw = manifest.get("allowed_system_libraries", [])
+    strict_raw = manifest.get("strict_features", [])
     if not isinstance(roots_raw, dict) or not roots_raw:
         fail("source_roots must be a non-empty object")
     if not isinstance(entries, list) or not entries:
@@ -193,6 +198,17 @@ def validate_manifest(manifest_path: Path, readelf: str, allow_incomplete: bool)
             allowed_by_feature[feature] = set(values)
     else:
         fail("allowed_system_libraries must be a sorted array or an object keyed by every feature")
+    if not isinstance(strict_raw, list) or strict_raw != sorted(set(strict_raw)):
+        fail("strict_features must be a sorted unique feature array")
+    if any(feature not in FEATURES for feature in strict_raw):
+        fail("strict_features has an invalid feature")
+    for feature in strict_raw:
+        escaped = sorted(allowed_by_feature[feature] - STRICT_FEATURE_ALLOWED_SYSTEM_LIBRARIES)
+        if escaped:
+            fail(
+                f"strict feature {feature} permits non-bionic system libraries: "
+                + ", ".join(escaped)
+            )
     base = manifest_path.resolve().parent.parent
     roots: dict[str, Path] = {}
     for release, raw_root in roots_raw.items():
@@ -294,7 +310,15 @@ def validate_manifest(manifest_path: Path, readelf: str, allow_incomplete: bool)
                 fail(f"undeclared cross-cohort provider {needed}: {provider_entry['feature']} -> {raw['feature']}")
             direct_providers.append(provider)
         for symbol in raw.get("required_symbols", []):
-            if not any(symbol in provider["metadata"]["defined_symbols"] for provider in direct_providers):
+            # ELF exposes C++ symbols by their ABI-mangled names.  A cohort
+            # requirement names the stable source-level function (for example
+            # WriteStringToFd), so accept an exact C symbol or its mangled
+            # implementation name without requiring host-side demanglers.
+            if not any(
+                symbol == defined or symbol in defined
+                for provider in direct_providers
+                for defined in provider["metadata"]["defined_symbols"]
+            ):
                 fail(f"required symbol {symbol} has no direct cohort provider for {raw['source_path']}")
 
     return {

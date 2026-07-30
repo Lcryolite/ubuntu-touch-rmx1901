@@ -12,6 +12,19 @@
 
 #define FASTRPC_IOCTL_GETINFO _IOWR('R', 8, uint32_t)
 
+/*
+ * Command 16 is the pre-API30 DSP-capability request.  Keep this probe next
+ * to command 17 so one device run distinguishes a general ADSP Utilities
+ * failure from rejection of command 17's 255-entry request vector.
+ */
+struct fastrpc_ioctl_dsp_capabilities {
+    uint32_t domain;
+    uint32_t dsp_attributes[7];
+};
+
+#define FASTRPC_IOCTL_GET_DSP_INFO \
+    _IOWR('R', 16, struct fastrpc_ioctl_dsp_capabilities)
+
 struct fastrpc_ioctl_capability {
     uint32_t domain;
     uint32_t attribute_ID;
@@ -41,6 +54,31 @@ static int query_capability(int fd, uint32_t domain, uint32_t attribute,
            domain, attribute, rc, saved_errno, query.capability);
     if (result != NULL)
         *result = query.capability;
+    errno = saved_errno;
+    return rc;
+}
+
+static int query_legacy_dsp_info(int fd, uint32_t domain) {
+    struct fastrpc_ioctl_dsp_capabilities query = {
+        .domain = domain,
+        .dsp_attributes = {
+            CAPABILITY_SENTINEL, CAPABILITY_SENTINEL, CAPABILITY_SENTINEL,
+            CAPABILITY_SENTINEL, CAPABILITY_SENTINEL, CAPABILITY_SENTINEL,
+            CAPABILITY_SENTINEL,
+        },
+    };
+    int rc;
+    int saved_errno;
+
+    errno = 0;
+    rc = ioctl(fd, FASTRPC_IOCTL_GET_DSP_INFO, &query);
+    saved_errno = errno;
+    printf("command16 domain=%u rc=%d errno=%d attrs=%08x,%08x,%08x,%08x,%08x,%08x,%08x\n",
+           domain, rc, saved_errno,
+           query.dsp_attributes[0], query.dsp_attributes[1],
+           query.dsp_attributes[2], query.dsp_attributes[3],
+           query.dsp_attributes[4], query.dsp_attributes[5],
+           query.dsp_attributes[6]);
     errno = saved_errno;
     return rc;
 }
@@ -80,11 +118,13 @@ int main(int argc, char **argv) {
         return 2;
     }
 
-    printf("uapi getinfo=0x%08lx command17=0x%08lx struct_size=%zu\n",
+    printf("uapi getinfo=0x%08lx command16=0x%08lx command17=0x%08lx struct_size=%zu\n",
            (unsigned long)FASTRPC_IOCTL_GETINFO,
+           (unsigned long)FASTRPC_IOCTL_GET_DSP_INFO,
            (unsigned long)FASTRPC_IOCTL_GET_DSP_CAPABILITY,
            sizeof(struct fastrpc_ioctl_capability));
     if ((unsigned long)FASTRPC_IOCTL_GETINFO != 0xc0045208UL ||
+        (unsigned long)FASTRPC_IOCTL_GET_DSP_INFO != 0xc0205210UL ||
         (unsigned long)FASTRPC_IOCTL_GET_DSP_CAPABILITY != 0xc00c5211UL ||
         sizeof(struct fastrpc_ioctl_capability) != 12U) {
         fprintf(stderr, "compiled UAPI constants do not match RMX1901 contract\n");
@@ -107,6 +147,9 @@ int main(int argc, char **argv) {
         return 1;
     }
     printf("getinfo domain=%u rc=0 smmu=%u\n", domain, info);
+
+    /* Deliberately report rather than fold into the command-17 verdict. */
+    (void)query_legacy_dsp_info(fd, domain);
 
     for (i = 0; i < sizeof(attributes) / sizeof(attributes[0]); ++i) {
         if (query_capability(fd, domain, attributes[i], &first[i]) != 0)
