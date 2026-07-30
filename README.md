@@ -74,3 +74,45 @@ The RUI2 stock boot security patch level has not yet been recovered from a
 matching stock image. `deviceinfo` therefore uses the minimum date accepted by
 the official `mkbootimg` frontend (`2000-01-01`) rather than claiming an
 unverified vendor patch month.
+
+## Current device status (2026-07-30)
+
+The accepted daily-use baseline is the b694 kernel payload with the
+`service_locator.enable=1` boot-command-line derivative.  It has repeatedly
+reached the Ubuntu Touch graphical session on real hardware.  A Recovery BCB
+controller plus a reset-only Sahara helper can return an early-boot failure to
+Recovery without requiring a physical key press; boot candidates are always
+written and read back with a full SHA-256 check before they are tried.
+
+Implemented and verified on the device:
+
+- Halium/LXC Android container startup, RNDIS SSH access, LightDM and the
+  Lomiri desktop/lock screen;
+- persistent userdata layout and the service-locator boot derivative;
+- recovery fallback/control plane and complete boot-partition rollback
+  verification;
+- Android Wi-Fi HIDL service startup and direct `IWifi.start()`/chip-ID
+  probing (this is a service-layer check only);
+- Android camera provider startup prerequisites: `ro.hardware.camera=qcom`,
+  the private Android 11 provider closure, and `/data/vendor/camera` creation
+  were proven in a temporary runtime probe.
+
+Not yet accepted as working features:
+
+- Wi-Fi: qcacld still fails while bringing up the kernel driver; there is no
+  `wlan0`, scan, association, DHCP, or traffic acceptance result.  The Android
+  14 AIDL service is incompatible with the Android 11 runtime, so the current
+  practical path is the RUI HIDL service, not an incomplete AIDL shim.
+- Camera: provider process startup is not a preview, still-capture, or video
+  stream acceptance test.
+- Bluetooth: QTI service/library compatibility and a persistent `/dev/vhci`
+  path remain unresolved; Bluebinder/BlueZ scan, pairing and transfer have not
+  passed.
+- Audio: FastRPC command-17 dispatch and device-node ownership were tested,
+  but the ADSP information channel fails and there is no stable playback or
+  recording acceptance.
+
+The kernel repository carries candidate FastRPC, camera-memory and VHCI
+changes for continued work.  They are source-tested/offline-built changes, not
+claims of hardware acceptance; do not replace the verified baseline without
+the Recovery rollback procedure described in `docs/`.

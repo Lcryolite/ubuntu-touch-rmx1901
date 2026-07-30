@@ -1,0 +1,9 @@
+# RMX1901's uevent delivery into Android LXC can miss these already-created
+# device nodes. Match device/realme/RMX1901/rootdir/ueventd.qcom.rc.
+on post-fs-data
+    chown wifi wifi /dev/wlan
+    chmod 0660 /dev/wlan
+
+on property:sys.boot_completed=1
+    chown wifi wifi /dev/wlan
+    chmod 0660 /dev/wlan

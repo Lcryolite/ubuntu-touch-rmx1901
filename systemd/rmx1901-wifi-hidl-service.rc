@@ -1,0 +1,18 @@
+# The physical AIDL definition is parsed before the private bind is visible to
+# this Halium init.  Give the API30 HIDL implementation its own init owner,
+# then explicitly retire the old retrying owner after Android is ready.
+service vendor.rmx1901_wifi_hidl /vendor/bin/hw/android.hardware.wifi@1.0-service
+    setenv LD_LIBRARY_PATH /vendor/lib64/hw
+    interface android.hardware.wifi@1.0::IWifi default
+    interface android.hardware.wifi@1.1::IWifi default
+    interface android.hardware.wifi@1.2::IWifi default
+    interface android.hardware.wifi@1.3::IWifi default
+    interface android.hardware.wifi@1.4::IWifi default
+    class hal
+    user wifi
+    group wifi gps
+    disabled
+
+on property:sys.boot_completed=1
+    stop vendor.wifi_hal_legacy
+    start vendor.rmx1901_wifi_hidl

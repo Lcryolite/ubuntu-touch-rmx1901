@@ -77,6 +77,7 @@ value = copy.deepcopy(manifest); value["entries"][0]["runtime_destination"] = "/
 value = copy.deepcopy(manifest); value["entries"][0]["required_symbols"] = ["not_provided"]; variants["symbol"] = value
 value = copy.deepcopy(manifest); value["entries"][0]["source_path"] = "/../bin/consumer"; variants["unsafe"] = value
 value = copy.deepcopy(manifest); value["entries"].append(copy.deepcopy(value["entries"][0])); variants["duplicate"] = value
+value = copy.deepcopy(manifest); value["strict_features"] = ["wifi"]; value["allowed_system_libraries"].append("libprovider.so"); value["allowed_system_libraries"].sort(); variants["strict-escape"] = value
 for name, data in variants.items():
     (root / "manifests" / f"{name}.json").write_text(json.dumps(data, indent=2, sort_keys=True) + "\n")
 PY
@@ -86,7 +87,7 @@ chmod +x "$verifier"
 grep -Fq '"status": "pass"' "$tmp_root/report.json"
 grep -Fq '"entries": 3' "$tmp_root/report.json"
 
-for name in incomplete hash needed unresolved cross global symbol unsafe duplicate; do
+for name in incomplete hash needed unresolved cross global symbol unsafe duplicate strict-escape; do
     set +e
     "$verifier" "$tmp_root/manifests/$name.json" >"$tmp_root/$name.out" 2>"$tmp_root/$name.err"
     status=$?
